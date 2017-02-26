@@ -15,8 +15,8 @@ import { Ng2Bs3ModalModule } from 'ng2-bs3-modal/ng2-bs3-modal';
 import { AccordionModule,DropdownModule,AlertModule,ModalModule } from 'ng2-bootstrap';
 import { MusteriNotlariService } from './musteri-detay/Service/musteri-notlari.service';
 import { NotlisteleComponent } from './musteri-detay/Components/notlistele/notlistele.component';
-
-
+import { PanelComponent } from './Panel/panel.component';
+import { ButtonComponent } from './Button/button.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +28,8 @@ import { NotlisteleComponent } from './musteri-detay/Components/notlistele/notli
     MusterilerComponent,
     MusteriDetayComponent,
     NotlisteleComponent,
+    PanelComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

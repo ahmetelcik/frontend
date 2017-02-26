@@ -1,1 +1,35 @@
 /* Panel Scss */
+.panel{
+  border-radius: 0;
+  box-shadow: none;
+  border: 1px solid transparent;
+}
+
+/* Panel Light */
+.panel-light{
+  border: 1px solid #e1e8ed;
+
+  & .panel-heading{
+    border-bottom: 1px solid #e1e8ed;
+  }
+
+  /* Panel Heading Left Block */
+  & .panel-heading-left-block{
+    display: inline-block;
+  }
+
+  /* Panel Heading Right Block */
+  & .panel-heading-right-block{
+    float:right;
+  }
+
+  /* Panel Footer Left Block */
+  & .panel-footer-left-block{
+    display: inline-block;
+  }
+
+  /* Panel Footer Right Blcok */
+  & .panel-footer-right-block{
+    float:right;
+  }
+}

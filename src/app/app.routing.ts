@@ -8,6 +8,8 @@ import { AnasayfaComponent } from './anasayfa/anasayfa.component';
 import { AraclarComponent } from './araclar/araclar.component';
 import { MusterilerComponent } from './musteriler/musteriler.component';
 import { MusteriDetayComponent } from './musteri-detay/musteri-detay.component';
+import { PanelComponent } from './Panel/panel.component';
+import { ButtonComponent } from './Button/button.component';
 
 const appRoutes: Routes = [
   {
@@ -29,6 +31,14 @@ const appRoutes: Routes = [
   {
     path: '',
     component: AnasayfaComponent
+  },
+  {
+    path : "panel",
+    component : PanelComponent
+  },
+  {
+    path : "button",
+    component : ButtonComponent
   }
 ];
 
