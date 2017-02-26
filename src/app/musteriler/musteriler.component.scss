@@ -1,0 +1,174 @@
+#sayfa-baslik{
+  padding: 60px 25px 10px;
+  border-bottom: 1px solid #ddd;
+  background: #F3F3F3;
+}
+.page-head-title{
+  padding: 0;
+  margin: 0;
+  & h2{
+    color: #6b6b6b;
+    font-size: 28px;
+    font-weight:300;
+    letter-spacing: -1px;
+  }
+}
+
+.breadcumb-title{
+  padding: 0;
+  margin: 0;
+  background: none;
+  & li{
+    & a {
+      color: #5e5e5e;
+      text-decoration: none;
+      &:hover{
+        color: #303030;
+      }
+    }
+  }
+
+  & .active{
+    color: #7a7a7a;
+    font-weight:300;
+  }
+}
+
+
+
+/* Müşteri Listele Body */
+#musteri-listele-body{
+  background: #fff;
+  border-radius: 10px;
+  border:1px solid #eee;
+}
+
+#musteri-listele-header{
+  border-bottom: 1px solid #F3F3F3;
+  padding:15px;
+}
+
+.musteri-title-baslik{
+  & span{
+    color: #999593;
+    font-weight: 400;
+    & i{
+      margin-right: 3px;
+    }
+  }
+}
+
+
+.musteri-list-ul{
+  list-style: none;
+  & li{
+    position: relative;
+    border-bottom: 1px solid #eee;
+    & a{
+      display: block;
+      padding: 10px;
+    }
+    &:hover{
+      background: #f3f3f3;
+    }
+  }
+}
+
+.musteri-listele-kisa-ad{
+  background: #ddd;
+  height: 47px;
+  width: 47px;
+  position: relative;
+  & span{
+    position: absolute;
+    color: #a39f9d;
+    font-weight: bold;
+    font-size: 14px;
+    top: 14px;
+    left: 14px;
+    letter-spacing: 1px
+  }
+}
+
+
+.musteri-listele-adi-soyadi{
+  position: absolute;
+  top: 12px;
+  left: 70px;
+  & span{
+    color: #999;
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+
+
+.musteri-listele-etiket-tags{
+  position: absolute;
+  top:34px;
+  left:70px;
+  & span{
+    font-size: 11px;
+    padding: 3px 15px;
+    border-radius: 4px;
+    color: #ffffff;
+  }
+}
+
+.musteri-etiket-tags-red{
+  background: rgba(228,7,0,0.72);
+}
+
+.musteri-etiket-tags-green{
+  background: rgba(0,185,14,0.52);
+}
+
+.musteri-listele-bakiyesi{
+  position: absolute;
+  right:10px;
+  top:23px;
+  & span{
+    color: #999;
+    font-weight: 500;
+    font-size: 18px;
+  }
+}
+
+
+/* Sol Filterlar */
+.musteri-listele-filterlar{
+  background: #fff;
+  border-radius: 10px;
+  border:1px solid #eee;
+}
+
+.musteri-listele-filterlar{
+  & ul{
+    list-style: none;
+    padding:10px;
+    & li{
+      padding:2px;
+      & a{
+        font-size: 12px;
+        color: #555;
+        display: block;
+        text-decoration: none;
+        &:hover{
+          color: #333;
+        }
+        & i{
+          font-size: 11px;
+          margin-right: 6px;
+          color: #777
+        }
+      }
+    }
+  }
+
+  & .active{
+    color: #333;
+    & span{
+      color: #333;
+    }
+  }
+}

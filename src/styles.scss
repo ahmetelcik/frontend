@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/normalize.css/normalize.css";
+@import "assets/css/font-awesome.min.css";
+@import "ozel.scss";
+@import "app/anasayfa/anasayfa.component.scss";
+@import "app/araclar/araclar.component.scss";
+@import "app/header/header.component.scss";
+@import "app/musteriler/musteriler.component.scss";
+@import "app/solmenu/solmenu.component.scss";
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic-ext');
+@import "scss/font-size";
+@import "app/musteri-detay/musteri-detay.component.scss";
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size:14px;
+  margin:0;
+  padding:0;
+  background-color: #F9F9F9
+}

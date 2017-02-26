@@ -1,0 +1,34 @@
+#sol-menu{
+  background-color: #282A2C;
+  width: 230px;
+  height: 100%;
+  position: fixed;
+  top:60px;
+  left:0;
+  z-index: 11;
+  & .active{
+    background-color: #0b1115;
+  }
+  & ul.menu-icerikli{
+    padding: 0;
+    margin: 0;
+    & li{
+      &:hover{
+        background-color: #0b1115;
+      }
+      & a {
+        color: #c3c3c3;
+        display: block;
+        text-decoration: none;
+        padding:13px 25px;
+        font-size:14px;
+        & .fa{
+          font-size:15px;
+        }
+        & span{
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+}
