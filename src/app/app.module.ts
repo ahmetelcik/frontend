@@ -13,7 +13,6 @@ import { MusterilerComponent } from './musteriler/musteriler.component';
 import { MusteriDetayComponent } from './musteri-detay/musteri-detay.component';
 import { Ng2Bs3ModalModule } from 'ng2-bs3-modal/ng2-bs3-modal';
 import { AccordionModule,DropdownModule,AlertModule,ModalModule } from 'ng2-bootstrap';
-import { MusteriNotSilDirective } from './musteri-detay/Directive/musteri-not-sil.directive';
 import { MusteriNotlariService } from './musteri-detay/Service/musteri-notlari.service';
 import { NotlisteleComponent } from './musteri-detay/Components/notlistele/notlistele.component';
 
@@ -28,7 +27,6 @@ import { NotlisteleComponent } from './musteri-detay/Components/notlistele/notli
     AraclarComponent,
     MusterilerComponent,
     MusteriDetayComponent,
-    MusteriNotSilDirective,
     NotlisteleComponent,
   ],
   imports: [
