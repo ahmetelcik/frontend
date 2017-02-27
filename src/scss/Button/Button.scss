@@ -37,6 +37,8 @@
 }
 
 
+
+
 /* Btn Success */
 .btn-success-ozel{
   color: #fff;
@@ -64,6 +66,28 @@
   }
   &:focus{
     color: #fff;
+  }
+  &:active{
+    background-color: #eb2521;
+  }
+}
+
+
+/* Btn Danger Outline */
+.btn-danger-ozel-outline{
+  color: #ef5350;
+  background-color: transparent;
+  border-color: #ef5350;
+
+  &:hover{
+    color: #fff;
+    background-color: #ef5350;
+    border-color: #ef5350;
+  }
+  &:focus{
+    color: #fff;
+    background-color: #ef5350;
+    border-color: #ef5350;
   }
   &:active{
     background-color: #eb2521;
