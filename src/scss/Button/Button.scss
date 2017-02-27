@@ -35,3 +35,20 @@
     background-color: #276ecc;
   }
 }
+
+
+/* Btn Success */
+.btn-success-ozel{
+  color: #fff;
+  background-color: #65ba68;
+  border-color: #65ba68;
+  &:hover{
+    color: #ffffff;
+  }
+  &:focus{
+    color: #fff;
+  }
+  &:active{
+    background-color: #5eb762;
+  }
+}
