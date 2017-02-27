@@ -19,3 +19,19 @@
     background-color: #f1f1f1;
   }
 }
+
+/* Btn Primary */
+.btn-primary-ozel{
+  color: #fff;
+  background-color: #2973d4;
+  border-color: #2973d4;
+  &:hover{
+    color: #ffffff;
+  }
+  &:focus{
+    color: #fff;
+  }
+  &:active{
+    background-color: #276ecc;
+  }
+}
