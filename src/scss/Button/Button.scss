@@ -23,8 +23,8 @@
 /* Btn Primary */
 .btn-primary-ozel{
   color: #fff;
-  background-color: #2973d4;
-  border-color: #2973d4;
+  background-color: #4a89dc;
+  border-color: #4a89dc;
   &:hover{
     color: #ffffff;
   }
@@ -50,5 +50,22 @@
   }
   &:active{
     background-color: #5eb762;
+  }
+}
+
+
+/* Btn Danger */
+.btn-danger-ozel{
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d9534f;
+  &:hover{
+    color: #ffffff;
+  }
+  &:focus{
+    color: #fff;
+  }
+  &:active{
+    background-color: #eb2521;
   }
 }
