@@ -1,0 +1,21 @@
+/* Form Input Text */
+.form-style-ozel{
+  border: 1px solid #e1e8ed;
+  border-radius: 3px;
+  box-shadow: none;
+  color: #6d6d6d;
+  &:focus{
+    border:1px solid #c7c7c7;
+    box-shadow: none;
+  }
+}
+
+/* Form Input Label */
+.form-style-ozel-label{
+  font-weight:300;
+  color: #656565;
+}
+
+.help-block{
+  font-size: 12px;
+}
