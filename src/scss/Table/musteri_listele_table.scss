@@ -1,7 +1,7 @@
 #musteri-listele{
   & .musteri-listele-header{
     border-bottom: 1px solid #e1e8ed;
-    padding-bottom: 10px;
+    padding:20px;
     & .musteri-listele-label-header{
       display: inline-block;
       & span{
@@ -21,10 +21,9 @@
       position: relative;
       //background: #c5c5c5;
       border-bottom:1px solid #f6f6f6;
-      margin-top: 10px;
-      margin-bottom: 10px;
       padding-bottom: 10px;
       padding-top: 10px;
+      padding-left: 10px;
       & a{
         display: block;
       }
@@ -49,7 +48,8 @@
           color: #666;
           position: absolute;
           top: 23px;
-          left: 14px;
+          left: 25px;
+          font-weight:100;
         }
       }
       & .musteri-list-tam-ad{
@@ -61,6 +61,10 @@
           font-size: 15px;
           font-weight: 300;
           display: block;
+        }
+
+        & .musteri-list-tam-ad-telefon{
+          font-size: 13px;
         }
       }
     }
@@ -82,4 +86,10 @@
       }
     }
   }
+}
+
+
+/* Müşteri Sol Block */
+.musteri-ekle-block{
+  border-bottom:1px solid #e1e8ed
 }
