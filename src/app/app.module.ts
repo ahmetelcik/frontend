@@ -12,6 +12,7 @@ import { AraclarComponent } from './araclar/araclar.component';
 import { MusterilerComponent } from './musteriler/musteriler.component';
 import { MusteriDetayComponent } from './musteri-detay/musteri-detay.component';
 import { Ng2Bs3ModalModule } from 'ng2-bs3-modal/ng2-bs3-modal';
+import { TabsModule } from 'ng2-bootstrap/tabs';
 import { AccordionModule,DropdownModule,AlertModule,ModalModule } from 'ng2-bootstrap';
 import { MusteriNotlariService } from './musteri-detay/Service/musteri-notlari.service';
 import { NotlisteleComponent } from './musteri-detay/Components/notlistele/notlistele.component';
@@ -46,7 +47,8 @@ import { TabComponent } from './Tab/tab.component';
     AccordionModule.forRoot(),
     DropdownModule.forRoot(),
     AlertModule.forRoot(),
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    TabsModule.forRoot(),
   ],
   providers: [MusteriNotlariService],
   bootstrap: [AppComponent]
