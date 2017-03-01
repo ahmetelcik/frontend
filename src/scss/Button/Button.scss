@@ -12,12 +12,16 @@
 .btn-default-ozel{
   background: #ddd;
   border:1px solid #e1e8ed;
+  & a{
+    color: #333!important;
+  }
   &:hover{
     box-shadow: #d3d3d3
   }
   &:active{
     background-color: #f1f1f1;
   }
+
 }
 
 /* Btn Primary */
