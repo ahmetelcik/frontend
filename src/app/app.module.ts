@@ -17,6 +17,7 @@ import { MusteriNotlariService } from './musteri-detay/Service/musteri-notlari.s
 import { NotlisteleComponent } from './musteri-detay/Components/notlistele/notlistele.component';
 import { PanelComponent } from './Panel/panel.component';
 import { ButtonComponent } from './Button/button.component';
+import { ListComponent } from './List/list.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ButtonComponent } from './Button/button.component';
     MusteriDetayComponent,
     NotlisteleComponent,
     PanelComponent,
-    ButtonComponent
+    ButtonComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,

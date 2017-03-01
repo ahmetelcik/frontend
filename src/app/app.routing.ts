@@ -10,7 +10,7 @@ import { MusterilerComponent } from './musteriler/musteriler.component';
 import { MusteriDetayComponent } from './musteri-detay/musteri-detay.component';
 import { PanelComponent } from './Panel/panel.component';
 import { ButtonComponent } from './Button/button.component';
-
+import { ListComponent } from './List/list.component';
 const appRoutes: Routes = [
   {
     path: 'anasayfa',
@@ -39,6 +39,10 @@ const appRoutes: Routes = [
   {
     path : "button",
     component : ButtonComponent
+  },
+  {
+    path : "list",
+    component : ListComponent
   }
 ];
 
