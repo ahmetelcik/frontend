@@ -18,6 +18,7 @@ import { NotlisteleComponent } from './musteri-detay/Components/notlistele/notli
 import { PanelComponent } from './Panel/panel.component';
 import { ButtonComponent } from './Button/button.component';
 import { ListComponent } from './List/list.component';
+import { FormComponent } from './Form/form.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ListComponent } from './List/list.component';
     NotlisteleComponent,
     PanelComponent,
     ButtonComponent,
-    ListComponent
+    ListComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,

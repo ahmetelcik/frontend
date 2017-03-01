@@ -11,6 +11,8 @@ import { MusteriDetayComponent } from './musteri-detay/musteri-detay.component';
 import { PanelComponent } from './Panel/panel.component';
 import { ButtonComponent } from './Button/button.component';
 import { ListComponent } from './List/list.component';
+import { FormComponent } from './Form/form.component';
+
 const appRoutes: Routes = [
   {
     path: 'anasayfa',
@@ -43,6 +45,10 @@ const appRoutes: Routes = [
   {
     path : "list",
     component : ListComponent
+  },
+  {
+    path : "form",
+    component: FormComponent
   }
 ];
 
