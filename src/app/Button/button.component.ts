@@ -11,6 +11,14 @@ export class ButtonComponent implements OnInit {
 
   }
 
+  public status: {isopen: boolean} = {isopen: true};
+
+  public toggleDropdown($event: MouseEvent): void {
+    $event.preventDefault();
+    $event.stopPropagation();
+    this.status.isopen = !this.status.isopen;
+  }
+
   ngOnInit() {
 
   }
