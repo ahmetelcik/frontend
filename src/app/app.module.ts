@@ -19,6 +19,7 @@ import { PanelComponent } from './Panel/panel.component';
 import { ButtonComponent } from './Button/button.component';
 import { ListComponent } from './List/list.component';
 import { FormComponent } from './Form/form.component';
+import { TabComponent } from './Tab/tab.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { FormComponent } from './Form/form.component';
     PanelComponent,
     ButtonComponent,
     ListComponent,
-    FormComponent
+    FormComponent,
+    TabComponent,
   ],
   imports: [
     BrowserModule,
