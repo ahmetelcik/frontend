@@ -7,7 +7,7 @@
 @import "app/araclar/araclar.component.scss";
 @import "app/header/header.component.scss";
 
-@import "app/musteriler/musteriler.component.scss";
+//@import "app/musteriler/musteriler.component.scss";
 
 @import "app/solmenu/solmenu.component.scss";
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic-ext');
@@ -21,6 +21,11 @@
 
 /* Dropdown */
 @import "scss/Dropdown/dropdown.scss";
+
+/* Table */
+@import "scss/Table/musteri_listele_table.scss";
+
+
 body{
   font-family: 'Roboto', sans-serif;
   font-size:14px;
