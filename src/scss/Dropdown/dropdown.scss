@@ -1,0 +1,15 @@
+/* Dropdown Menu */
+.dropdown-menu {
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
+  border-radius: 0;
+  border-color: #e1e8ed;
+  & li > a{
+    padding:6px 20px;
+  }
+  & .active > a{
+    background: #4a89dc;
+  }
+
+}
