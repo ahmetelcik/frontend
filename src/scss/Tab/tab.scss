@@ -24,7 +24,7 @@ li.tab-ozel{
 
 /* Tab Page İçerik */
 .tab-page-content{
-  height:250px;
+  height:256px;
   overflow-y: auto;
 }
 
@@ -79,7 +79,55 @@ li.tab-ozel{
   }
 }
 
+
 .odeme-listele-tab{
-  padding:0;
-  list-style: none!important;
+  list-style: none;
+  padding: 0;
+  & li {
+    border-bottom: 1px solid #f6f6f6;
+    &:hover{
+      background: #f9f9f9;
+    }
+    & a{
+      display: block;
+      padding: 13px;
+    }
+  }
+  & a{
+    text-decoration: none;
+  }
+  /* İcon */
+  & .tab-page-content-icon-block{
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+    & i{
+      background: #eee;
+      color: #a39f9d;
+      top: 10px;
+      left: 10px;
+      border-radius: 5px;
+      padding: 10px!important;
+    }
+  }
+
+  & .tab-page-content-text{
+    width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    & p{
+      padding:0;
+      margin: 0;
+      color: #333;
+      font-size: 12px;
+    }
+
+    & span{
+      color: #888888;
+      font-size: 11px;
+    }
+  }
 }
+
+
