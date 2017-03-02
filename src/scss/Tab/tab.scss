@@ -27,3 +27,20 @@ li.tab-ozel{
   height:200px;
   overflow-y: auto;
 }
+
+/* Tab İçerik Notlari Listele */
+.not-listele-tab{
+  list-style: none;
+  padding: 0;
+  & .tab-page-content-icon-block{
+    display: inline-block;
+    & i{
+      background: #eee;
+      color: #a39f9d;
+      top: 10px;
+      left: 10px;
+      border-radius: 5px;
+      padding: 10px;
+    }
+  }
+}
