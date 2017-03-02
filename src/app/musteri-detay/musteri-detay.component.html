@@ -223,159 +223,186 @@
       <div class="row">
         <div class="col-md-12">
           <!-- Panel -->
-          <div class="panel panel-benim">
-            <!-- Panel Body-->
+          <div class="panel panel-light">
+            <!-- Panel Body -->
             <div class="panel-body padding-0">
-            <!-- Tab -->
-              <div class="tab-ozel">
-                <!-- Tab Header-->
-                <div class="tab-ozel-header" style="position: relative">
-                  <ul class="tab-ozel-header-ul padding-0">
-                    <li [ngClass]="{active: tab==='ödemeler'}"><a href="javascript:void(0)" (click)="tab = 'ödemeler'">Ödemeler</a></li>
-                    <li [ngClass]="{active: tab==='notlar'}"><a href="javascript:void(0)" (click)="tab = 'notlar'">Notlar</a></li>
-                    <li [ngClass]="{active: tab==='kartlar'}"><a href="javascript:void(0)" (click)="tab = 'kartlar'">Kartlar</a></li>
-                  </ul>
-                  <div class="not-ekle" style="position: absolute;right: 5px;top: 5px;">
-                    <a href="javascript:void(0)" (click)="staticModal.show()"  class="btn btn-success-ozel"><i class="fa fa-plus"></i><span>Yeni Not</span></a>
-                  </div>
-                </div>
-                <!-- Tab Header-->
-                <!-- Tab Body-->
-                <div class="tab-ozel-body">
-                  <!-- Tab Box -->
-                  <div class="tab-ozel-box" id="odemeler" *ngIf="tab == 'ödemeler'">
-                    <!-- İçerik Yoksa -->
-                    <div class="tab-ozel-box-bos-veri">
-                      <div class="tab-ozel-box-bos-veri-iconu">
-                        <i class="fa fa-exclamation-circle"></i>
-                      </div>
-                    </div>
-                    <!-- İçerik Yoksa -->
-                    <ul class="padding-0">
+              <!-- Tab -->
+              <tabset>
+                <!-- Ödemeler -->
+                <tab heading="Ödemeler" customClass="tab-ozel">
+                  <div class="tab-page-content">
+                    <ul class="odeme-listele-tab">
+                      <li class="tab-page-content-blank">
+                        <i class="fa fa-info-circle fa-5x"></i>
+                      </li>
                       <!--<li>-->
-                        <!--<a href="#">-->
-                          <!--<div class="tab-ozel-icon-box">-->
-                            <!--<i class="fa fa-sign-out"></i>-->
-                          <!--</div>-->
-                          <!--<div class="tab-ozel-box-icerik">-->
-                            <!--<span>150,00 <i class="fa fa-try"></i> 'lik ödeme gerçekleşti.</span>-->
-                            <!--<span class="tab-ozel-box-icerik-alt-bilgi">24 Eylül 2016 07:22 / <a href="#">Ahmet Elçik</a></span>-->
-                          <!--</div>-->
-                        <!--</a>-->
+                      <!--<a href="#">-->
+                      <!--&lt;!&ndash; İcon &ndash;&gt;-->
+                      <!--<div class="tab-page-content-icon-block">-->
+                      <!--<i class="fa fa-sign-out fa-rotate-90"></i>-->
+                      <!--</div>-->
+                      <!--&lt;!&ndash; İcon &ndash;&gt;-->
+                      <!--&lt;!&ndash; Text &ndash;&gt;-->
+                      <!--<div class="tab-page-content-text">-->
+                      <!--<p>25,00 <i class="fa fa-try"></i> 'lik Ödeme Gerçekleşti.</p>-->
+                      <!--<span>12 Aralık 2016 / Ahmet Elçik</span>-->
+                      <!--</div>-->
+                      <!--&lt;!&ndash; Text &ndash;&gt;-->
+                      <!--</a>-->
+                      <!--</li>-->
+                      <!--<li>-->
+                      <!--<a href="#">-->
+                      <!--&lt;!&ndash; İcon &ndash;&gt;-->
+                      <!--<div class="tab-page-content-icon-block">-->
+                      <!--<i class="fa fa-sign-out fa-rotate-90"></i>-->
+                      <!--</div>-->
+                      <!--&lt;!&ndash; İcon &ndash;&gt;-->
+                      <!--&lt;!&ndash; Text &ndash;&gt;-->
+                      <!--<div class="tab-page-content-text">-->
+                      <!--<p>25,00 <i class="fa fa-try"></i> 'lik Ödeme Gerçekleşti.</p>-->
+                      <!--<span>12 Aralık 2016 / Ahmet Elçik</span>-->
+                      <!--</div>-->
+                      <!--&lt;!&ndash; Text &ndash;&gt;-->
+                      <!--</a>-->
+                      <!--</li>-->
+                      <!--<li>-->
+                      <!--<a href="#">-->
+                      <!--&lt;!&ndash; İcon &ndash;&gt;-->
+                      <!--<div class="tab-page-content-icon-block">-->
+                      <!--<i class="fa fa-sign-out fa-rotate-90"></i>-->
+                      <!--</div>-->
+                      <!--&lt;!&ndash; İcon &ndash;&gt;-->
+                      <!--&lt;!&ndash; Text &ndash;&gt;-->
+                      <!--<div class="tab-page-content-text">-->
+                      <!--<p>25,00 <i class="fa fa-try"></i> 'lik Ödeme Gerçekleşti.</p>-->
+                      <!--<span>12 Aralık 2016 / Ahmet Elçik</span>-->
+                      <!--</div>-->
+                      <!--&lt;!&ndash; Text &ndash;&gt;-->
+                      <!--</a>-->
+                      <!--</li>-->
+                      <!--<li>-->
+                      <!--<a href="#">-->
+                      <!--&lt;!&ndash; İcon &ndash;&gt;-->
+                      <!--<div class="tab-page-content-icon-block">-->
+                      <!--<i class="fa fa-sign-out fa-rotate-90"></i>-->
+                      <!--</div>-->
+                      <!--&lt;!&ndash; İcon &ndash;&gt;-->
+                      <!--&lt;!&ndash; Text &ndash;&gt;-->
+                      <!--<div class="tab-page-content-text">-->
+                      <!--<p>25,00 <i class="fa fa-try"></i> 'lik Ödeme Gerçekleşti.</p>-->
+                      <!--<span>12 Aralık 2016 / Ahmet Elçik</span>-->
+                      <!--</div>-->
+                      <!--&lt;!&ndash; Text &ndash;&gt;-->
+                      <!--</a>-->
                       <!--</li>-->
                     </ul>
                   </div>
-                  <!-- Tab Box -->
+                </tab>
+                <!-- Ödemeler -->
 
-                  <!-- Tab Box -->
-                  <div class="tab-ozel-box" id="notlar" *ngIf="tab == 'notlar'">
-                    <ul class="padding-0">
-
-                      <app-notlistele *ngFor="let not of this.notlarim" [notData] = "not" (showData)="sayData($event)"></app-notlistele>
-
-                        <!--<li style="position:relative;" *ngFor="let not of this.notlarim">-->
-                          <!--<a href="javascript:void(0);" >-->
-                            <!--<div class="tab-ozel-icon-box">-->
-                              <!--<i class="fa fa-commenting"></i>-->
-                            <!--</div>-->
-                            <!--<div class="tab-ozel-box-icerik">-->
-                              <!--<span class="tab-ozel-box-icerik-not-yazi">{{ not.notum}}</span>-->
-                              <!--<span class="tab-ozel-box-icerik-alt-bilgi"> {{ not.eklenme_tarihi_tr }} {{ not.eklenme_saati }} / <a href="javascript:void(0);">{{ not.ekleyen_kullanici_adi_soyadi }} </a> <a href="javascript:void(0);" class="pull-right f-t-14" style="color:#D52B2B"><i class="fa fa-trash-o musterinotsilbtntrash"></i></a> </span>-->
-                            <!--</div>-->
-                          <!--</a>-->
-
-                        <!--</li>-->
-
-                      <!--<li style="position:relative;">-->
-                        <!--<a href="javascript:void(0);" >-->
-                          <!--<div class="tab-ozel-icon-box">-->
-                            <!--<i class="fa fa-commenting"></i>-->
-                          <!--</div>-->
-                          <!--<div class="tab-ozel-box-icerik">-->
-                            <!--<span class="tab-ozel-box-icerik-not-yazi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequuntur delectus ex id, incidunt laudantium saepe! Aliquam architecto, atque commodi ea eius enim est, eum harum, nostrum perferendis qui quod.</span>-->
-                            <!--<span class="tab-ozel-box-icerik-alt-bilgi">24 Eylül 2016 07:22 / <a href="javascript:void(0);">Ahmet Elçik</a> <a href="javascript:void(0);"   class="pull-right f-t-14" style="color:#D52B2B"><i class="fa fa-trash-o musterinotsilbtntrash"></i></a> </span>-->
-                          <!--</div>-->
-                        <!--</a>-->
-                      <!--</li>-->
-
-
-                      <!--<li style="position:relative;">-->
-                        <!--<a href="javascript:void(0);" >-->
-                          <!--<div class="tab-ozel-icon-box">-->
-                            <!--<i class="fa fa-commenting"></i>-->
-                          <!--</div>-->
-                          <!--<div class="tab-ozel-box-icerik">-->
-                            <!--<span class="tab-ozel-box-icerik-not-yazi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequuntur delectus ex id, incidunt laudantium saepe! Aliquam architecto, atque commodi ea eius enim est, eum harum, nostrum perferendis qui quod.</span>-->
-                            <!--<span class="tab-ozel-box-icerik-alt-bilgi">24 Eylül 2016 07:22 / <a href="javascript:void(0);">Ahmet Elçik</a> <a href="javascript:void(0);" class="pull-right f-t-14" style="color:#D52B2B"><i class="fa fa-trash-o musterinotsilbtntrash"></i></a> </span>-->
-                          <!--</div>-->
-                        <!--</a>-->
-                      <!--</li>-->
-
-                      <!--<li>-->
-                        <!--<a href="#">-->
-                          <!--<div class="tab-ozel-icon-box">-->
-                            <!--<i class="fa fa-commenting"></i>-->
-                          <!--</div>-->
-                          <!--<div class="tab-ozel-box-icerik">-->
-                            <!--<span class="tab-ozel-box-icerik-not-yazi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequuntur delectus ex id, incidunt laudantium saepe! Aliquam architecto, atque commodi ea eius enim est, eum harum, nostrum perferendis qui quod.</span>-->
-                            <!--<span class="tab-ozel-box-icerik-alt-bilgi">24 Eylül 2016 07:22 / <a href="#">Ahmet Elçik</a></span>-->
-                          <!--</div>-->
-                        <!--</a>-->
-                      <!--</li>-->
-                      <!--<li>-->
-                        <!--<a href="#">-->
-                          <!--<div class="tab-ozel-icon-box">-->
-                            <!--<i class="fa fa-commenting"></i>-->
-                          <!--</div>-->
-                          <!--<div class="tab-ozel-box-icerik">-->
-                            <!--<span class="tab-ozel-box-icerik-not-yazi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequuntur delectus ex id, incidunt laudantium saepe! Aliquam architecto, atque commodi ea eius enim est, eum harum, nostrum perferendis qui quod.</span>-->
-                            <!--<span class="tab-ozel-box-icerik-alt-bilgi">24 Eylül 2016 07:22 / <a href="#">Ahmet Elçik</a></span>-->
-                          <!--</div>-->
-                        <!--</a>-->
-                      <!--</li>-->
-                      <!--<li>-->
-                        <!--<a href="#">-->
-                          <!--<div class="tab-ozel-icon-box">-->
-                            <!--<i class="fa fa-commenting"></i>-->
-                          <!--</div>-->
-                          <!--<div class="tab-ozel-box-icerik">-->
-                            <!--<span class="tab-ozel-box-icerik-not-yazi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequuntur delectus ex id, incidunt laudantium saepe! Aliquam architecto, atque commodi ea eius enim est, eum harum, nostrum perferendis qui quod.</span>-->
-                            <!--<span class="tab-ozel-box-icerik-alt-bilgi">24 Eylül 2016 07:22 / <a href="#">Ahmet Elçik</a></span>-->
-                          <!--</div>-->
-                        <!--</a>-->
-                      <!--</li>-->
-                      <!--<li>-->
-                        <!--<a href="#">-->
-                          <!--<div class="tab-ozel-icon-box">-->
-                            <!--<i class="fa fa-commenting"></i>-->
-                          <!--</div>-->
-                          <!--<div class="tab-ozel-box-icerik">-->
-                            <!--<span class="tab-ozel-box-icerik-not-yazi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequuntur delectus ex id, incidunt laudantium saepe! Aliquam architecto, atque commodi ea eius enim est, eum harum, nostrum perferendis qui quod.</span>-->
-                            <!--<span class="tab-ozel-box-icerik-alt-bilgi">24 Eylül 2016 07:22 / <a href="#">Ahmet Elçik</a></span>-->
-                          <!--</div>-->
-                        <!--</a>-->
-                      <!--</li>-->
-                      <!--<li>-->
-                        <!--<a href="#">-->
-                          <!--<div class="tab-ozel-icon-box">-->
-                            <!--<i class="fa fa-commenting"></i>-->
-                          <!--</div>-->
-                          <!--<div class="tab-ozel-box-icerik">-->
-                            <!--<span class="tab-ozel-box-icerik-not-yazi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequuntur delectus ex id, incidunt laudantium saepe! Aliquam architecto, atque commodi ea eius enim est, eum harum, nostrum perferendis qui quod.</span>-->
-                            <!--<span class="tab-ozel-box-icerik-alt-bilgi">24 Eylül 2016 07:22 / <a href="#">Ahmet Elçik</a></span>-->
-                          <!--</div>-->
-                        <!--</a>-->
-                      <!--</li>-->
+                <!-- Notlar -->
+                <tab heading="Notlar" customClass="tab-ozel">
+                  <div class="tab-page-content">
+                    <ul class="not-listele-tab">
+                      <li class="not-listele-tab-not-ekle-btn"><button class="btn btn-primary-ozel btn-block"><i class="fa fa-plus"></i> Yeni Not</button></li>
+                      <li>
+                        <a href="#">
+                          <!-- İcon -->
+                          <div class="tab-page-content-icon-block">
+                            <i class="fa fa-commenting"></i>
+                          </div>
+                          <!-- İcon -->
+                          <!-- Text -->
+                          <div class="tab-page-content-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad asperiores aut corporis distinctio, dolorum, explicabo fuga neque nisi reiciendis suscipit veniam voluptatem voluptatibus. Consequuntur impedit laborum laudantium sed soluta?</p>
+                            <span>12 Aralık 2016 / Ahmet Elçik</span>
+                          </div>
+                          <!-- Text -->
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <!-- İcon -->
+                          <div class="tab-page-content-icon-block">
+                            <i class="fa fa-commenting"></i>
+                          </div>
+                          <!-- İcon -->
+                          <!-- Text -->
+                          <div class="tab-page-content-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad asperiores aut corporis distinctio, dolorum, explicabo fuga neque nisi reiciendis suscipit veniam voluptatem voluptatibus. Consequuntur impedit laborum laudantium sed soluta?</p>
+                            <span>12 Aralık 2016 / Ahmet Elçik</span>
+                          </div>
+                          <!-- Text -->
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <!-- İcon -->
+                          <div class="tab-page-content-icon-block">
+                            <i class="fa fa-commenting"></i>
+                          </div>
+                          <!-- İcon -->
+                          <!-- Text -->
+                          <div class="tab-page-content-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad asperiores aut corporis distinctio, dolorum, explicabo fuga neque nisi reiciendis suscipit veniam voluptatem voluptatibus. Consequuntur impedit laborum laudantium sed soluta?</p>
+                            <span>12 Aralık 2016 / Ahmet Elçik</span>
+                          </div>
+                          <!-- Text -->
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <!-- İcon -->
+                          <div class="tab-page-content-icon-block">
+                            <i class="fa fa-commenting"></i>
+                          </div>
+                          <!-- İcon -->
+                          <!-- Text -->
+                          <div class="tab-page-content-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad asperiores aut corporis distinctio, dolorum, explicabo fuga neque nisi reiciendis suscipit veniam voluptatem voluptatibus. Consequuntur impedit laborum laudantium sed soluta?</p>
+                            <span>12 Aralık 2016 / Ahmet Elçik</span>
+                          </div>
+                          <!-- Text -->
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <!-- İcon -->
+                          <div class="tab-page-content-icon-block">
+                            <i class="fa fa-commenting"></i>
+                          </div>
+                          <!-- İcon -->
+                          <!-- Text -->
+                          <div class="tab-page-content-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad asperiores aut corporis distinctio, dolorum, explicabo fuga neque nisi reiciendis suscipit veniam voluptatem voluptatibus. Consequuntur impedit laborum laudantium sed soluta?</p>
+                            <span>12 Aralık 2016 / Ahmet Elçik</span>
+                          </div>
+                          <!-- Text -->
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <!-- İcon -->
+                          <div class="tab-page-content-icon-block">
+                            <i class="fa fa-commenting"></i>
+                          </div>
+                          <!-- İcon -->
+                          <!-- Text -->
+                          <div class="tab-page-content-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad asperiores aut corporis distinctio, dolorum, explicabo fuga neque nisi reiciendis suscipit veniam voluptatem voluptatibus. Consequuntur impedit laborum laudantium sed soluta?</p>
+                            <span>12 Aralık 2016 / Ahmet Elçik</span>
+                          </div>
+                          <!-- Text -->
+                        </a>
+                      </li>
                     </ul>
                   </div>
-                  <!-- Tab Box -->
-
-                </div>
-                <!-- Tab Body-->
-              </div>
-            <!-- Tab -->
+                </tab>
+                <!-- Notlar -->
+              </tabset>
+              <!-- Tab -->
             </div>
-            <!-- Panel Body-->
+            <!-- Panel Body -->
           </div>
           <!-- Panel -->
         </div>
