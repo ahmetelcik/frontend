@@ -1,0 +1,25 @@
+/* List Header */
+.list-header-block{
+  padding: 20px;
+
+  /* Left Block */
+  & .list-header-left-block{
+    display: inline-block;
+    & span{
+      color: #999;
+      font-weight: 500;
+      letter-spacing: 0.4px
+    }
+  }
+
+  /* Right Block */
+  & .list-header-right-block{
+    display: inline-block;
+    float: right;
+    & span{
+      color: #999;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+    }
+  }
+}
