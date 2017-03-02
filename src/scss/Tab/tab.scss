@@ -139,4 +139,18 @@ li.tab-ozel{
   }
 }
 
+/* Tab İçerik Boş ise */
+.tab-page-content-blank{
+  border: none!important;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  &:hover{
+    background: none!important;
+    height: 50%;
+  }
+  & i{
+    color: #ddd;
+  }
+}
 
