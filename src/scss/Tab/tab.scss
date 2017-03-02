@@ -32,11 +32,20 @@ li.tab-ozel{
 .not-listele-tab{
   list-style: none;
   padding: 0;
+
+  & .not-listele-tab-not-ekle-btn{
+    padding: 15px;
+    &:hover{
+      background: none;
+    }
+  }
+
   & li {
     border-bottom: 1px solid #f6f6f6;
     &:hover{
       background: #f9f9f9;
     }
+
     & a{
       display: block;
       padding: 13px;
