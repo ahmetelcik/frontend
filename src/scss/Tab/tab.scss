@@ -24,7 +24,7 @@ li.tab-ozel{
 
 /* Tab Page İçerik */
 .tab-page-content{
-  height:200px;
+  height:250px;
   overflow-y: auto;
 }
 
@@ -61,7 +61,6 @@ li.tab-ozel{
   }
 
   & .tab-page-content-text{
-    display: inline-block;
     width: 250px;
     overflow: hidden;
     white-space: nowrap;
