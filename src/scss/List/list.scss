@@ -98,3 +98,92 @@
     }
   }
 }
+
+
+/* Araç Listele */
+#arac-listele-body-block{
+  & ul.arac-listele-ul{
+    list-style: none;
+    padding: 0;
+    & li{
+      border-bottom: 1px solid #f6f6f6;
+      &:hover{
+        background: #f5f5f5;
+      }
+      & a{
+        display: block;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+        &:hover{
+          text-decoration: none;
+          background: #f5f5f5;
+        }
+      }
+    }
+
+    /* Left Block */
+    & .arac-listele-left-block{
+      display: inline-block;
+    }
+    /* İcon Block */
+    & .arac-listele-icon-block{
+      display: inline-block;
+      float: left;
+      position: relative;
+      height: 50px;
+      width: 50px;
+      background: #e2e2e2;
+      border-radius: 25px;
+      margin-right: 7px;
+      & i{
+        color: #adadad;
+        font-size: 23px;
+        position: absolute;
+        top: 11px;
+        left: 12px;
+
+      }
+    }
+    /* Hesap İsmi Blcok */
+    & .arac-listele-ismi-adi{
+      display: inline-block;
+      margin-top: 5px;
+      & span{
+        color: #888;
+        font-size: 17px;
+        font-weight: 300;
+        display: block;
+      }
+
+      & .arac-listele-arac-plaka{
+        color: #999;
+        font-size: 13px;
+      }
+    }
+
+    /* Right Block */
+    & .arac-listele-right-block{
+      float: right;
+      padding-right: 20px;
+    }
+
+    & .arac-listele-bakiye{
+      line-height: 50px;
+      & span{
+        color: #888;
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+
+    .arac-listele-arac-konumu{
+      line-height: 50px;
+      & span{
+        color: #888;
+        font-weight: 500;
+        font-size: 14px;
+      }
+    }
+  }
+}
