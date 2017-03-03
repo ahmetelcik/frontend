@@ -187,3 +187,135 @@
     }
   }
 }
+
+
+/* Gider Listele */
+#gider-listele-body-block{
+  & ul.gider-listele-ul{
+    list-style: none;
+    padding: 0;
+    & li{
+      border-bottom: 1px solid #f6f6f6;
+      &:hover{
+        background: #f5f5f5;
+      }
+      & a{
+        display: block;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+        &:hover{
+          text-decoration: none;
+          background: #f5f5f5;
+        }
+      }
+    }
+
+    /* Left Block */
+    & .gider-listele-left-block{
+      display: inline-block;
+    }
+    /* İcon Block */
+    & .gider-listele-icon-block{
+      display: inline-block;
+      float: left;
+      position: relative;
+      height: 50px;
+      width: 50px;
+      background: #e2e2e2;
+      border-radius: 10px;
+      margin-right: 7px;
+      & i{
+        color: #adadad;
+        font-size: 27px;
+        position: absolute;
+        top: 11px;
+        left: 14px;
+
+      }
+    }
+    /* Hesap İsmi Blcok */
+    & .gider-listele-aciklama-block{
+      display: inline-block;
+      margin: 2px;
+      & span{
+        color: #888;
+        font-size: 14px;
+        font-weight: 300;
+        display: block;
+      }
+
+      & .gider-listele-kategorisi{
+        color: #999;
+        font-size: 13px;
+        padding: 3px;
+        border-radius: 3px;
+        display: inline-block;
+        background: #ddd;
+      }
+    }
+
+    /* Right Block */
+    & .gider-listele-right-block{
+      float: right;
+      padding-right: 20px;
+    }
+
+    & .gider-listele-bakiye-bilgisi{
+
+    }
+
+    .gider-listele-kalan-meblag-block{
+      & span{
+        color: #EC5549;
+        font-weight: 400;
+        font-size: 14px;
+        & b{
+          font-weight: 500;
+        }
+      }
+    }
+    & .gider-listele-genel-toplam-block{
+      & span{
+        color: #999593;
+        font-weight: 400;
+        font-size: 14px;
+        & b{
+          font-weight: 500;
+        }
+      }
+    }
+    & .gider-listele-odeme-durum-bilgisi-block{
+      text-align: right;
+      & span{
+        color: #999593;
+        font-weight: 400;
+        font-size: 14px;
+        & b{
+          font-weight: 500;
+        }
+      }
+      & .gider-listele-odeme-durumu-odendi{
+        color: #65ba68;
+      }
+
+
+    }
+  }
+}
+
+
+
+.odeme-durumu-red-icon{
+  color: rgb(255, 116, 116)!important;
+}
+.odeme-durumu-green-icon{
+  color: #7cd03f!important;
+}
+.gider-listele-icon-odeme-durumu-kisa{
+
+  position: absolute!important;
+  left: 37px!important;
+  font-size: 13px!important;
+  top: 2px!important;
+}
