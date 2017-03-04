@@ -319,3 +319,112 @@
   font-size: 13px!important;
   top: 2px!important;
 }
+
+
+/* Gider Listele Body  Table */
+#gider-listele-body-table{
+
+  & table tr{
+    &:hover{
+      background: #f4f4f4;
+    }
+    & a{
+      text-decoration: none;
+    }
+  }
+  & .gider-listele-table-baslik-text{
+    color: #999;
+    font-weight: 500;
+  }
+  & .gider-listele-right-baslik-text{
+    text-align: right;
+  }
+  & .gider-listele-table-baslik-block{
+    padding: 20px;
+  }
+
+  & .gider-listele-table-left-icon-block{
+    display: inline-block;
+    float: left;
+    margin-right: 7px;
+  }
+
+  & .gider-listele-table-aciklama-text{
+    display: inline-block;
+    font-weight: 100;
+    color: #777;
+    font-size: 14px;
+  }
+
+  & .gider-listele-table-kategori-block{
+    margin-top: 7px;
+    & span{
+      background: #ddd;
+      padding: 4px;
+      border-radius: 5px;
+      font-size: 12px;
+      color: #999;
+    }
+  }
+
+  & .gider-listele-table-fatura-tarihi{
+     & span{
+       font-weight: 100;
+       color: #777;
+       font-size: 14px;
+     }
+    & .kalan-gun-text{
+      font-size: 12px;
+      color: #EC5549;
+    }
+  }
+
+  & .gider-listele-table-right-block{
+    float: right;
+  }
+  & .gider-listele-table-gider-turu-block{
+    & span{
+      font-weight: 100;
+      color: #777;
+      font-size: 14px;
+    }
+  }
+  & .gider-listele-table-gider-sube-block{
+    & span{
+      font-weight: 100;
+      color: #777;
+      font-size: 14px;
+    }
+  }
+
+  & .gider-listele-table-kalan-meblag-block{
+    text-align: left;
+    & span{
+      color: #EC5549;
+      & b{
+        font-weight: 500;
+      }
+    }
+  }
+  & .gider-listele-table-genel-toplam-block{
+    text-align: left;
+    & span{
+      color: #777;
+      & b{
+        font-weight: 500;
+      }
+    }
+  }
+  & .gider-listele-table-odeme-durumu-block{
+    & span{
+      font-weight: 500;
+      font-size: 13px;
+    }
+    & .odendi{
+      color: #56BD81!important;
+    }
+    & .odenecek{
+      color: #999!important;
+    }
+  }
+}
