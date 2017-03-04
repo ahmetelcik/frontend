@@ -1,4 +1,4 @@
-#kategori-listele-body-block{
+#hizmet-listele-body-block{
   & table{
     & tr{
       &:hover{
@@ -14,7 +14,7 @@
     }
 
   }
-  & .kategori-listele-table-head-text-first{
+  & .hizmet-listele-table-head-text-first{
     padding-left: 20px;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -22,14 +22,14 @@
     font-weight: 500;
   }
 
-  & .kategori-listele-table-head-text{
+  & .hizmet-listele-table-head-text{
     padding-bottom: 20px;
     padding-top: 20px;
     color: #999;
     font-weight: 500;
   }
 
-  & .kategori-listele-table-head-text-last{
+  & .hizmet-listele-table-head-text-last{
     padding-right: 20px;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -37,23 +37,44 @@
     font-weight: 500;
   }
 
-  & .kategori-listele-table-body-text-first{
+  & .hizmet-listele-table-body-text-first{
     color: #777;
     font-size: 14px;
     padding-left: 20px;
 
   }
-  & .kategori-listele-table-body-text{
+  & .hizmet-listele-table-body-text{
     color: #777;
     font-size: 14px;
 
   }
-  & .kategori-listele-table-body-text-last{
+  & .hizmet-listele-table-body-text-last{
     color: #777;
     font-size: 16px;
     padding-right: 20px;
     text-align: right;
     font-weight: 500;
 
+  }
+}
+
+/* Kategori Listele */
+#kategori-listele-body-block{
+  & ul.kategori-listele-ul{
+    padding: 0;
+    list-style: none;
+    padding: 15px;
+    & li{
+      background: #f4f4f4;
+      padding: 6px;
+      margin-top: 5px;
+      border-radius: 5px;
+      & a{
+        font-size: 13px;
+        color: #777;
+        text-decoration: none;
+        display: block;
+      }
+    }
   }
 }
