@@ -16,6 +16,16 @@
       }
     }
   }
+
+  & .first-table-cell{
+    padding-left: 15px;
+    min-width: 200px;
+  }
+  & .last-table-cell{
+    padding-right: 15px;
+    min-width: 200px;
+  }
+
   & .kiralama-listele-table-head-text-first{
     padding-left: 20px;
     padding-bottom: 20px;
@@ -68,9 +78,52 @@
     }
   }
 
+  & .kiralama-listele-table-middle-cikis-tarihi-block{
+    line-height: 24px;
+    & span{
+      color: #888;
+      font-weight: 100;
+      font-size: 14px;
+    }
+  }
 
+  & .kiralama-listele-table-middle-cikis-sube{
+    & span{
+      color: #888;
+      font-weight: 100;
+      font-size: 14px;
+    }
+  }
 
+  & .kiralama-listele-table-right-block{
+    float: right;
+    padding-right: 15px;
+  }
 
+  .kiralama-listele-table-right-kalan-meblag-block{
+    & span{
+      color: #EC5549;
+    }
+  }
 
+  & .kiralama-listele-table-right-genel-toplam-block{
+    & span{
+      color: #777;
+    }
+  }
 
+  & .kiralama-listele-table-right-odeme-durumu-block{
+    text-align: right;
+    & span{
+      font-weight: 500;
+      color: #999;
+      font-size: 13px
+    }
+  }
+
+  & .kiralama-listele-donus-tarihi-gun-sayisi{
+    color: #EC5549!important;
+    font-size: 12px!important;
+  }
 }
+
