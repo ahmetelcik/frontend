@@ -1,0 +1,85 @@
+#arac-listele-body-table-block{
+  & table{
+    & tr{
+      & td{
+        padding: 0;
+      }
+      & a{
+        text-decoration: none;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: block;
+      }
+      &:hover{
+        background: #f6f6f6;
+      }
+    }
+  }
+
+  & .first-table-cell{
+    padding-left: 15px;
+    min-width: 200px;
+  }
+  & .last-table-cell{
+    padding-right: 15px;
+    min-width: 200px;
+
+  }
+
+  & .arac-listele-table-head-text-first{
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #999;
+    font-weight: 500;
+  }
+
+  & .arac-listele-table-head-text-last{
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #999;
+    font-weight: 500;
+  }
+
+  & .arac-listele-table-left-icon-block{
+    display: inline-block;
+    float: left;
+    margin-right: 7px;
+    & i{
+      background-color: #dddddd;
+      padding: 13px;
+      font-size: 21px;
+      color: #adadad;
+      border-radius: 10px;
+    }
+  }
+
+  & .arac-listele-table-left-arac-marka-full{
+    display: inline-block;
+    margin-top: 3px;
+  }
+
+  & .arac-listele-table-left-arac-marka-adi-span{
+    display: block;
+    color: #888;
+    font-size: 17px;
+    font-weight: 300;
+  }
+
+  & .arac-listele-table-left-arac-marka-plaka-span{
+    display: block;
+    color: #888;
+    font-size: 13px;
+    font-weight: 300;
+  }
+
+  & .sube-listele-table-right-bakiye-text{
+    line-height: 50px;
+    & span{
+      color: #888888;
+      font-size: 14px;
+    }
+  }
+
+}
