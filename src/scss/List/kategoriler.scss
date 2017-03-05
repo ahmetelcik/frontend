@@ -1,6 +1,9 @@
 #hizmet-listele-body-block{
   & table{
     & tr{
+      td{
+        border-bottom: 1px solid #f5f5f5;
+      }
       &:hover{
         background: #f6f6f6;
       }
