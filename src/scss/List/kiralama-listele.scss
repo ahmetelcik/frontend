@@ -1,0 +1,56 @@
+#kiralama-listele-table-body-block{
+  & table{
+    & tr{
+      & td{
+        padding: 0;
+        border-bottom: 1px solid #f5f5f5;
+      }
+      & a{
+        text-decoration: none;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: block;
+      }
+      &:hover{
+        background: #f6f6f6;
+      }
+    }
+  }
+  & .kiralama-listele-table-head-text-first{
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #999;
+    font-weight: 500;
+  }
+
+  & .kiralama-listele-table-head-text{
+    color: #999;
+    font-weight: 500;
+  }
+
+  & .kiralama-listele-table-head-text-last{
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #999;
+    font-weight: 500;
+  }
+
+  & .kiralama-listele-table-left-icon-block{
+    display: inline-block;
+    & i{
+      background-color: #dddddd;
+      padding: 13px;
+      font-size: 21px;
+      color: #adadad;
+      border-radius: 10px;
+    }
+  }
+
+
+
+
+
+
+}
