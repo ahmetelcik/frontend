@@ -37,7 +37,14 @@
 /* List */
 @import "scss/List/list.scss";
 
+/* Kategori Listele */
 @import "scss/List/kategoriler.scss";
+
+/* Müşteri Listele */
+@import "scss/List/musteri-listele.scss";
+
+/* Şube Listele */
+@import "scss/List/sube-listele.scss";
 
 body{
   font-family: 'Roboto', sans-serif;

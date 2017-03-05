@@ -1,0 +1,82 @@
+#musteri-listele-body-table{
+  & table{
+    & tr{
+      & td{
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      & a{
+        text-decoration: none;
+      }
+      &:hover{
+        background: #f6f6f6;
+      }
+    }
+  }
+  & .first-table-cell{
+    padding-left: 15px;
+    min-width: 200px;
+  }
+  & .last-table-cell{
+    padding-right: 15px;
+    min-width: 200px;
+  }
+  & .musteri-listele-table-head-text-first{
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #999;
+    font-weight: 500;
+  }
+
+  & .musteri-listele-table-head-text-last{
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #999;
+    font-weight: 500;
+  }
+
+  & .musteri-listele-table-left-block{
+
+  }
+
+  & .musteri-listele-table-left-kisa-ad-block{
+    display: inline-block;
+    float: left;
+    margin-right: 7px;
+    margin-top: 16px;
+    & span{
+      display: inline;
+      background: #ddd;
+      color: #adadad;
+      font-weight: 500;
+      padding: 17px;
+      border-radius: 30px;
+    }
+  }
+
+  & .musteri-listele-table-left-tam-adi{
+    display: inline-block;
+    margin-top: 4px;
+    line-height: 22px;
+    & .musteri-listele-table-left-telefon-no{
+      font-size: 13px
+    }
+    & span{
+      color: #888;
+      font-size: 15px;
+      font-weight: 300;
+      display: block;
+    }
+  }
+
+  & .musteri-listele-table-right-bakiye-text{
+    line-height: 50px;
+    & span{
+      color: #888888;
+      font-size: 17px;
+    }
+  }
+}
