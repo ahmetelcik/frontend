@@ -40,6 +40,7 @@
   & .kiralama-listele-table-left-icon-block{
     display: inline-block;
     float: left;
+    margin-right: 7px;
     & i{
       background-color: #dddddd;
       padding: 13px;
@@ -51,6 +52,19 @@
 
   & .kiralama-listele-table-left-arac-marka-adi{
     display: inline-block;
+    & span{
+      color: #888;
+      font-weight: 100;
+      font-size: 13px;
+    }
+  }
+  & .kiralama-listele-table-left-musteri-adi{
+    & span{
+      color: #888;
+      font-weight: 100;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+    }
   }
 
 
