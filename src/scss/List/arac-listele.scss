@@ -42,6 +42,14 @@
     font-weight: 500;
   }
 
+  & .arac-listele-table-right-konum-text{
+    line-height: 50px;
+    & span{
+      color: #888888;
+      font-size: 14px;
+    }
+  }
+
   & .arac-listele-table-left-icon-block{
     display: inline-block;
     float: left;
@@ -53,6 +61,12 @@
       font-size: 21px;
       color: #adadad;
       border-radius: 10px;
+    }
+    & .arac-durumu-succes{
+      color: #65ba68!important;
+    }
+    & .arac-durumu-red{
+      color: #d9534f!important;
     }
   }
 
