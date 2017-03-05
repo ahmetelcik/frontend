@@ -46,6 +46,7 @@
     display: inline-block;
     float: left;
     margin-right: 7px;
+    position: relative;
     & i{
       background-color: #dddddd;
       padding: 13px;
@@ -82,4 +83,12 @@
     }
   }
 
+  & .arac-listele-table-left-icon-durumu{
+    background: none!important;
+    padding: 0!important;
+    position: absolute!important;
+    top: 4px;
+    right: 4px;
+    font-size: 13px!important;
+  }
 }
