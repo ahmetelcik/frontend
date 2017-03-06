@@ -19,11 +19,12 @@
 
   & .first-table-cell{
     padding-left: 15px;
-    min-width: 200px;
+    min-width: 250px;
   }
   & .last-table-cell{
     padding-right: 15px;
     min-width: 200px;
+    padding-bottom: 10px;
   }
 
   & .kiralama-listele-table-head-text-first{
@@ -87,7 +88,24 @@
     }
   }
 
+  & .kiralama-listele-table-middle-donus-tarihi-block{
+    line-height: 24px;
+    & span{
+      color: #888;
+      font-weight: 100;
+      font-size: 14px;
+    }
+  }
+
   & .kiralama-listele-table-middle-cikis-sube{
+    & span{
+      color: #888;
+      font-weight: 100;
+      font-size: 14px;
+    }
+  }
+
+  & .kiralama-listele-table-middle-donus-sube{
     & span{
       color: #888;
       font-weight: 100;
@@ -124,5 +142,7 @@
     color: #EC5549!important;
     font-size: 12px!important;
   }
+
+
 }
 
