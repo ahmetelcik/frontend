@@ -33,3 +33,37 @@
     float:right;
   }
 }
+
+
+
+/* Çalışan Right İşlem Paneli */
+.calisan-right-footer-title-text{
+  color: #666;
+  font-size: 13px;
+  font-weight: 500;
+}
+.calisan-right-footer-content-text{
+  color: #333;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.calisan-right-islem-detay-footer-text-block{
+  padding-bottom: 3px;
+}
+
+.calisan-detay-kalan-title-text{
+  color: #666;
+  font-size: 13px;
+  font-weight: 500;
+}
+.calisan-detay-kalan-bakiye-text{
+  float: right;
+  color: #8e8e8e;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.calisan-detay-kalan-bakiye-text-block{
+  margin-top: 10px
+}
