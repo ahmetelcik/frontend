@@ -3,10 +3,8 @@
 
 @import "assets/css/font-awesome.min.css";
 @import "ozel.scss";
-@import "app/header/header.component.scss";
-
-//@import "app/musteriler/musteriler.component.scss";
-
+/* Header */
+@import "scss/Header/header.scss";
 @import "app/solmenu/solmenu.component.scss";
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic-ext');
 @import "scss/font-size";
