@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-anasayfa',
-  templateUrl: './anasayfa.component.html',
-  styleUrls: ['./anasayfa.component.scss']
+  templateUrl: './anasayfa.component.html'
 })
 export class AnasayfaComponent implements OnInit {
 
