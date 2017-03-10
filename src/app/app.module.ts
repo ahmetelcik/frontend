@@ -22,6 +22,7 @@ import { ListComponent } from './List/list.component';
 import { FormComponent } from './Form/form.component';
 import { TabComponent } from './Tab/tab.component';
 import { DatepickerModule } from 'ng2-bootstrap/datepicker';
+import { AracDetayComponent } from './AracDetay/arac-detay.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { DatepickerModule } from 'ng2-bootstrap/datepicker';
     ListComponent,
     FormComponent,
     TabComponent,
+    AracDetayComponent
   ],
   imports: [
     BrowserModule,

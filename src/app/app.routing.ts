@@ -13,6 +13,9 @@ import { ButtonComponent } from './Button/button.component';
 import { ListComponent } from './List/list.component';
 import { FormComponent } from './Form/form.component';
 import { TabComponent } from './Tab/tab.component';
+import { AracDetayComponent } from './AracDetay/arac-detay.component';
+
+
 const appRoutes: Routes = [
   {
     path: 'anasayfa',
@@ -29,6 +32,10 @@ const appRoutes: Routes = [
   {
     path: "musteri/:id/detay",
     component: MusteriDetayComponent
+  },
+  {
+    path : "araclar/:id/detay",
+    component : AracDetayComponent
   },
   {
     path: '',
