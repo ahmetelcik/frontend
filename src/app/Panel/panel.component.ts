@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import * as moment from 'moment';
+import { Component, OnInit,AfterViewInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-panel-component',
@@ -7,6 +7,10 @@ import * as moment from 'moment';
 })
 export class PanelComponent {
 
+
+  constructor(){
+
+  }
 
 
 
