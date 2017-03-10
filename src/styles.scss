@@ -9,7 +9,6 @@
 @import "app/solmenu/solmenu.component.scss";
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic-ext');
 @import "scss/font-size";
-@import "app/musteri-detay/musteri-detay.component.scss";
 
 /* Link */
 @import "scss/Link/link.scss";
@@ -51,6 +50,8 @@
 /* Kiralama Listele */
 @import "scss/List/kiralama-listele.scss";
 
+/* Müşteri Detay */
+@import "scss/MusteriDetay/musteri-detay.scss";
 body{
   font-family: 'Roboto', sans-serif;
   font-size:14px;

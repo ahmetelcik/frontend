@@ -9,8 +9,6 @@ import { NotlisteleComponent } from './Components/notlistele/notlistele.componen
 @Component({
   selector: 'app-musteri-detay',
   templateUrl: './musteri-detay.component.html',
-  styleUrls: ['./musteri-detay.component.scss'],
-
 })
 
 export class MusteriDetayComponent implements OnInit {

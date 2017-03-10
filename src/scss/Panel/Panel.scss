@@ -67,3 +67,22 @@
 .calisan-detay-kalan-bakiye-text-block{
   margin-top: 10px
 }
+
+/* Panel Footer Ekleyen Kullanıcı */
+.panel-footer-ekleyen-kullanici-block{
+  & span{
+    color: #777;
+    font-size: 13px;
+    & a{
+      color: #666;
+      font-size: 13px;
+      text-decoration: none;
+    }
+  }
+}
+
+/* Panel Footer Oluşturulma Tarihi */
+.panel-footer-olusturulma-tarihi-block{
+  color: #777;
+  font-size: 13px;
+}
