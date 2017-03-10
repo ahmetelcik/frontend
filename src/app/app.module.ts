@@ -23,7 +23,6 @@ import { FormComponent } from './Form/form.component';
 import { TabComponent } from './Tab/tab.component';
 import { DatepickerModule } from 'ng2-bootstrap/datepicker';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,7 +50,7 @@ import { DatepickerModule } from 'ng2-bootstrap/datepicker';
     AlertModule.forRoot(),
     ModalModule.forRoot(),
     TabsModule.forRoot(),
-    DatepickerModule.forRoot(),
+    DatepickerModule.forRoot()
 
   ],
   providers: [MusteriNotlariService],
