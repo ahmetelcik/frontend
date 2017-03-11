@@ -15,7 +15,7 @@ import { FormComponent } from './Ui/Form/form.component';
 import { TabComponent } from './Ui/Tab/tab.component';
 import { AracDetayComponent } from './AracDetay/arac-detay.component';
 import { ModalComponent } from './Ui/Modal/modal.component';
-
+import { AracGiderEkleComponent } from './AracGiderEkle/arac-gider-ekle.component';
 const appRoutes: Routes = [
   {
     path: 'anasayfa',
@@ -36,6 +36,10 @@ const appRoutes: Routes = [
   {
     path : "araclar/:id/detay",
     component : AracDetayComponent
+  },
+  {
+    path : "araclar/:id/gider/yeni",
+    component : AracGiderEkleComponent
   },
   {
     path: '',

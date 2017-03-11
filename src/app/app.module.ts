@@ -24,6 +24,7 @@ import { TabComponent } from './Ui/Tab/tab.component';
 import { ModalComponent } from './Ui/Modal/modal.component';
 import { DatepickerModule } from 'ng2-bootstrap/datepicker';
 import { AracDetayComponent } from './AracDetay/arac-detay.component';
+import { AracGiderEkleComponent } from './AracGiderEkle/arac-gider-ekle.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { AracDetayComponent } from './AracDetay/arac-detay.component';
     FormComponent,
     TabComponent,
     ModalComponent,
-    AracDetayComponent
+    AracDetayComponent,
+    AracGiderEkleComponent
   ],
   imports: [
     BrowserModule,
