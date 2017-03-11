@@ -8,13 +8,13 @@ import { AnasayfaComponent } from './anasayfa/anasayfa.component';
 import { AraclarComponent } from './araclar/araclar.component';
 import { MusterilerComponent } from './musteriler/musteriler.component';
 import { MusteriDetayComponent } from './musteri-detay/musteri-detay.component';
-import { PanelComponent } from './Panel/panel.component';
-import { ButtonComponent } from './Button/button.component';
-import { ListComponent } from './List/list.component';
-import { FormComponent } from './Form/form.component';
-import { TabComponent } from './Tab/tab.component';
+import { PanelComponent } from './Ui/Panel/panel.component';
+import { ButtonComponent } from './Ui/Button/button.component';
+import { ListComponent } from './Ui/List/list.component';
+import { FormComponent } from './Ui/Form/form.component';
+import { TabComponent } from './Ui/Tab/tab.component';
 import { AracDetayComponent } from './AracDetay/arac-detay.component';
-
+import { ModalComponent } from './Ui/Modal/modal.component';
 
 const appRoutes: Routes = [
   {
@@ -60,6 +60,10 @@ const appRoutes: Routes = [
   {
     path : "tab",
     component: TabComponent
+  },
+  {
+    path : "modals",
+    component : ModalComponent
   }
 ];
 

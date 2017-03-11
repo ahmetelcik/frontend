@@ -16,11 +16,12 @@ import { TabsModule } from 'ng2-bootstrap/tabs';
 import { AccordionModule,DropdownModule,AlertModule,ModalModule } from 'ng2-bootstrap';
 import { MusteriNotlariService } from './musteri-detay/Service/musteri-notlari.service';
 import { NotlisteleComponent } from './musteri-detay/Components/notlistele/notlistele.component';
-import { PanelComponent } from './Panel/panel.component';
-import { ButtonComponent } from './Button/button.component';
-import { ListComponent } from './List/list.component';
-import { FormComponent } from './Form/form.component';
-import { TabComponent } from './Tab/tab.component';
+import { PanelComponent } from './Ui/Panel/panel.component';
+import { ButtonComponent } from './Ui/Button/button.component';
+import { ListComponent } from './Ui/List/list.component';
+import { FormComponent } from './Ui/Form/form.component';
+import { TabComponent } from './Ui/Tab/tab.component';
+import { ModalComponent } from './Ui/Modal/modal.component';
 import { DatepickerModule } from 'ng2-bootstrap/datepicker';
 import { AracDetayComponent } from './AracDetay/arac-detay.component';
 
@@ -39,6 +40,7 @@ import { AracDetayComponent } from './AracDetay/arac-detay.component';
     ListComponent,
     FormComponent,
     TabComponent,
+    ModalComponent,
     AracDetayComponent
   ],
   imports: [
