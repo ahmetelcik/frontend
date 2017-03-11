@@ -1,25 +1,30 @@
-import { Component, OnInit,ElementRef } from '@angular/core';
-
+import { Component, OnInit,ViewChild } from '@angular/core';
+import { ModalDirective } from 'ng2-bootstrap/modal';
 @Component({
   selector: 'app-arac-detays',
   templateUrl: './arac-detay.component.html',
 })
 export class AracDetayComponent implements OnInit {
 
-  constructor(private elRef:ElementRef) {
+  constructor() {
 
   }
 
-  ngAfterViewInit() {
-    var div = this.elRef.nativeElement.querySelector('#giderEkleBtn');
-    console.log(div);
+  @ViewChild('childModal') public childModal:ModalDirective;
+
+  public showChildModal():void {
+    this.childModal.show();
   }
 
-  // for transcluded content
-  ngAfterContentInit() {
-    var div = this.elRef.nativeElement.querySelector('#giderEkleBtn');
-    console.log(div);
+  public hideChildModal():void {
+    this.childModal.hide();
   }
+
+  /* Araç Sil Click Event */
+  aracSilEvent(id:number){
+    console.log("araç siliniyor " + id);
+  }
+
 
   ngOnInit() {
   }

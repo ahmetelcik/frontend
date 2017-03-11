@@ -173,8 +173,8 @@
               <div class="btn-group btn-block" dropdown>
                 <button class="btn btn-default-ozel btn-block" dropdownToggle>DİĞER <span class="caret"></span></button>
                 <ul dropdownMenu role="menu" aria-labelledby="single-button" class="btn-block">
-                  <li role="menuitem"><a class="dropdown-item" href="#"><i class="fa fa-edit"></i> <span>Düzenle</span></a></li>
-                  <li role="menuitem"><a class="dropdown-item" href="#"><i class="fa fa-trash-o"></i> <span>Sil</span></a></li>
+                  <li role="menuitem"><a href="javascript:void(0)" class="dropdown-item"><i class="fa fa-edit"></i> <span>Düzenle</span></a></li>
+                  <li role="menuitem"><a href="javascript:void(0)" class="dropdown-item" (click)="showChildModal()"><i class="fa fa-trash-o"></i> <span>Sil</span></a></li>
                 </ul>
               </div>
             </div>
@@ -415,7 +415,7 @@
             <tab heading="Geçmiş Kiralamalar" customClass="tab-ozel">
               <div class="tab-page-content" style="height: auto">
                 <!-- Panel -->
-                <div class="panel panel-light" style="border-radius: 5px">
+                <div class="panel panel-light" style="border:none;">
                   <!-- Panel Body -->
                   <div class="panel-body" style="padding: 0;">
                     <div id="kiralama-listele-table-body-block">
@@ -619,7 +619,7 @@
             <tab heading="Araç Giderleri" customClass="tab-ozel">
               <div class="tab-page-content" style="height: auto">
                 <!-- Panel -->
-                <div class="panel panel-light" style="border-radius: 5px">
+                <div class="panel panel-light" style="border:none">
                   <!-- Panel Body -->
                   <div class="panel-body" style="padding: 0;">
                     <div id="gider-listele-body-table">
@@ -806,3 +806,32 @@
   </div>
   <!-- Alt -->
 </div>
+
+
+
+
+<div  bsModal #childModal="bs-modal" class="modal fade delete-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Silme işlemini onaylayın</h4>
+      </div>
+      <div class="modal-body">
+        <div class="modal-uyari-block2">
+          <span>Bu çalışan kaydını silmek istediğinize emin misiniz? </span>
+        </div>
+        <div class="modal-uyari-bock-3">
+          <span><i class="fa fa-exclamation-circle"></i> Dikkat, silme işlemi geri alınamaz.</span>
+        </div>
+        <div class="modal-uyari-block">
+          <span>Silme işleminin sonucunda bu çalışan kaydı sistemden tamamen silinecek ve raporlama bilgileri dahil tüm bilgiler kaybolacaktır.</span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger-ozel-outline" data-dismiss="modal" (click)="aracSilEvent(5)">SİL</button>
+        <button type="button" class="btn btn-default-ozel" (click)="hideChildModal()">VAZGEÇ</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
