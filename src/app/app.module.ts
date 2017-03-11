@@ -25,6 +25,7 @@ import { ModalComponent } from './Ui/Modal/modal.component';
 import { DatepickerModule } from 'ng2-bootstrap/datepicker';
 import { AracDetayComponent } from './AracDetay/arac-detay.component';
 import { AracGiderEkleComponent } from './AracGiderEkle/arac-gider-ekle.component';
+import { AracDuzenleComponent } from './AracDuzenle/arac-duzenle.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { AracGiderEkleComponent } from './AracGiderEkle/arac-gider-ekle.componen
     TabComponent,
     ModalComponent,
     AracDetayComponent,
-    AracGiderEkleComponent
+    AracGiderEkleComponent,
+    AracDuzenleComponent,
   ],
   imports: [
     BrowserModule,
