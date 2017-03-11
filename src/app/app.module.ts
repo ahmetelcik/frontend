@@ -26,6 +26,8 @@ import { DatepickerModule } from 'ng2-bootstrap/datepicker';
 import { AracDetayComponent } from './AracDetay/arac-detay.component';
 import { AracGiderEkleComponent } from './AracGiderEkle/arac-gider-ekle.component';
 import { AracDuzenleComponent } from './AracDuzenle/arac-duzenle.component';
+import { MusteriDuzenleComponent } from './MusteriDuzenle/musteri-duzenle.component';
+import { MusteriMaasPrimEkleComponent } from './MusteriMaasPrimEkle/musteri-maas-prim-ekle.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +48,8 @@ import { AracDuzenleComponent } from './AracDuzenle/arac-duzenle.component';
     AracDetayComponent,
     AracGiderEkleComponent,
     AracDuzenleComponent,
+    MusteriDuzenleComponent,
+    MusteriMaasPrimEkleComponent,
   ],
   imports: [
     BrowserModule,

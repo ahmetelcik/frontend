@@ -17,6 +17,8 @@ import { AracDetayComponent } from './AracDetay/arac-detay.component';
 import { ModalComponent } from './Ui/Modal/modal.component';
 import { AracGiderEkleComponent } from './AracGiderEkle/arac-gider-ekle.component';
 import { AracDuzenleComponent } from './AracDuzenle/arac-duzenle.component';
+import { MusteriDuzenleComponent } from './MusteriDuzenle/musteri-duzenle.component';
+import { MusteriMaasPrimEkleComponent } from './MusteriMaasPrimEkle/musteri-maas-prim-ekle.component';
 
 const appRoutes: Routes = [
   {
@@ -46,6 +48,14 @@ const appRoutes: Routes = [
   {
     path : "araclar/:id/duzenle",
     component : AracDuzenleComponent
+  },
+  {
+    path : "musteriler/:id/duzenle",
+    component : MusteriDuzenleComponent
+  },
+  {
+    path : "musteriler/:id/maas/yeni",
+    component : MusteriMaasPrimEkleComponent
   },
   {
     path: '',
