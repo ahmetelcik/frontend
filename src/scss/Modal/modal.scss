@@ -1,0 +1,58 @@
+.delete-modal{
+  & .modal-header{
+    & .modal-title{
+      font-weight: 400;
+      color: #555;
+      font-size: 16px
+    }
+  }
+
+  & .modal-body{
+    padding: 0;
+  }
+
+  & .modal-uyari-block{
+    border-top: 1px solid #dedddc;
+    background: #F7F7F6;
+    padding: 10px;
+    & span{
+      font-size: 13px;
+      color: #555;
+      line-height: 23px;
+    }
+  }
+
+  & .modal-uyari-block2{
+    border-bottom: 1px solid #dedddc;
+    background: #F7F7F6;
+    padding: 10px;
+    & span{
+      font-size: 13px;
+      color: #555;
+      line-height: 23px;
+    }
+  }
+
+  & .modal-uyari-list-block{
+    & ul.modal-uyari-list-ul{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      & li{
+        color: #ef5350;
+        padding: 0px 10px 10px 10px;
+        & i{
+          font-size: 13px;
+        }
+        & span{
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  & .modal-uyari-bock-3{
+    padding: 15px 10px;
+  }
+
+}
