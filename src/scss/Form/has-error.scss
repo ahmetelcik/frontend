@@ -11,8 +11,9 @@
     color: #ef5350;
   }
 
-  /* TextArea */
-  textarea{
+
+  /* Form Control */
+  & .form-control{
     border:1px solid #ef5350;
     &:focus{
       border:1px solid #ef5350;
