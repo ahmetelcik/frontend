@@ -31,6 +31,7 @@ import { MusteriMaasPrimEkleComponent } from './MusteriMaasPrimEkle/musteri-maas
 import { KiralamaDetayComponent } from './KiralamaDetay/kiralama-detay.component';
 import { GiderListeleComponent } from './Giderler/gider-listele.component';
 import { GiderDetayComponent } from './GiderDetay/gider-detay.component';
+import { AracEkleComponent } from './AracEkle/arac-ekle.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { GiderDetayComponent } from './GiderDetay/gider-detay.component';
     KiralamaDetayComponent,
     GiderListeleComponent,
     GiderDetayComponent,
+    AracEkleComponent,
   ],
   imports: [
     BrowserModule,
