@@ -1,0 +1,21 @@
+.has-success-ozel{
+  color: #81c784;
+
+  /* Control Label */
+  & .control-label{
+    color: #81c784;
+  }
+
+  /* Help Block */
+  & .help-block{
+    color: #81c784;
+  }
+
+  /* TextArea */
+  textarea{
+    border:1px solid #81c784;
+    &:focus{
+      border:1px solid #81c784;
+    }
+  }
+}
