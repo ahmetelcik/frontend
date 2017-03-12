@@ -30,6 +30,7 @@ import { MusteriDuzenleComponent } from './MusteriDuzenle/musteri-duzenle.compon
 import { MusteriMaasPrimEkleComponent } from './MusteriMaasPrimEkle/musteri-maas-prim-ekle.component';
 import { KiralamaDetayComponent } from './KiralamaDetay/kiralama-detay.component';
 import { GiderListeleComponent } from './Giderler/gider-listele.component';
+import { GiderDetayComponent } from './GiderDetay/gider-detay.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +53,8 @@ import { GiderListeleComponent } from './Giderler/gider-listele.component';
     MusteriDuzenleComponent,
     MusteriMaasPrimEkleComponent,
     KiralamaDetayComponent,
-    GiderListeleComponent
+    GiderListeleComponent,
+    GiderDetayComponent,
   ],
   imports: [
     BrowserModule,
