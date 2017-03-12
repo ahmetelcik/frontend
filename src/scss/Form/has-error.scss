@@ -1,5 +1,5 @@
 .has-error-ozel{
-  color: #ef5350;
+
 
   /* Control Label */
   & .control-label{
@@ -17,5 +17,10 @@
     &:focus{
       border:1px solid #ef5350;
     }
+  }
+
+  /* Checkbox */
+  & .checkbox{
+    color: #ef5350;
   }
 }
