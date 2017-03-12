@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-kiralama-detay',
-  templateUrl: './kiralama-detay.component.html',
+  selector: 'app-gider-listele',
+  templateUrl: './gider-listele.component.html',
 })
-export class KiralamaDetayComponent implements OnInit {
+export class GiderListeleComponent implements OnInit {
 
   constructor() {
 
