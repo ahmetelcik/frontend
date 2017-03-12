@@ -19,6 +19,7 @@ import { AracGiderEkleComponent } from './AracGiderEkle/arac-gider-ekle.componen
 import { AracDuzenleComponent } from './AracDuzenle/arac-duzenle.component';
 import { MusteriDuzenleComponent } from './MusteriDuzenle/musteri-duzenle.component';
 import { MusteriMaasPrimEkleComponent } from './MusteriMaasPrimEkle/musteri-maas-prim-ekle.component';
+import { KiralamaDetayComponent } from './KiralamaDetay/kiralama-detay.component';
 
 const appRoutes: Routes = [
   {
@@ -56,6 +57,10 @@ const appRoutes: Routes = [
   {
     path : "musteriler/:id/maas/yeni",
     component : MusteriMaasPrimEkleComponent
+  },
+  {
+    path : "kiralamalar/:id/detay",
+    component : KiralamaDetayComponent
   },
   {
     path: '',
