@@ -20,7 +20,7 @@ import { AracDuzenleComponent } from './AracDuzenle/arac-duzenle.component';
 import { MusteriDuzenleComponent } from './MusteriDuzenle/musteri-duzenle.component';
 import { MusteriMaasPrimEkleComponent } from './MusteriMaasPrimEkle/musteri-maas-prim-ekle.component';
 import { KiralamaDetayComponent } from './KiralamaDetay/kiralama-detay.component';
-
+import { GiderListeleComponent } from './Giderler/gider-listele.component';
 const appRoutes: Routes = [
   {
     path: 'anasayfa',
@@ -61,6 +61,10 @@ const appRoutes: Routes = [
   {
     path : "kiralamalar/:id/detay",
     component : KiralamaDetayComponent
+  },
+  {
+    path : "giderler/listele",
+    component : GiderListeleComponent
   },
   {
     path: '',
