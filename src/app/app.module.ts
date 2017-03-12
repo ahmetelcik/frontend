@@ -28,7 +28,8 @@ import { AracGiderEkleComponent } from './AracGiderEkle/arac-gider-ekle.componen
 import { AracDuzenleComponent } from './AracDuzenle/arac-duzenle.component';
 import { MusteriDuzenleComponent } from './MusteriDuzenle/musteri-duzenle.component';
 import { MusteriMaasPrimEkleComponent } from './MusteriMaasPrimEkle/musteri-maas-prim-ekle.component';
-
+import { KiralamaDetayComponent } from './KiralamaDetay/kiralama-detay.component';
+import { GiderListeleComponent } from './Giderler/gider-listele.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,6 +51,8 @@ import { MusteriMaasPrimEkleComponent } from './MusteriMaasPrimEkle/musteri-maas
     AracDuzenleComponent,
     MusteriDuzenleComponent,
     MusteriMaasPrimEkleComponent,
+    KiralamaDetayComponent,
+    GiderListeleComponent
   ],
   imports: [
     BrowserModule,
