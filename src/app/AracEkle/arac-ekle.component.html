@@ -31,39 +31,46 @@
         <div class="panel-heading">
           <!-- Panel Left Block -->
           <div class="panel-heading-left-block">
-            <span>Müşteri Detay </span>
+            <span> Araç Ekle </span>
           </div>
           <!-- Panel Heading Left Block -->
-          <!-- Panel Heading Right Block -->
-          <div class="panel-heading-right-block">
-            <a href="#" class="btn btn-danger btn-xs">Button 1</a>
-            <a href="#" class="btn btn-success btn-xs">Button 2</a>
-          </div>
-          <!-- Panel Right Block -->
         </div>
         <!-- Panel Heading -->
         <!-- Panel Body -->
         <div class="panel-body">
+          Araç Plaka : {{ arac_model.arac_plaka }}
+          Araç Marka : {{ arac_model.arac_marka }}
+          Araç Modeli : {{ arac_model.arac_modeli }}
           <form>
             <!-- Araç Plaka -->
             <div class="form-group">
               <label for="aracPlakaLabel" class="control-label form-style-ozel-label">Araç Plaka</label>
-              <input type="text" class="form-control form-style-ozel" id="aracPlakaLabel" placeholder="Araç Plaka">
+              <input type="text" class="form-control form-style-ozel" id="aracPlakaLabel" placeholder="Araç Plaka" name="arac_plaka" [(ngModel)]="arac_model.arac_plaka" >
             </div>
             <!-- Araç Plaka -->
 
             <!-- Araç Marka -->
             <div class="form-group">
               <label class="control-label form-style-ozel-label">Araç Marka</label>
-              <select class="form-control">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
+
+              <select class="form-control form-style-ozel" name="arac_marka" [(ngModel)]="arac_model.arac_marka" >
+                <option>Araç Marka Seçiniz!</option>
+                <option *ngFor="let arac_marka of arac_markalari" value="{{ arac_marka.id }}">{{ arac_marka.marka_adi }}</option>
               </select>
             </div>
             <!-- Araç Marka -->
+
+            <!-- Araç Modeli -->
+            <div class="form-group">
+              <label class="control-label form-style-ozel-label">Araç Modeli</label>
+              <select class="form-control form-style-ozel" name="arac_modeli" [(ngModel)]="arac_model.arac_modeli">
+                <option>Araç Modeli Seçiniz!</option>
+                <option *ngFor="let arac_model of arac_modelleri" [value]="arac_model.id">{{ arac_model.model_adi }}</option>
+              </select>
+            </div>
+            <!-- Araç Modeli -->
+
+
 
           </form>
         </div>
