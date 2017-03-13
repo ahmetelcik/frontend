@@ -22,7 +22,7 @@ import { MusteriMaasPrimEkleComponent } from './MusteriMaasPrimEkle/musteri-maas
 import { KiralamaDetayComponent } from './KiralamaDetay/kiralama-detay.component';
 import { GiderListeleComponent } from './Giderler/gider-listele.component';
 import { GiderDetayComponent } from './GiderDetay/gider-detay.component';
-
+import { AracEkleComponent } from './AracEkle/arac-ekle.component';
 const appRoutes: Routes = [
   {
     path: 'anasayfa',
@@ -71,6 +71,10 @@ const appRoutes: Routes = [
   {
     path : "giderler/:id/detay",
     component : GiderDetayComponent
+  },
+  {
+    path : "araclar/yeni",
+    component : AracEkleComponent
   },
   {
     path: '',
