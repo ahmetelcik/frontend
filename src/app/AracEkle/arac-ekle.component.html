@@ -73,7 +73,7 @@
               <label class="control-label form-style-ozel-label">Çekiş Tipi</label>
               <select class="form-control form-style-ozel" name="arac_cekis_tipi" [(ngModel)]="arac_model.arac_cekis_tipi">
                 <option value="0">Çekiş Tipi Seçiniz</option>
-                <option value="1">4WD Sürekli</option>
+                <option *ngFor="let arac_cekis of arac_cekis_tipleri" [value]="arac_cekis.id">{{ arac_cekis.cekis_tip_adi }}</option>
               </select>
             </div>
             <!-- Araç Çekiş Tipi -->

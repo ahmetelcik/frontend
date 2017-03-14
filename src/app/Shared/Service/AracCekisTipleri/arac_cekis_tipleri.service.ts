@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class AracCekisTipleriService {
+export class AracCekisTipleriListeleService {
 
   /** Araç Markaları Listele */
   private _aracCekisTipleri = [];
@@ -25,7 +25,7 @@ export class AracCekisTipleriService {
     ];
   }
 
-  getAracCekisTipleri(){
+  getAracCekisTipleriListele(){
     return this._aracCekisTipleri;
   }
 

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AracModel } from './Model/arac-ekle.model';
 import {AracMarkaListeleService} from "../Shared/AracMarkalari/Service/arac_marka_listele.service";
+import {AracCekisTipleriListeleService} from "../Shared/Service/AracCekisTipleri/arac_cekis_tipleri.service";
 
 @Component({
   selector: 'app-arac-ekle',
@@ -38,8 +39,15 @@ export class AracEkleComponent implements OnInit {
 
 
   /** Constructor */
-  constructor(private _arac_marka_listele : AracMarkaListeleService) {
+  constructor(private _arac_marka_listele : AracMarkaListeleService,private _arac_cekis_turleri_listele : AracCekisTipleriListeleService) {
+    /**
+     * Araç markalarını serviceden çekiyoruz
+     */
     this.arac_markalari = this._arac_marka_listele.getAracMarkaListele();
+    /**
+     * Araç çekiş tiplerini serviceden çekiyoruz
+     */
+    this.arac_cekis_tipleri = this._arac_cekis_turleri_listele.getAracCekisTipleriListele();
   }
 
 
