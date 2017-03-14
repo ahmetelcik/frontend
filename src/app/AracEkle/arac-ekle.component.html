@@ -113,7 +113,7 @@
               <label class="control-label form-style-ozel-label">Yakıt Tipi</label>
               <select class="form-control form-style-ozel" name="arac_yakit_tipi" [(ngModel)]="arac_model.arac_yakit_tipi" >
                 <option value="0">Yakit Tipi Seçiniz</option>
-                <option value="1">Benzin</option>
+                <option *ngFor="let arac_yakit of arac_yakit_turleri" [value]="arac_yakit.id">{{ arac_yakit.yakit_tipi_adi }}</option>
               </select>
             </div>
             <!-- Araç Yakıt Tipi -->

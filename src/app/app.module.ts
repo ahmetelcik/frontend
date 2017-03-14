@@ -32,16 +32,27 @@ import { KiralamaDetayComponent } from './KiralamaDetay/kiralama-detay.component
 import { GiderListeleComponent } from './Giderler/gider-listele.component';
 import { GiderDetayComponent } from './GiderDetay/gider-detay.component';
 import { AracEkleComponent } from './AracEkle/arac-ekle.component';
-/* Araç Markaları Listele Service */
+
+/** SERVICES **/
+/** Araç Markaları Listele Service */
 import { AracMarkaListeleService } from './Shared/AracMarkalari/Service/arac_marka_listele.service';
-/* Araç Çekiş Tipleri Listele Service */
+
+/** Araç Çekiş Tipleri Listele Service */
 import { AracCekisTipleriListeleService } from './Shared/Service/AracCekisTipleri/arac_cekis_tipleri.service';
-/* Araç Kasa Tipleri Listele Service */
+
+/** Araç Kasa Tipleri Listele Service */
 import { AracKasaTipleriListeleService } from './Shared/Service/AracKasaTipleriService/arac_kasa_tipleri.service';
-/* Araç Motor Hacimleri Listele Service */
+
+/** Araç Motor Hacimleri Listele Service */
 import { AracMotorHacimleriListeleService } from './Shared/Service/AracMotorHacimleriService/arac_motor_hacimleri.service';
-/* Araç Vites Tipleri Listele Service */
+
+/** Araç Vites Tipleri Listele Service */
 import { AracVitesTipleriListeleService } from './Shared/Service/AracVitesTipleriService/arac_vites_tipleri.service';
+
+/** Araç Yakit Tipleri Listele Service */
+import { AracYakitTipleriListeleService } from './Shared/Service/AracYakitTipleriService/arac_yakit_tipleri.service';
+
+/** SERVICES **/
 @NgModule({
   declarations: [
     AppComponent,
@@ -88,7 +99,8 @@ import { AracVitesTipleriListeleService } from './Shared/Service/AracVitesTipler
     AracCekisTipleriListeleService,
     AracKasaTipleriListeleService,
     AracMotorHacimleriListeleService,
-    AracVitesTipleriListeleService
+    AracVitesTipleriListeleService,
+    AracYakitTipleriListeleService,
   ],
   bootstrap: [AppComponent]
 })
