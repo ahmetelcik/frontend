@@ -38,9 +38,7 @@
         <!-- Panel Heading -->
         <!-- Panel Body -->
         <div class="panel-body">
-          Araç Plaka : {{ arac_model.arac_plaka }}
-          Araç Marka : {{ arac_model.arac_marka }}
-          Araç Modeli : {{ arac_model.arac_modeli }}
+          Araç Model : {{ arac_model|json }}
           <form>
             <!-- Araç Plaka -->
             <div class="form-group">
@@ -53,8 +51,8 @@
             <div class="form-group">
               <label class="control-label form-style-ozel-label">Araç Marka</label>
 
-              <select class="form-control form-style-ozel" name="arac_marka" [(ngModel)]="arac_model.arac_marka" >
-                <option [value]="default">Araç Marka Seçiniz!</option>
+              <select class="form-control form-style-ozel" name="arac_marka" [(ngModel)]="arac_model.arac_marka">
+                <option value="0">Araç Marka Seçiniz</option>
                 <option *ngFor="let arac_marka of arac_markalari" value="{{ arac_marka.id }}">{{ arac_marka.marka_adi }}</option>
               </select>
             </div>
@@ -64,11 +62,78 @@
             <div class="form-group">
               <label class="control-label form-style-ozel-label">Araç Modeli</label>
               <select class="form-control form-style-ozel" name="arac_modeli" [(ngModel)]="arac_model.arac_modeli">
-                <option [value]="default">Araç Modeli Seçiniz!</option>
+                <option value="0">Araç Modeli Seçiniz</option>
                 <option *ngFor="let arac_model of arac_modelleri" [value]="arac_model.id">{{ arac_model.model_adi }}</option>
               </select>
             </div>
             <!-- Araç Modeli -->
+
+            <!-- Araç Çekiş Tipi -->
+            <div class="form-group">
+              <label class="control-label form-style-ozel-label">Çekiş Tipi</label>
+              <select class="form-control form-style-ozel" name="arac_cekis_tipi" [(ngModel)]="arac_model.arac_cekis_tipi">
+                <option value="0">Çekiş Tipi Seçiniz</option>
+                <option value="1">4WD Sürekli</option>
+              </select>
+            </div>
+            <!-- Araç Çekiş Tipi -->
+
+            <!-- Araç Kasa Tipi -->
+            <div class="form-group">
+              <label class="control-label form-style-ozel-label">Kasa Tipi</label>
+              <select class="form-control form-style-ozel" name="arac_kasa_tipi" [(ngModel)]="arac_model.arac_kasa_tipi">
+                <option value="0">Kasa Tipi Seçiniz</option>
+                <option value="1">Cabrio</option>
+              </select>
+            </div>
+            <!-- Araç Kasa Tipi -->
+
+            <!-- Araç Motor Hacmi -->
+            <div class="form-group">
+              <label class="control-label form-style-ozel-label">Motor Hacmi</label>
+              <select class="form-control form-style-ozel" name="arac_motor_hacmi" [(ngModel)]="arac_model.arac_motor_hacmi">
+                <option value="0">Motor Hacmi Seçiniz</option>
+                <option value="1">1201 - 1400 cm3</option>
+              </select>
+            </div>
+            <!-- Araç Motor Hacmi -->
+
+            <!-- Araç Vites Tipi -->
+            <div class="form-group">
+              <label class="control-label form-style-ozel-label">Vites Tipi</label>
+              <select class="form-control form-style-ozel" name="arac_vites_turu" [(ngModel)]="arac_model.arac_vites_tipi">
+                <option value="0">Vites Tipi Seçiniz</option>
+                <option value="1">Manuel</option>
+              </select>
+            </div>
+            <!-- Araç Vites Tipi -->
+
+            <!-- Araç Yakıt Tipi -->
+            <div class="form-group">
+              <label class="control-label form-style-ozel-label">Yakıt Tipi</label>
+              <select class="form-control form-style-ozel" name="arac_yakit_tipi" [(ngModel)]="arac_model.arac_yakit_tipi" >
+                <option value="0">Yakit Tipi Seçiniz</option>
+                <option value="1">Benzin</option>
+              </select>
+            </div>
+            <!-- Araç Yakıt Tipi -->
+
+            <!-- Araç Başlangıç Şube -->
+            <div class="form-group">
+              <label class="control-label form-style-ozel-label">Başlangıç Şube</label>
+              <select class="form-control form-style-ozel" name="arac_baslangic_sube" [(ngModel)]="arac_model.arac_baslangic_sube">
+                <option value="0">Başlangıç Şube Seçiniz</option>
+                <option value="1">Merkez Şube</option>
+              </select>
+            </div>
+            <!-- Araç Başlangıç Şube -->
+
+            <!-- Araç Kilometresi -->
+            <div class="form-group">
+              <label for="arac_kilometresiLabel" class="control-label form-style-ozel-label">Kilometre</label>
+              <input type="text" class="form-control form-style-ozel" id="arac_kilometresiLabel" placeholder="Araç Kilometresi" name="arac_kilometresi" [(ngModel)]="arac_model.arac_kilometre">
+            </div>
+            <!-- Araç Kilometresi -->
 
 
 

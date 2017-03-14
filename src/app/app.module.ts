@@ -32,7 +32,8 @@ import { KiralamaDetayComponent } from './KiralamaDetay/kiralama-detay.component
 import { GiderListeleComponent } from './Giderler/gider-listele.component';
 import { GiderDetayComponent } from './GiderDetay/gider-detay.component';
 import { AracEkleComponent } from './AracEkle/arac-ekle.component';
-
+/* Araç Markaları Listele Service */
+import { AracMarkaListeleService } from './Shared/AracMarkalari/Service/arac_marka_listele.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -73,7 +74,7 @@ import { AracEkleComponent } from './AracEkle/arac-ekle.component';
     DatepickerModule.forRoot()
 
   ],
-  providers: [MusteriNotlariService],
+  providers: [MusteriNotlariService,AracMarkaListeleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
