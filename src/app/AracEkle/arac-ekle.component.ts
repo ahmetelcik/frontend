@@ -3,6 +3,7 @@ import { AracModel } from './Model/arac-ekle.model';
 import {AracMarkaListeleService} from "../Shared/AracMarkalari/Service/arac_marka_listele.service";
 import {AracCekisTipleriListeleService} from "../Shared/Service/AracCekisTipleri/arac_cekis_tipleri.service";
 import {AracKasaTipleriListeleService} from "../Shared/Service/AracKasaTipleriService/arac_kasa_tipleri.service";
+import {AracMotorHacimleriListeleService} from "../Shared/Service/AracMotorHacimleriService/arac_motor_hacimleri.service";
 
 @Component({
   selector: 'app-arac-ekle',
@@ -40,7 +41,7 @@ export class AracEkleComponent implements OnInit {
 
 
   /** Constructor */
-  constructor(private _arac_marka_listele : AracMarkaListeleService,private _arac_cekis_turleri_listele : AracCekisTipleriListeleService,private _arac_kasa_tipleri_listele : AracKasaTipleriListeleService) {
+  constructor(private _arac_marka_listele : AracMarkaListeleService,private _arac_cekis_turleri_listele : AracCekisTipleriListeleService,private _arac_kasa_tipleri_listele : AracKasaTipleriListeleService,private _arac_motor_hacimleri : AracMotorHacimleriListeleService) {
     /**
      * Araç markalarını serviceden çekiyoruz
      */
@@ -54,6 +55,11 @@ export class AracEkleComponent implements OnInit {
      * Araç kasa tiplerini service'den çekiyoruz
      */
     this.arac_kasa_tipleri = this._arac_kasa_tipleri_listele.getAracKasaTipleriListele();
+
+    /**
+     * Araç motor hacimlerini service'den çekiyoruz
+     */
+    this.arac_motor_hacimleri = this._arac_motor_hacimleri.getAracMotorHacimleriListele();
   }
 
 

@@ -93,7 +93,7 @@
               <label class="control-label form-style-ozel-label">Motor Hacmi</label>
               <select class="form-control form-style-ozel" name="arac_motor_hacmi" [(ngModel)]="arac_model.arac_motor_hacmi">
                 <option value="0">Motor Hacmi Seçiniz</option>
-                <option value="1">1201 - 1400 cm3</option>
+                <option *ngFor="let arac_motor_hacim of arac_motor_hacimleri" [value]="arac_motor_hacim.id">{{ arac_motor_hacim.motor_hacim_adi }}</option>
               </select>
             </div>
             <!-- Araç Motor Hacmi -->
