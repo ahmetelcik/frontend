@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { AracModel } from './Model/arac-ekle.model';
 import {AracMarkaListeleService} from "../Shared/AracMarkalari/Service/arac_marka_listele.service";
 import {AracCekisTipleriListeleService} from "../Shared/Service/AracCekisTipleri/arac_cekis_tipleri.service";
@@ -6,6 +7,7 @@ import {AracKasaTipleriListeleService} from "../Shared/Service/AracKasaTipleriSe
 import {AracMotorHacimleriListeleService} from "../Shared/Service/AracMotorHacimleriService/arac_motor_hacimleri.service";
 import {AracVitesTipleriListeleService} from "../Shared/Service/AracVitesTipleriService/arac_vites_tipleri.service";
 import {AracYakitTipleriListeleService} from "../Shared/Service/AracYakitTipleriService/arac_yakit_tipleri.service";
+import {FirmaSubeleriListeleService} from "../Shared/Service/SubeListeleService/sube_listele.service";
 
 @Component({
   selector: 'app-arac-ekle',
@@ -43,7 +45,7 @@ export class AracEkleComponent implements OnInit {
 
 
   /** Constructor */
-  constructor(private _arac_marka_listele : AracMarkaListeleService,private _arac_cekis_turleri_listele : AracCekisTipleriListeleService,private _arac_kasa_tipleri_listele : AracKasaTipleriListeleService,private _arac_motor_hacimleri : AracMotorHacimleriListeleService,private _arac_vites_tipleri : AracVitesTipleriListeleService,private _arac_yakit_tipleri : AracYakitTipleriListeleService) {
+  constructor(private _arac_marka_listele : AracMarkaListeleService,private _arac_cekis_turleri_listele : AracCekisTipleriListeleService,private _arac_kasa_tipleri_listele : AracKasaTipleriListeleService,private _arac_motor_hacimleri : AracMotorHacimleriListeleService,private _arac_vites_tipleri : AracVitesTipleriListeleService,private _arac_yakit_tipleri : AracYakitTipleriListeleService,private _firma_subeleri : FirmaSubeleriListeleService) {
     /**
      * Araç markalarını serviceden çekiyoruz
      */
@@ -72,6 +74,11 @@ export class AracEkleComponent implements OnInit {
      * Araç yakit tiplerini service'den çekiyoruz
      */
     this.arac_yakit_turleri = this._arac_yakit_tipleri.getAracYakitTipleriListele();
+
+    /**
+     * Firma şubelerini service'den çekiyoruz
+     */
+    this.arac_baslangic_subeleri = this._firma_subeleri.getFirmaSubeleri();
   }
 
 
@@ -79,4 +86,8 @@ export class AracEkleComponent implements OnInit {
 
   }
 
+
+  public submitAracEkleForm(form : NgForm){
+    console.log(form);
+  }
 }

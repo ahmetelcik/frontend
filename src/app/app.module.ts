@@ -52,6 +52,9 @@ import { AracVitesTipleriListeleService } from './Shared/Service/AracVitesTipler
 /** Araç Yakit Tipleri Listele Service */
 import { AracYakitTipleriListeleService } from './Shared/Service/AracYakitTipleriService/arac_yakit_tipleri.service';
 
+/** Firma Şubeleri Listele Service */
+import { FirmaSubeleriListeleService } from './Shared/Service/SubeListeleService/sube_listele.service';
+
 /** SERVICES **/
 @NgModule({
   declarations: [
@@ -101,6 +104,7 @@ import { AracYakitTipleriListeleService } from './Shared/Service/AracYakitTipler
     AracMotorHacimleriListeleService,
     AracVitesTipleriListeleService,
     AracYakitTipleriListeleService,
+    FirmaSubeleriListeleService
   ],
   bootstrap: [AppComponent]
 })

@@ -37,13 +37,24 @@
         </div>
         <!-- Panel Heading -->
         <!-- Panel Body -->
+        <form #aracEkleForm="ngForm" (submit)="submitAracEkleForm(aracEkleForm)">
         <div class="panel-body">
           Araç Model : {{ arac_model|json }}
-          <form>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          Form {{ aracEkleForm.errors|json}}
+
+          <br>
+          <p>First name value: {{ arac_plaka.errors | json }}</p>
+          <p>Plaka Valid ? : {{ arac_plaka.valid}}</p>
             <!-- Araç Plaka -->
             <div class="form-group">
               <label for="aracPlakaLabel" class="control-label form-style-ozel-label">Araç Plaka</label>
-              <input type="text" class="form-control form-style-ozel" id="aracPlakaLabel" placeholder="Araç Plaka" name="arac_plaka" [(ngModel)]="arac_model.arac_plaka" >
+              <input type="text" class="form-control form-style-ozel" id="aracPlakaLabel" placeholder="Araç Plaka" name="arac_plaka" #arac_plaka="ngModel" [(ngModel)]="arac_model.arac_plaka" required  pattern="^([1-9][0-9]+|[1-9])$">
+              <span class="help-block">Bu alan zorunludur.</span>
             </div>
             <!-- Araç Plaka -->
 
@@ -61,9 +72,12 @@
             <!-- Araç Modeli -->
             <div class="form-group">
               <label class="control-label form-style-ozel-label">Araç Modeli</label>
-              <select class="form-control form-style-ozel" name="arac_modeli" [(ngModel)]="arac_model.arac_modeli">
+              <select class="form-control form-style-ozel" name="arac_modeli" [(ngModel)]="arac_model.arac_modeli" >
                 <option value="0">Araç Modeli Seçiniz</option>
-                <option *ngFor="let arac_model of arac_modelleri" [value]="arac_model.id">{{ arac_model.model_adi }}</option>
+                <option value="1">3 Serisi</option>
+                <option value="4">4 Serisi</option>
+                <option value="5">5 Serisi</option>
+                <option value="6">7 Serisi</option>
               </select>
             </div>
             <!-- Araç Modeli -->
@@ -71,7 +85,7 @@
             <!-- Araç Çekiş Tipi -->
             <div class="form-group">
               <label class="control-label form-style-ozel-label">Çekiş Tipi</label>
-              <select class="form-control form-style-ozel" name="arac_cekis_tipi" [(ngModel)]="arac_model.arac_cekis_tipi">
+              <select class="form-control form-style-ozel" name="arac_cekis_tipi" [(ngModel)]="arac_model.arac_cekis_tipi" >
                 <option value="0">Çekiş Tipi Seçiniz</option>
                 <option *ngFor="let arac_cekis of arac_cekis_tipleri" [value]="arac_cekis.id">{{ arac_cekis.cekis_tip_adi }}</option>
               </select>
@@ -81,7 +95,7 @@
             <!-- Araç Kasa Tipi -->
             <div class="form-group">
               <label class="control-label form-style-ozel-label">Kasa Tipi</label>
-              <select class="form-control form-style-ozel" name="arac_kasa_tipi" [(ngModel)]="arac_model.arac_kasa_tipi">
+              <select class="form-control form-style-ozel" name="arac_kasa_tipi" [(ngModel)]="arac_model.arac_kasa_tipi" >
                 <option value="0">Kasa Tipi Seçiniz</option>
                 <option *ngFor="let arac_kasa of arac_kasa_tipleri" [value]="arac_kasa.id">{{ arac_kasa.kasa_tipi_adi }}</option>
               </select>
@@ -91,7 +105,7 @@
             <!-- Araç Motor Hacmi -->
             <div class="form-group">
               <label class="control-label form-style-ozel-label">Motor Hacmi</label>
-              <select class="form-control form-style-ozel" name="arac_motor_hacmi" [(ngModel)]="arac_model.arac_motor_hacmi">
+              <select class="form-control form-style-ozel" name="arac_motor_hacmi" [(ngModel)]="arac_model.arac_motor_hacmi" >
                 <option value="0">Motor Hacmi Seçiniz</option>
                 <option *ngFor="let arac_motor_hacim of arac_motor_hacimleri" [value]="arac_motor_hacim.id">{{ arac_motor_hacim.motor_hacim_adi }}</option>
               </select>
@@ -101,7 +115,7 @@
             <!-- Araç Vites Tipi -->
             <div class="form-group">
               <label class="control-label form-style-ozel-label">Vites Tipi</label>
-              <select class="form-control form-style-ozel" name="arac_vites_turu" [(ngModel)]="arac_model.arac_vites_tipi">
+              <select class="form-control form-style-ozel" name="arac_vites_turu" [(ngModel)]="arac_model.arac_vites_tipi" >
                 <option value="0">Vites Tipi Seçiniz</option>
                 <option *ngFor="let arac_vites of arac_vites_tipleri" [value]="arac_vites.id">{{ arac_vites.vites_tipi_adi }}</option>
               </select>
@@ -121,9 +135,9 @@
             <!-- Araç Başlangıç Şube -->
             <div class="form-group">
               <label class="control-label form-style-ozel-label">Başlangıç Şube</label>
-              <select class="form-control form-style-ozel" name="arac_baslangic_sube" [(ngModel)]="arac_model.arac_baslangic_sube">
+              <select class="form-control form-style-ozel" name="arac_baslangic_sube" [(ngModel)]="arac_model.arac_baslangic_sube" >
                 <option value="0">Başlangıç Şube Seçiniz</option>
-                <option value="1">Merkez Şube</option>
+                <option *ngFor="let subeler of arac_baslangic_subeleri" [value]="subeler.id">{{ subeler.sube_adi }}</option>
               </select>
             </div>
             <!-- Araç Başlangıç Şube -->
@@ -137,7 +151,6 @@
 
 
 
-          </form>
         </div>
         <!-- Panel Body -->
         <!-- Panel Footer -->
@@ -148,6 +161,7 @@
           <div class="clearfix"></div>
         </div>
         <!-- Panel Footer -->
+        </form>
       </div>
       <!-- Panel -->
     </div>
