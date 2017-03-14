@@ -38,7 +38,10 @@ import { AracMarkaListeleService } from './Shared/AracMarkalari/Service/arac_mar
 import { AracCekisTipleriListeleService } from './Shared/Service/AracCekisTipleri/arac_cekis_tipleri.service';
 /* Araç Kasa Tipleri Listele Service */
 import { AracKasaTipleriListeleService } from './Shared/Service/AracKasaTipleriService/arac_kasa_tipleri.service';
+/* Araç Motor Hacimleri Listele Service */
 import { AracMotorHacimleriListeleService } from './Shared/Service/AracMotorHacimleriService/arac_motor_hacimleri.service';
+/* Araç Vites Tipleri Listele Service */
+import { AracVitesTipleriListeleService } from './Shared/Service/AracVitesTipleriService/arac_vites_tipleri.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -84,7 +87,8 @@ import { AracMotorHacimleriListeleService } from './Shared/Service/AracMotorHaci
     AracMarkaListeleService,
     AracCekisTipleriListeleService,
     AracKasaTipleriListeleService,
-    AracMotorHacimleriListeleService
+    AracMotorHacimleriListeleService,
+    AracVitesTipleriListeleService
   ],
   bootstrap: [AppComponent]
 })

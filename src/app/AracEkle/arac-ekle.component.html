@@ -103,7 +103,7 @@
               <label class="control-label form-style-ozel-label">Vites Tipi</label>
               <select class="form-control form-style-ozel" name="arac_vites_turu" [(ngModel)]="arac_model.arac_vites_tipi">
                 <option value="0">Vites Tipi Seçiniz</option>
-                <option value="1">Manuel</option>
+                <option *ngFor="let arac_vites of arac_vites_tipleri" [value]="arac_vites.id">{{ arac_vites.vites_tipi_adi }}</option>
               </select>
             </div>
             <!-- Araç Vites Tipi -->
