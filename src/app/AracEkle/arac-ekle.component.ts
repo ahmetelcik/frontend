@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { FormControl } from '@angular/forms';
 import { AracModel } from './Model/arac-ekle.model';
 import {AracMarkaListeleService} from "../Shared/AracMarkalari/Service/arac_marka_listele.service";
 import {AracCekisTipleriListeleService} from "../Shared/Service/AracCekisTipleri/arac_cekis_tipleri.service";
@@ -90,4 +91,11 @@ export class AracEkleComponent implements OnInit {
   public submitAracEkleForm(form : NgForm){
     console.log(form);
   }
+
+
+
+
+
+
+
 }

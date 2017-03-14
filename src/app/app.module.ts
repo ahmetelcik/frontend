@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+
 import { AppComponent } from './app.component';
 import { SolmenuComponent } from './solmenu/solmenu.component';
 import { HeaderComponent } from './header/header.component';
@@ -55,6 +56,10 @@ import { AracYakitTipleriListeleService } from './Shared/Service/AracYakitTipler
 /** Firma Şubeleri Listele Service */
 import { FirmaSubeleriListeleService } from './Shared/Service/SubeListeleService/sube_listele.service';
 
+
+import { EqualValidator } from './Shared/ValidatorDirective/email_validator';
+
+
 /** SERVICES **/
 @NgModule({
   declarations: [
@@ -81,6 +86,7 @@ import { FirmaSubeleriListeleService } from './Shared/Service/SubeListeleService
     GiderListeleComponent,
     GiderDetayComponent,
     AracEkleComponent,
+    EqualValidator,
   ],
   imports: [
     BrowserModule,
