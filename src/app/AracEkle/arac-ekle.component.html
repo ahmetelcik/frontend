@@ -83,7 +83,7 @@
               <label class="control-label form-style-ozel-label">Kasa Tipi</label>
               <select class="form-control form-style-ozel" name="arac_kasa_tipi" [(ngModel)]="arac_model.arac_kasa_tipi">
                 <option value="0">Kasa Tipi Seçiniz</option>
-                <option value="1">Cabrio</option>
+                <option *ngFor="let arac_kasa of arac_kasa_tipleri" [value]="arac_kasa.id">{{ arac_kasa.kasa_tipi_adi }}</option>
               </select>
             </div>
             <!-- Araç Kasa Tipi -->
