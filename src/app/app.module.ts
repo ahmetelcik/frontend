@@ -38,7 +38,7 @@ import { AracMarkaListeleService } from './Shared/AracMarkalari/Service/arac_mar
 import { AracCekisTipleriListeleService } from './Shared/Service/AracCekisTipleri/arac_cekis_tipleri.service';
 /* Araç Kasa Tipleri Listele Service */
 import { AracKasaTipleriListeleService } from './Shared/Service/AracKasaTipleriService/arac_kasa_tipleri.service';
-
+import { AracMotorHacimleriListeleService } from './Shared/Service/AracMotorHacimleriService/arac_motor_hacimleri.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -79,7 +79,13 @@ import { AracKasaTipleriListeleService } from './Shared/Service/AracKasaTipleriS
     DatepickerModule.forRoot()
 
   ],
-  providers: [MusteriNotlariService,AracMarkaListeleService,AracCekisTipleriListeleService,AracKasaTipleriListeleService],
+  providers: [
+    MusteriNotlariService,
+    AracMarkaListeleService,
+    AracCekisTipleriListeleService,
+    AracKasaTipleriListeleService,
+    AracMotorHacimleriListeleService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
