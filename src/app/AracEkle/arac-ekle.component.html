@@ -54,7 +54,7 @@
               <label class="control-label form-style-ozel-label">Araç Marka</label>
 
               <select class="form-control form-style-ozel" name="arac_marka" [(ngModel)]="arac_model.arac_marka" >
-                <option>Araç Marka Seçiniz!</option>
+                <option [value]="default">Araç Marka Seçiniz!</option>
                 <option *ngFor="let arac_marka of arac_markalari" value="{{ arac_marka.id }}">{{ arac_marka.marka_adi }}</option>
               </select>
             </div>
@@ -64,7 +64,7 @@
             <div class="form-group">
               <label class="control-label form-style-ozel-label">Araç Modeli</label>
               <select class="form-control form-style-ozel" name="arac_modeli" [(ngModel)]="arac_model.arac_modeli">
-                <option>Araç Modeli Seçiniz!</option>
+                <option [value]="default">Araç Modeli Seçiniz!</option>
                 <option *ngFor="let arac_model of arac_modelleri" [value]="arac_model.id">{{ arac_model.model_adi }}</option>
               </select>
             </div>
