@@ -57,8 +57,9 @@ import { AracYakitTipleriListeleService } from './Shared/Service/AracYakitTipler
 import { FirmaSubeleriListeleService } from './Shared/Service/SubeListeleService/sube_listele.service';
 
 
-import { EqualValidator } from './Shared/ValidatorDirective/email_validator';
+// import { EqualValidator } from './Shared/ValidatorDirective/email_validator';
 
+import { validateAhmetValidator } from './Shared/ValidatorDirective/email_validator';
 
 /** SERVICES **/
 @NgModule({
@@ -86,7 +87,8 @@ import { EqualValidator } from './Shared/ValidatorDirective/email_validator';
     GiderListeleComponent,
     GiderDetayComponent,
     AracEkleComponent,
-    EqualValidator,
+    // EqualValidator,
+    validateAhmetValidator,
   ],
   imports: [
     BrowserModule,

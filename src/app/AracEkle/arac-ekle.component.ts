@@ -89,7 +89,7 @@ export class AracEkleComponent implements OnInit {
 
 
   public submitAracEkleForm(form : NgForm){
-    console.log(form);
+
   }
 
 

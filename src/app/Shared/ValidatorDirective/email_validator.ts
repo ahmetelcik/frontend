@@ -1,40 +1,52 @@
-import { Directive, forwardRef, Attribute } from '@angular/core';
-import { Validator, AbstractControl, NG_VALIDATORS } from '@angular/forms';
+
+import { Directive } from '@angular/core';
+import { NgModel, NG_VALIDATORS, AbstractControl, ValidatorFn, Validator,FormControl } from '@angular/forms';
+
+
+// validation function
+function validateJuriNameFactory() {
+  return (c: AbstractControl) => {
+
+
+    let isValid = c.value;
+
+    if(isValid === "ahmet") {
+      // koşul doğru ise
+      return null;
+    } else {
+
+      /** Errors */
+      return {
+        juriName: {
+          valid: false
+        }
+      };
+
+    }
+
+  }
+}
+
 @Directive({
-  selector: '[validateEqual][formControlName],[validateEqual][formControl],[validateEqual][ngModel]',
+  selector: '[validateAhmet][ngModel]',
   providers: [
     {
       provide: NG_VALIDATORS,
-      useExisting: forwardRef(() => EqualValidator),
-      multi: true }
+      useExisting: validateAhmetValidator,
+      multi: true
+    }
   ]
 })
-export class EqualValidator implements Validator {
+export class validateAhmetValidator implements Validator {
+  validator: ValidatorFn;
 
-  constructor( @Attribute('validateEqual') public validateEqual: string) {
-
-
+  constructor() {
+    this.validator = validateJuriNameFactory();
   }
 
-  validate(c: AbstractControl): { [key: string]: any } {
-    // self value (e.g. retype password)
-    let v = c.value;
+  validate(c: FormControl) {
 
-
-
-    // control value (e.g. password)
-    let e = c.root.get(this.validateEqual);
-
-    console.log(e.value);
-    if(e.value == "ahmet"){
-      return {
-        validateEqual: false
-      };
-    }
-
-
-    return null;
-
-
+    return this.validator(c);
   }
+
 }
