@@ -48,7 +48,7 @@ export class AracModel{
    * @param number arac_kilometre
    */
   public constructor(
-    arac_plaka          : string = "35 D 8897",
+    arac_plaka          : string = "",
     arac_marka          : number = 0,
     arac_modeli         : number = 0,
     arac_cekis_tipi     : number = 0,
