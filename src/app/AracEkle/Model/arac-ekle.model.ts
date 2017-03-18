@@ -32,7 +32,7 @@ export class AracModel{
   public arac_baslangic_sube  : number;
 
   /** @var string Araç Başlangıç Kilometresi */
-  public arac_kilometre       : string|number;
+  public arac_kilometre       : string;
 
 
   /**
@@ -57,7 +57,7 @@ export class AracModel{
     arac_vites_tipi     : number = 0,
     arac_yakit_tipi     : number = 0,
     arac_baslangic_sube : number = 0,
-    arac_kilometre      : number|string = ""
+    arac_kilometre      : string = ""
   ){
 
     this.arac_plaka = arac_plaka;

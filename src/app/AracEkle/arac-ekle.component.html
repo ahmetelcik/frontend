@@ -39,21 +39,19 @@
         <!-- Panel Body -->
         <form #aracEkleForm="ngForm" (submit)="submitAracEkleForm(aracEkleForm)">
         <div class="panel-body">
-          Araç Model : {{ arac_model|json }}
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          Form {{ aracEkleForm.errors|json}}
 
-          <br>
-          <p>First name value: {{ arac_plaka.errors | json }}</p>
-          <p>Plaka Valid ? : {{ arac_plaka.valid}}</p>
             <!-- Araç Plaka -->
             <div class="form-group">
               <label for="aracPlakaLabel" class="control-label form-style-ozel-label">Araç Plaka</label>
-              <input type="text" class="form-control form-style-ozel" id="aracPlakaLabel" placeholder="Araç Plaka" name="arac_plaka" #arac_plaka="ngModel" [(ngModel)]="arac_model.arac_plaka" required  validateAhmet>
+              <input
+                type="text"
+                class="form-control form-style-ozel"
+                id="aracPlakaLabel"
+                placeholder="Araç Plaka"
+                name="arac_plaka"
+                #arac_plaka="ngModel"
+                [(ngModel)]="arac_model.arac_plaka"
+              >
               <span class="help-block">Bu alan zorunludur.</span>
             </div>
             <!-- Araç Plaka -->
@@ -145,7 +143,13 @@
             <!-- Araç Kilometresi -->
             <div class="form-group">
               <label for="arac_kilometresiLabel" class="control-label form-style-ozel-label">Kilometre</label>
-              <input type="text" class="form-control form-style-ozel" id="arac_kilometresiLabel" placeholder="Araç Kilometresi" name="arac_kilometresi" [(ngModel)]="arac_model.arac_kilometre">
+              <input
+                type="text"
+                class="form-control form-style-ozel"
+                id="arac_kilometresiLabel"
+                placeholder="Araç Kilometresi"
+                name="arac_kilometresi"
+                [(ngModel)]="arac_model.arac_kilometre">
             </div>
             <!-- Araç Kilometresi -->
 
