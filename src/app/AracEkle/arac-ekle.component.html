@@ -56,13 +56,18 @@
             </div>
             <!-- Araç Plaka -->
 
+
             <!-- Araç Marka -->
             <div class="form-group">
               <label class="control-label form-style-ozel-label">Araç Marka</label>
 
+              {{ arac_markalari | json }}
+              <ul>
+                <li *ngFor="let arac_marka of arac_markalari">{{ arac_marka.marka_adi}}</li>
+              </ul>
               <select class="form-control form-style-ozel" name="arac_marka" [(ngModel)]="arac_model.arac_marka">
                 <option value="0">Araç Marka Seçiniz</option>
-                <option *ngFor="let arac_marka of arac_markalari" value="{{ arac_marka.id }}">{{ arac_marka.marka_adi }}</option>
+                <!--<option  *ngFor="let arac_marka of arac_markalari" value="{{ arac_marka.id }}">{{ arac_marka.marka_adi }}</option>-->
               </select>
             </div>
             <!-- Araç Marka -->

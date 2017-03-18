@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { FormControl } from '@angular/forms';
 import { AracModel } from './Model/arac-ekle.model';
-import {AracMarkaListeleService} from "../Shared/AracMarkalari/Service/arac_marka_listele.service";
+
 import {AracCekisTipleriListeleService} from "../Shared/Service/AracCekisTipleri/arac_cekis_tipleri.service";
 import {AracKasaTipleriListeleService} from "../Shared/Service/AracKasaTipleriService/arac_kasa_tipleri.service";
 import {AracMotorHacimleriListeleService} from "../Shared/Service/AracMotorHacimleriService/arac_motor_hacimleri.service";
 import {AracVitesTipleriListeleService} from "../Shared/Service/AracVitesTipleriService/arac_vites_tipleri.service";
 import {AracYakitTipleriListeleService} from "../Shared/Service/AracYakitTipleriService/arac_yakit_tipleri.service";
 import {FirmaSubeleriListeleService} from "../Shared/Service/SubeListeleService/sube_listele.service";
+
+import { AracMarkalariListeleService } from '../Shared/Service/AracMarkalariListeleService/arac_markalari_listele.service';
 
 @Component({
   selector: 'app-arac-ekle',
@@ -46,15 +47,15 @@ export class AracEkleComponent implements OnInit {
 
 
   /** Constructor */
-  constructor(private _arac_marka_listele : AracMarkaListeleService,private _arac_cekis_turleri_listele : AracCekisTipleriListeleService,private _arac_kasa_tipleri_listele : AracKasaTipleriListeleService,private _arac_motor_hacimleri : AracMotorHacimleriListeleService,private _arac_vites_tipleri : AracVitesTipleriListeleService,private _arac_yakit_tipleri : AracYakitTipleriListeleService,private _firma_subeleri : FirmaSubeleriListeleService) {
-    /**
-     * Araç markalarını serviceden çekiyoruz
-     */
-    this.arac_markalari = this._arac_marka_listele.getAracMarkaListele();
+  constructor(private _arac_markalari: AracMarkalariListeleService,private _arac_cekis_turleri_listele : AracCekisTipleriListeleService,private _arac_kasa_tipleri_listele : AracKasaTipleriListeleService,private _arac_motor_hacimleri : AracMotorHacimleriListeleService,private _arac_vites_tipleri : AracVitesTipleriListeleService,private _arac_yakit_tipleri : AracYakitTipleriListeleService,private _firma_subeleri : FirmaSubeleriListeleService) {
+
+
+
     /**
      * Araç çekiş tiplerini serviceden çekiyoruz
      */
     this.arac_cekis_tipleri = this._arac_cekis_turleri_listele.getAracCekisTipleriListele();
+
 
     /**
      * Araç kasa tiplerini service'den çekiyoruz
@@ -84,7 +85,9 @@ export class AracEkleComponent implements OnInit {
 
 
   ngOnInit() {
-
+    this._arac_markalari.getPosts().subscribe(posts => {
+      this.arac_markalari = posts.content.arac_markalari;
+    });
   }
 
 

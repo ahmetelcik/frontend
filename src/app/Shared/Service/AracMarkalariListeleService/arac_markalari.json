@@ -1,0 +1,61 @@
+{
+  "http" : {
+    "success" : true,
+    "http_code" : 200,
+    "http_message" : "Başarıyla Listelendi"
+  },
+  "content" : {
+    "arac_markalari" :
+    [
+      {
+        "id" : 1,
+        "marka_adi" : "Acura"
+      },
+      {
+        "id" : 2,
+        "marka_adi" : "Alfa Romeo"
+      },
+      {
+        "id" : 3,
+        "marka_adi" : "Anadol"
+      },
+      {
+        "id" : 4,
+        "marka_adi" : "Audi"
+      },
+      {
+        "id" : 5,
+        "marka_adi" : "Bentley"
+      },
+      {
+        "id" : 6,
+        "marka_adi" : "Bmw"
+      },
+      {
+        "id" : 7,
+        "marka_adi" : "Bugatti"
+      },
+      {
+        "id" : 8,
+        "marka_adi" : "Buick"
+      },
+      {
+        "id" : 9,
+        "marka_adi" : "Cadillac"
+      },
+      {
+        "id" : 10,
+        "marka_adi" : "Chery"
+      },
+      {
+        "id" : 11,
+
+        "marka_adi" : "Chevrolet"
+      },
+      {
+        "id" : 12,
+        "marka_adi" : "Chrysler"
+      }
+    ]
+  }
+}

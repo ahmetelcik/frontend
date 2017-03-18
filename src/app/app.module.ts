@@ -36,7 +36,7 @@ import { AracEkleComponent } from './AracEkle/arac-ekle.component';
 
 /** SERVICES **/
 /** Araç Markaları Listele Service */
-import { AracMarkaListeleService } from './Shared/AracMarkalari/Service/arac_marka_listele.service';
+import { AracMarkalariListeleService } from './Shared/Service/AracMarkalariListeleService/arac_markalari_listele.service';
 
 /** Araç Çekiş Tipleri Listele Service */
 import { AracCekisTipleriListeleService } from './Shared/Service/AracCekisTipleri/arac_cekis_tipleri.service';
@@ -57,9 +57,6 @@ import { AracYakitTipleriListeleService } from './Shared/Service/AracYakitTipler
 import { FirmaSubeleriListeleService } from './Shared/Service/SubeListeleService/sube_listele.service';
 
 
-// import { EqualValidator } from './Shared/ValidatorDirective/email_validator';
-
-import { validateAhmetValidator } from './Shared/ValidatorDirective/email_validator';
 
 /** SERVICES **/
 @NgModule({
@@ -87,8 +84,6 @@ import { validateAhmetValidator } from './Shared/ValidatorDirective/email_valida
     GiderListeleComponent,
     GiderDetayComponent,
     AracEkleComponent,
-    // EqualValidator,
-    validateAhmetValidator,
   ],
   imports: [
     BrowserModule,
@@ -106,7 +101,7 @@ import { validateAhmetValidator } from './Shared/ValidatorDirective/email_valida
   ],
   providers: [
     MusteriNotlariService,
-    AracMarkaListeleService,
+    AracMarkalariListeleService,
     AracCekisTipleriListeleService,
     AracKasaTipleriListeleService,
     AracMotorHacimleriListeleService,
