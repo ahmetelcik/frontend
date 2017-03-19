@@ -38,6 +38,7 @@ import { AracEkleComponent } from './AracEkle/arac-ekle.component';
 import { AracEkleFormGetBilgilerService} from './Shared/Service/AracEkleForm/AracEkleForm_getBilgiler.service';
 
 import { AracEkleFormComponent } from './AracEkle/Components/arac_ekle_form.component';
+import { AracModelListeleService } from './Shared/Service/AracEkleForm/Arac_model_listele.service';
 /** SERVICES **/
 @NgModule({
   declarations: [
@@ -82,7 +83,8 @@ import { AracEkleFormComponent } from './AracEkle/Components/arac_ekle_form.comp
   ],
   providers: [
     MusteriNotlariService,
-    AracEkleFormGetBilgilerService
+    AracEkleFormGetBilgilerService,
+    AracModelListeleService
   ],
   bootstrap: [AppComponent]
 })
