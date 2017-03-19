@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import { Http,Response,Headers,RequestOptions } from '@angular/http';
 import 'rxjs/add/operator/map';
-
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/Rx';
 @Injectable()
 export class AracMarkalariListeleService {
 
 
-  private _AracMarkalari = [];
+  private arac_markalari;
 
   public constructor(private http: Http){
 
@@ -14,9 +15,14 @@ export class AracMarkalariListeleService {
 
 
 
-  getPosts() {
-    return this.http.get("/app/Shared/Service/AracMarkalariListeleService/arac_markalari.json")
+  getPosts(): Observable<any> {
+
+    this.arac_markalari = this.http.get("/app/Shared/Service/AracMarkalariListeleService/arac_markalari.json")
+      .delay(300)
       .map(res =>  res.json());
+
+
+    return this.arac_markalari;
   }
 
 

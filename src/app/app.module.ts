@@ -55,9 +55,7 @@ import { AracYakitTipleriListeleService } from './Shared/Service/AracYakitTipler
 
 /** Firma Şubeleri Listele Service */
 import { FirmaSubeleriListeleService } from './Shared/Service/SubeListeleService/sube_listele.service';
-
-
-
+import { AracEkleFormComponent } from './AracEkle/Components/arac_ekle_form.component';
 /** SERVICES **/
 @NgModule({
   declarations: [
@@ -84,6 +82,7 @@ import { FirmaSubeleriListeleService } from './Shared/Service/SubeListeleService
     GiderListeleComponent,
     GiderDetayComponent,
     AracEkleComponent,
+    AracEkleFormComponent
   ],
   imports: [
     BrowserModule,

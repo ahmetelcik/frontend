@@ -5,8 +5,7 @@
     "http_message" : "Başarıyla Listelendi"
   },
   "content" : {
-    "arac_markalari" :
-    [
+    "arac_markalari" : [
       {
         "id" : 1,
         "marka_adi" : "Acura"
