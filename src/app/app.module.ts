@@ -39,7 +39,9 @@ import { AracEkleFormGetBilgilerService} from './Shared/Service/AracEkleForm/Ara
 
 import { AracEkleFormComponent } from './AracEkle/Components/arac_ekle_form.component';
 import { AracModelListeleService } from './Shared/Service/AracEkleForm/Arac_model_listele.service';
-/** SERVICES **/
+/** Services **/
+
+import { Ng2Validator } from './Shared/ng2_Validator/';
 @NgModule({
   declarations: [
     AppComponent,
@@ -78,7 +80,8 @@ import { AracModelListeleService } from './Shared/Service/AracEkleForm/Arac_mode
     AlertModule.forRoot(),
     ModalModule.forRoot(),
     TabsModule.forRoot(),
-    DatepickerModule.forRoot()
+    DatepickerModule.forRoot(),
+    Ng2Validator
 
   ],
   providers: [
