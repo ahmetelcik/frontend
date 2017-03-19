@@ -5,6 +5,7 @@ import { AracModel } from '../Model/arac-ekle.model';
 
 
 import { AracEkleFormGetBilgilerService } from '../../Shared/Service/AracEkleForm/AracEkleForm_getBilgiler.service';
+import { AracModelListeleService } from '../../Shared/Service/AracEkleForm/Arac_model_listele.service';
 @Component({
     selector: 'app_arac_ekle_form_component',
     template: `
@@ -43,7 +44,7 @@ import { AracEkleFormGetBilgilerService } from '../../Shared/Service/AracEkleFor
             <!-- Araç Marka -->
             <div class="form-group">
               <label class="control-label form-style-ozel-label">Araç Marka</label>
-              <select class="form-control form-style-ozel" name="arac_marka" [(ngModel)]="arac_model.arac_marka">
+              <select class="form-control form-style-ozel" name="arac_marka" [(ngModel)]="arac_model.arac_marka" (ngModelChange)="aracMarkaChangeEvent($event)">
                 <option value="0">Araç Marka Seçiniz</option>
                 <option  *ngFor="let arac_marka of arac_markalari" value="{{ arac_marka.id }}">{{ arac_marka.marka_adi }}</option>
               </select>
@@ -55,10 +56,7 @@ import { AracEkleFormGetBilgilerService } from '../../Shared/Service/AracEkleFor
               <label class="control-label form-style-ozel-label">Araç Modeli</label>
               <select class="form-control form-style-ozel" name="arac_modeli" [(ngModel)]="arac_model.arac_modeli" >
                 <option value="0">Araç Modeli Seçiniz</option>
-                <option value="1">3 Serisi</option>
-                <option value="4">4 Serisi</option>
-                <option value="5">5 Serisi</option>
-                <option value="6">7 Serisi</option>
+                <option *ngFor="let arac_model of arac_modelleri" value="{{ arac_model.id }}">{{ arac_model.model_adi }}</option>
               </select>
             </div>
             <!-- Araç Modeli -->
@@ -161,13 +159,15 @@ export class AracEkleFormComponent implements OnInit {
   public arac_model:AracModel = new AracModel();
 
   private arac_markalari;
+  private arac_modelleri;
   private arac_cekis_tipleri;
   private arac_kasa_tipleri;
   private arac_motor_hacimleri;
   private arac_vites_tipleri;
   private arac_yakit_tipleri;
   private firma_subeleri;
-  constructor(private aracEkleFormBilgileri: AracEkleFormGetBilgilerService) {
+
+  constructor(private aracEkleFormBilgileri: AracEkleFormGetBilgilerService,private aracModelleriGetir: AracModelListeleService) {
 
   }
 
@@ -187,6 +187,20 @@ export class AracEkleFormComponent implements OnInit {
 
 
     });
+  }
+
+
+  aracMarkaChangeEvent(marka_id){
+    if(marka_id > 0){
+
+
+      this.aracModelleriGetir.getAracModelListele(marka_id).subscribe(arac_modelleri => {
+        this.arac_modelleri = arac_modelleri.contents.arac_modelleri;
+      });
+
+      console.log(marka_id);
+    }
+
   }
 
 
