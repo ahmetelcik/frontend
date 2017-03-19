@@ -23,7 +23,6 @@ import { AracModelListeleService } from '../../Shared/Service/AracEkleForm/Arac_
         <!-- Panel Heading -->
         <!-- Panel Body -->
         <div class="panel-body">
-                
             <!-- Araç Plaka -->
             <div class="form-group">
               <label for="aracPlakaLabel" class="control-label form-style-ozel-label">Araç Plaka</label>
@@ -208,6 +207,7 @@ export class AracEkleFormComponent implements OnInit {
   }
 
 
+  /** Araç Ekleme **/
   submitAracEkleForm(aracEkleForm:NgForm){
       console.log(aracEkleForm);
   }
