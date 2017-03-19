@@ -190,15 +190,19 @@ export class AracEkleFormComponent implements OnInit {
   }
 
 
+  /** Araç Markasının ngModeli Değişirse Burası Tetikleniyor **/
   aracMarkaChangeEvent(marka_id){
     if(marka_id > 0){
 
 
       this.aracModelleriGetir.getAracModelListele(marka_id).subscribe(arac_modelleri => {
         this.arac_modelleri = arac_modelleri.contents.arac_modelleri;
+
+        // Araç modelinin içinden arac_modeli'ni değiştiriyoruz
+        this.arac_model.arac_modeli = this.arac_modelleri[0].id;
       });
 
-      console.log(marka_id);
+
     }
 
   }
