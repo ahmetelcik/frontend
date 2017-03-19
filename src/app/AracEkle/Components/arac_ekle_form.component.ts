@@ -194,7 +194,7 @@ export class AracEkleFormComponent implements OnInit {
 
 
   /** Araç Markasının ngModeli Değişirse Burası Tetikleniyor **/
-  aracMarkaChangeEvent(marka_id){
+  aracMarkaChangeEvent(marka_id:number){
     if(marka_id > 0){
 
 
@@ -209,6 +209,7 @@ export class AracEkleFormComponent implements OnInit {
     }
 
   }
+
 
 
   /** Araç Ekleme **/
