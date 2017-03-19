@@ -24,7 +24,7 @@ import { AracModelListeleService } from '../../Shared/Service/AracEkleForm/Arac_
         <!-- Panel Body -->
         <div class="panel-body">
             <!-- Araç Plaka -->
-            <div class="form-group">
+            <div class="form-group" [class.has-error-ozel]="arac_plaka.dirty && arac_plaka.errors">
               <label for="aracPlakaLabel" class="control-label form-style-ozel-label">Araç Plaka</label>
               <input
                 type="text"
@@ -34,8 +34,12 @@ import { AracModelListeleService } from '../../Shared/Service/AracEkleForm/Arac_
                 name="arac_plaka"
                 #arac_plaka="ngModel"
                 [(ngModel)]="arac_model.arac_plaka"
+                NotBlankValidate
               >
-
+              <div class="errors-div" *ngIf="arac_plaka.errors && arac_plaka.dirty">
+                <div class="help-block" *ngIf="arac_plaka.errors.invalidNotBlankValidate">Araç Plasını Boş Bırakamazsınız</div>
+              </div>
+              
             </div>
             <!-- Araç Plaka -->
 
