@@ -34,27 +34,9 @@ import { GiderListeleComponent } from './Giderler/gider-listele.component';
 import { GiderDetayComponent } from './GiderDetay/gider-detay.component';
 import { AracEkleComponent } from './AracEkle/arac-ekle.component';
 
-/** SERVICES **/
-/** Araç Markaları Listele Service */
-import { AracMarkalariListeleService } from './Shared/Service/AracMarkalariListeleService/arac_markalari_listele.service';
+/** Services */
+import { AracEkleFormGetBilgilerService} from './Shared/Service/AracEkleForm/AracEkleForm_getBilgiler.service';
 
-/** Araç Çekiş Tipleri Listele Service */
-import { AracCekisTipleriListeleService } from './Shared/Service/AracCekisTipleri/arac_cekis_tipleri.service';
-
-/** Araç Kasa Tipleri Listele Service */
-import { AracKasaTipleriListeleService } from './Shared/Service/AracKasaTipleriService/arac_kasa_tipleri.service';
-
-/** Araç Motor Hacimleri Listele Service */
-import { AracMotorHacimleriListeleService } from './Shared/Service/AracMotorHacimleriService/arac_motor_hacimleri.service';
-
-/** Araç Vites Tipleri Listele Service */
-import { AracVitesTipleriListeleService } from './Shared/Service/AracVitesTipleriService/arac_vites_tipleri.service';
-
-/** Araç Yakit Tipleri Listele Service */
-import { AracYakitTipleriListeleService } from './Shared/Service/AracYakitTipleriService/arac_yakit_tipleri.service';
-
-/** Firma Şubeleri Listele Service */
-import { FirmaSubeleriListeleService } from './Shared/Service/SubeListeleService/sube_listele.service';
 import { AracEkleFormComponent } from './AracEkle/Components/arac_ekle_form.component';
 /** SERVICES **/
 @NgModule({
@@ -100,13 +82,7 @@ import { AracEkleFormComponent } from './AracEkle/Components/arac_ekle_form.comp
   ],
   providers: [
     MusteriNotlariService,
-    AracMarkalariListeleService,
-    AracCekisTipleriListeleService,
-    AracKasaTipleriListeleService,
-    AracMotorHacimleriListeleService,
-    AracVitesTipleriListeleService,
-    AracYakitTipleriListeleService,
-    FirmaSubeleriListeleService
+    AracEkleFormGetBilgilerService
   ],
   bootstrap: [AppComponent]
 })

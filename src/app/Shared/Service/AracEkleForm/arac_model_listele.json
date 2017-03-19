@@ -1,0 +1,27 @@
+{
+  "http" : {
+    "success" : true,
+    "http_code" : 200,
+    "http_message" : "Başarıyla Listelendi"
+  },
+  "contents" : {
+    "arac_modelleri" : [
+      {
+        "id" : 25,
+        "model_adi" : "Bmw 3 Serisi"
+      },
+      {
+        "id" : 26,
+        "model_adi" : "Bmw 4 Serisi"
+      },
+      {
+        "id" : 27,
+        "model_adi" : "Bmw 5 Serisi"
+      },
+      {
+        "id" : 28,
+        "model_adi" : "Bmw 7 Serisi"
+      }
+    ]
+  }
+}

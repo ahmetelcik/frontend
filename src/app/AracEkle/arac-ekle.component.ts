@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+import { AracEkleFormComponent } from './Components/arac_ekle_form.component';
 
 
 @Component({

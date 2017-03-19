@@ -1,0 +1,188 @@
+{
+  "http" : {
+    "success" : true,
+    "http_code" : 200,
+    "http_message" : "Başarıyla Listelendi"
+  },
+  "contents" : {
+    "arac_markalari": [
+      {
+        "id" : 1,
+        "marka_adi" : "Acura"
+      },
+      {
+        "id" : 2,
+        "marka_adi" : "Alfa Romeo"
+      },
+      {
+        "id" : 3,
+        "marka_adi" : "Anadol"
+      },
+      {
+        "id" : 4,
+        "marka_adi" : "Audi"
+      },
+      {
+        "id" : 5,
+        "marka_adi" : "Bentley"
+      },
+      {
+        "id" : 6,
+        "marka_adi" : "Bmw"
+      },
+      {
+        "id" : 7,
+        "marka_adi" : "Bugatti"
+      },
+      {
+        "id" : 8,
+        "marka_adi" : "Buick"
+      },
+      {
+        "id" : 9,
+        "marka_adi" : "Cadillac"
+      },
+      {
+        "id" : 10,
+        "marka_adi" : "Chery"
+      },
+      {
+        "id" : 11,
+
+        "marka_adi" : "Chevrolet"
+      },
+      {
+        "id" : 12,
+        "marka_adi" : "Chrysler"
+      }
+    ],
+    "arac_cekis_tipleri" : [
+      {
+        "id" : 1,
+        "cekis_adi" : "4WD (Sürekli)"
+      },
+      {
+        "id" : 2,
+        "cekis_adi" : "Arkadan İtiş"
+      },
+      {
+        "id" : 3,
+        "cekis_adi" : "Önden Çekiş"
+      }
+    ],
+    "arac_kasa_tipleri" : [
+      {
+        "id" : 1,
+        "kasa_tipi_adi" : "Cabrio"
+      },
+      {
+        "id" : 2,
+        "kasa_tipi_adi" : "Coupe"
+      },
+      {
+        "id" : 3,
+        "kasa_tipi_adi" : "Hatchback 3 kapı"
+      },
+      {
+        "id" : 4,
+        "kasa_tipi_adi" : "Hatchback 5 kapı"
+      },
+      {
+        "id" : 5,
+        "kasa_tipi_adi" : "Sedan"
+      },
+      {
+        "id" : 6,
+        "kasa_tipi_adi" : "Station Vagon"
+      },
+      {
+        "id" : 7,
+        "kasa_tipi_adi" : "Crossover"
+      },
+      {
+        "id" : 8,
+        "kasa_tipi_adi" : "Roadster"
+      }
+    ],
+    "arac_motor_hacimleri" : [
+      {
+        "id" : 1,
+        "motor_hacim_adi" : "1200 cm3' e kadar"
+      },
+      {
+        "id" : 2,
+        "motor_hacim_adi" : "1201 - 1400 cm3"
+      },
+      {
+        "id" : 3,
+        "motor_hacim_adi" : "1401 - 1600 cm3"
+      },
+      {
+        "id" : 4,
+        "motor_hacim_adi" : "1601 - 1800 cm3"
+      },
+      {
+        "id" : 5,
+        "motor_hacim_adi" : "1801 - 2000 cm3"
+      },
+      {
+        "id" : 6,
+        "motor_hacim_adi" : "2001 - 2500 cm3"
+      },
+      {
+        "id" : 7,
+        "motor_hacim_adi" : "2501 - 3000 cm3"
+      },
+      {
+        "id" : 8,
+        "motor_hacim_adi" : "3001 - 3500 cm3"
+      }
+    ],
+    "arac_vites_tipleri" : [
+      {
+        "id" : 1,
+        "vites_tipi_adi" : "Manuel"
+      },
+      {
+        "id" : 2,
+        "vites_tipi_adi" : "Yarı Otomatik"
+      },
+      {
+        "id" : 3,
+        "vites_tipi_adi" : "Otomatik"
+      }
+    ],
+    "arac_yakit_tipleri" : [
+      {
+        "id" : 1,
+        "yakit_tipi_adi" : "Benzin"
+      },
+      {
+        "id" : 2,
+        "yakit_tipi_adi" : "Benzin & LPG"
+      },
+      {
+        "id" : 3,
+        "yakit_tipi_adi" : "Dizel"
+      },
+      {
+        "id" : 4,
+        "yakit_tipi_adi" : "Hybrid"
+      }
+    ],
+    "firma_subeleri" : [
+      {
+        "id" : 1,
+        "sube_adi" : "Antalya Manavgat Şube"
+      },
+      {
+        "id": 2,
+        "sube_adi" : "Denizli Çınar Şube"
+      },
+      {
+        "id": 3,
+        "sube_adi" : "İstanbul Sabiha Gökçen Havalimanı"
+      }
+    ]
+  }
+}

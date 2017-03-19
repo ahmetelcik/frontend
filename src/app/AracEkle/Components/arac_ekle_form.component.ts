@@ -3,18 +3,9 @@ import { NgForm } from '@angular/forms';
 
 import { AracModel } from '../Model/arac-ekle.model';
 
-import {AracCekisTipleriListeleService} from "../../Shared/Service/AracCekisTipleri/arac_cekis_tipleri.service";
-import {AracKasaTipleriListeleService} from "../../Shared/Service/AracKasaTipleriService/arac_kasa_tipleri.service";
-import {AracMotorHacimleriListeleService} from "../../Shared/Service/AracMotorHacimleriService/arac_motor_hacimleri.service";
-import {AracVitesTipleriListeleService} from "../../Shared/Service/AracVitesTipleriService/arac_vites_tipleri.service";
-import {AracYakitTipleriListeleService} from "../../Shared/Service/AracYakitTipleriService/arac_yakit_tipleri.service";
-import {FirmaSubeleriListeleService} from "../../Shared/Service/SubeListeleService/sube_listele.service";
 
-import { AracMarkalariListeleService } from '../../Shared/Service/AracMarkalariListeleService/arac_markalari_listele.service';
-
-
+import { AracEkleFormGetBilgilerService } from '../../Shared/Service/AracEkleForm/AracEkleForm_getBilgiler.service';
 @Component({
-    moduleId: module.id,
     selector: 'app_arac_ekle_form_component',
     template: `
 <!-- Panel -->
@@ -31,10 +22,7 @@ import { AracMarkalariListeleService } from '../../Shared/Service/AracMarkalariL
         <!-- Panel Heading -->
         <!-- Panel Body -->
         <div class="panel-body">
-        <div class="col-md-12" *ngIf="!arac_markalari">
-            <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
-            <span class="sr-only">Loading...</span>
-          </div>
+                
             <!-- Araç Plaka -->
             <div class="form-group">
               <label for="aracPlakaLabel" class="control-label form-style-ozel-label">Araç Plaka</label>
@@ -80,7 +68,7 @@ import { AracMarkalariListeleService } from '../../Shared/Service/AracMarkalariL
               <label class="control-label form-style-ozel-label">Çekiş Tipi</label>
               <select class="form-control form-style-ozel" name="arac_cekis_tipi" [(ngModel)]="arac_model.arac_cekis_tipi" >
                 <option value="0">Çekiş Tipi Seçiniz</option>
-                <option *ngFor="let arac_cekis of arac_cekis_tipleri" [value]="arac_cekis.id">{{ arac_cekis.cekis_tip_adi }}</option>
+                <option  *ngFor="let arac_cekis of arac_cekis_tipleri" value="{{ arac_cekis.id }}">{{ arac_cekis.cekis_adi }}</option>
               </select>
             </div>
             <!-- Araç Çekiş Tipi -->
@@ -90,7 +78,7 @@ import { AracMarkalariListeleService } from '../../Shared/Service/AracMarkalariL
               <label class="control-label form-style-ozel-label">Kasa Tipi</label>
               <select class="form-control form-style-ozel" name="arac_kasa_tipi" [(ngModel)]="arac_model.arac_kasa_tipi" >
                 <option value="0">Kasa Tipi Seçiniz</option>
-                <option *ngFor="let arac_kasa of arac_kasa_tipleri" [value]="arac_kasa.id">{{ arac_kasa.kasa_tipi_adi }}</option>
+                <option  *ngFor="let arac_kasa of arac_kasa_tipleri" value="{{ arac_kasa.id }}">{{ arac_kasa.kasa_tipi_adi }}</option>
               </select>
             </div>
             <!-- Araç Kasa Tipi -->
@@ -120,7 +108,7 @@ import { AracMarkalariListeleService } from '../../Shared/Service/AracMarkalariL
               <label class="control-label form-style-ozel-label">Yakıt Tipi</label>
               <select class="form-control form-style-ozel" name="arac_yakit_tipi" [(ngModel)]="arac_model.arac_yakit_tipi" >
                 <option value="0">Yakit Tipi Seçiniz</option>
-                <option *ngFor="let arac_yakit of arac_yakit_turleri" [value]="arac_yakit.id">{{ arac_yakit.yakit_tipi_adi }}</option>
+                <option *ngFor="let arac_yakit of arac_yakit_tipleri" [value]="arac_yakit.id">{{ arac_yakit.yakit_tipi_adi }}</option>
               </select>
             </div>
             <!-- Araç Yakıt Tipi -->
@@ -130,7 +118,7 @@ import { AracMarkalariListeleService } from '../../Shared/Service/AracMarkalariL
               <label class="control-label form-style-ozel-label">Başlangıç Şube</label>
               <select class="form-control form-style-ozel" name="arac_baslangic_sube" [(ngModel)]="arac_model.arac_baslangic_sube" >
                 <option value="0">Başlangıç Şube Seçiniz</option>
-                <option *ngFor="let subeler of arac_baslangic_subeleri" [value]="subeler.id">{{ subeler.sube_adi }}</option>
+                <option *ngFor="let sube of firma_subeleri" [value]="sube.id">{{ sube.sube_adi }}</option>
               </select>
             </div>
             <!-- Araç Başlangıç Şube -->
@@ -160,80 +148,46 @@ import { AracMarkalariListeleService } from '../../Shared/Service/AracMarkalariL
       </div>
       <!-- Panel -->
       </form>
+      
+      <pre>
+      {{ arac_model | json }}
+</pre>
 `
 })
 export class AracEkleFormComponent implements OnInit {
-
-  /** Araç Markalari Listele */
-  public arac_markalari;
-
-  /** Araç Modellerini Listele */
-  public arac_modelleri;
-
-  /** Araç Çekiş Türleri Listele */
-  public arac_cekis_tipleri;
-
-  /** Araç Kasa Tipleri Listele */
-  public arac_kasa_tipleri;
-
-  /** Araç Motor Hacimleri Listele */
-  public arac_motor_hacimleri;
-
-  /** Araç Vites Tipleri Listlee */
-  public arac_vites_tipleri;
-
-  /** Araç Yakıt Türleri Listele */
-  public arac_yakit_turleri;
-
-  /** Firma Şubeleri Listele */
-  public arac_baslangic_subeleri;
 
 
   /** Araç Ekle Model */
   public arac_model:AracModel = new AracModel();
 
-    constructor(private _arac_markalari: AracMarkalariListeleService,private _arac_cekis_turleri_listele : AracCekisTipleriListeleService,private _arac_kasa_tipleri_listele : AracKasaTipleriListeleService,private _arac_motor_hacimleri : AracMotorHacimleriListeleService,private _arac_vites_tipleri : AracVitesTipleriListeleService,private _arac_yakit_tipleri : AracYakitTipleriListeleService,private _firma_subeleri : FirmaSubeleriListeleService) {
+  private arac_markalari;
+  private arac_cekis_tipleri;
+  private arac_kasa_tipleri;
+  private arac_motor_hacimleri;
+  private arac_vites_tipleri;
+  private arac_yakit_tipleri;
+  private firma_subeleri;
+  constructor(private aracEkleFormBilgileri: AracEkleFormGetBilgilerService) {
 
-      /**
-       * Araç çekiş tiplerini serviceden çekiyoruz
-       */
-      this.arac_cekis_tipleri = this._arac_cekis_turleri_listele.getAracCekisTipleriListele();
+  }
 
 
-      /**
-       * Araç kasa tiplerini service'den çekiyoruz
-       */
-      this.arac_kasa_tipleri = this._arac_kasa_tipleri_listele.getAracKasaTipleriListele();
+  ngOnInit() {
+    this.aracEkleFormBilgileri.getAracEklegetBilgiler().subscribe(aracbilgileri => {
 
-      /**
-       * Araç motor hacimlerini service'den çekiyoruz
-       */
-      this.arac_motor_hacimleri = this._arac_motor_hacimleri.getAracMotorHacimleriListele();
+      this.arac_markalari = aracbilgileri.contents.arac_markalari;
+      this.arac_cekis_tipleri = aracbilgileri.contents.arac_cekis_tipleri;
+      this.arac_kasa_tipleri = aracbilgileri.contents.arac_kasa_tipleri;
+      this.arac_motor_hacimleri = aracbilgileri.contents.arac_motor_hacimleri;
+      this.arac_vites_tipleri = aracbilgileri.contents.arac_vites_tipleri;
+      this.arac_yakit_tipleri = aracbilgileri.contents.arac_yakit_tipleri;
+      this.firma_subeleri = aracbilgileri.contents.firma_subeleri;
 
-      /**
-       * Araç vites tipleri service'den çekiyoruz
-       */
-      this.arac_vites_tipleri = this._arac_vites_tipleri.getAracVitesTipleriListele();
 
-      /**
-       * Araç yakit tiplerini service'den çekiyoruz
-       */
-      this.arac_yakit_turleri = this._arac_yakit_tipleri.getAracYakitTipleriListele();
 
-      /**
-       * Firma şubelerini service'den çekiyoruz
-       */
-      this.arac_baslangic_subeleri = this._firma_subeleri.getFirmaSubeleri();
 
-    }
-
-    ngOnInit() {
-
-      this._arac_markalari.getPosts().subscribe(posts => {
-        this.arac_markalari = posts.content.arac_markalari;
-      });
-
-    }
+    });
+  }
 
 
   submitAracEkleForm(aracEkleForm:NgForm){
