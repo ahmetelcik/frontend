@@ -39,93 +39,116 @@ import { AracModelListeleService } from '../../Shared/Service/AracEkleForm/Arac_
               <div class="errors-div" *ngIf="arac_plaka.errors && arac_plaka.dirty">
                 <div class="help-block" *ngIf="arac_plaka.errors.invalidNotBlankValidate">Araç Plasını Boş Bırakamazsınız</div>
               </div>
-              
             </div>
             <!-- Araç Plaka -->
 
 
             <!-- Araç Marka -->
-            <div class="form-group">
+            <div class="form-group" [class.has-error-ozel]="arac_marka.dirty && arac_marka.errors">
               <label class="control-label form-style-ozel-label">Araç Marka</label>
-              <select class="form-control form-style-ozel" name="arac_marka" [(ngModel)]="arac_model.arac_marka" (ngModelChange)="aracMarkaChangeEvent($event)">
+              <select class="form-control form-style-ozel" name="arac_marka" #arac_marka="ngModel" [(ngModel)]="arac_model.arac_marka" (ngModelChange)="aracMarkaChangeEvent($event)" notZeroValidate>
                 <option value="0">Araç Marka Seçiniz</option>
                 <option  *ngFor="let arac_marka of arac_markalari" value="{{ arac_marka.id }}">{{ arac_marka.marka_adi }}</option>
               </select>
+              <div class="errors-div" *ngIf="arac_marka.errors && arac_marka.dirty">
+                <div class="help-block" *ngIf="arac_marka.errors.invalidNotZero">Araç Markası Seçiniz</div>
+              </div>
             </div>
             <!-- Araç Marka -->
 
             <!-- Araç Modeli -->
-            <div class="form-group">
+            <div class="form-group" [class.has-error-ozel]="arac_modeli.dirty && arac_modeli.errors">
               <label class="control-label form-style-ozel-label">Araç Modeli</label>
-              <select class="form-control form-style-ozel" name="arac_modeli" [(ngModel)]="arac_model.arac_modeli" >
+              <select class="form-control form-style-ozel" name="arac_modeli" #arac_modeli="ngModel" [(ngModel)]="arac_model.arac_modeli" notZeroValidate>
                 <option value="0">Araç Modeli Seçiniz</option>
                 <option *ngFor="let arac_model of arac_modelleri" value="{{ arac_model.id }}">{{ arac_model.model_adi }}</option>
               </select>
+              <div class="errors-div" *ngIf="arac_modeli.errors && arac_modeli.dirty">
+                <div class="help-block" *ngIf="arac_modeli.errors.invalidNotZero">Araç Modeli Seçiniz</div>
+              </div>
             </div>
             <!-- Araç Modeli -->
 
             <!-- Araç Çekiş Tipi -->
-            <div class="form-group">
+            <div class="form-group" [class.has-error-ozel]="arac_cekis_tipi.dirty && arac_cekis_tipi.errors">
               <label class="control-label form-style-ozel-label">Çekiş Tipi</label>
-              <select class="form-control form-style-ozel" name="arac_cekis_tipi" [(ngModel)]="arac_model.arac_cekis_tipi" >
+              <select class="form-control form-style-ozel" name="arac_cekis_tipi" #arac_cekis_tipi="ngModel" [(ngModel)]="arac_model.arac_cekis_tipi" notZeroValidate>
                 <option value="0">Çekiş Tipi Seçiniz</option>
                 <option  *ngFor="let arac_cekis of arac_cekis_tipleri" value="{{ arac_cekis.id }}">{{ arac_cekis.cekis_adi }}</option>
               </select>
+              <div class="errors-div" *ngIf="arac_cekis_tipi.errors && arac_cekis_tipi.dirty">
+                <div class="help-block" *ngIf="arac_cekis_tipi.errors.invalidNotZero">Araç Vites Tipi Seçiniz</div>
+              </div>
             </div>
             <!-- Araç Çekiş Tipi -->
 
             <!-- Araç Kasa Tipi -->
-            <div class="form-group">
+            <div class="form-group" [class.has-error-ozel]="arac_kasa_tipi.dirty && arac_kasa_tipi.errors">
               <label class="control-label form-style-ozel-label">Kasa Tipi</label>
-              <select class="form-control form-style-ozel" name="arac_kasa_tipi" [(ngModel)]="arac_model.arac_kasa_tipi" >
+              <select class="form-control form-style-ozel" name="arac_kasa_tipi" #arac_kasa_tipi="ngModel" [(ngModel)]="arac_model.arac_kasa_tipi" notZeroValidate>
                 <option value="0">Kasa Tipi Seçiniz</option>
                 <option  *ngFor="let arac_kasa of arac_kasa_tipleri" value="{{ arac_kasa.id }}">{{ arac_kasa.kasa_tipi_adi }}</option>
               </select>
+              <div class="errors-div" *ngIf="arac_kasa_tipi.errors && arac_kasa_tipi.dirty">
+                <div class="help-block" *ngIf="arac_kasa_tipi.errors.invalidNotZero">Araç Kasa Tipi Seçiniz</div>
+              </div>
             </div>
             <!-- Araç Kasa Tipi -->
 
             <!-- Araç Motor Hacmi -->
-            <div class="form-group">
+            <div class="form-group" [class.has-error-ozel]="arac_motor_hacmi.dirty && arac_motor_hacmi.errors">
               <label class="control-label form-style-ozel-label">Motor Hacmi</label>
-              <select class="form-control form-style-ozel" name="arac_motor_hacmi" [(ngModel)]="arac_model.arac_motor_hacmi" >
+              <select class="form-control form-style-ozel" name="arac_motor_hacmi" #arac_motor_hacmi="ngModel" [(ngModel)]="arac_model.arac_motor_hacmi" notZeroValidate>
                 <option value="0">Motor Hacmi Seçiniz</option>
                 <option *ngFor="let arac_motor_hacim of arac_motor_hacimleri" [value]="arac_motor_hacim.id">{{ arac_motor_hacim.motor_hacim_adi }}</option>
               </select>
+              <div class="errors-div" *ngIf="arac_motor_hacmi.errors && arac_motor_hacmi.dirty">
+                <div class="help-block" *ngIf="arac_motor_hacmi.errors.invalidNotZero">Araç Motor Hacmi Seçiniz</div>
+              </div>
             </div>
             <!-- Araç Motor Hacmi -->
 
             <!-- Araç Vites Tipi -->
-            <div class="form-group">
+            <div class="form-group" [class.has-error-ozel]="arac_vites_tipi.dirty && arac_vites_tipi.errors">
               <label class="control-label form-style-ozel-label">Vites Tipi</label>
-              <select class="form-control form-style-ozel" name="arac_vites_turu" [(ngModel)]="arac_model.arac_vites_tipi" >
+              <select class="form-control form-style-ozel" name="arac_vites_tipi" #arac_vites_tipi="ngModel" [(ngModel)]="arac_model.arac_vites_tipi" notZeroValidate>
                 <option value="0">Vites Tipi Seçiniz</option>
                 <option *ngFor="let arac_vites of arac_vites_tipleri" [value]="arac_vites.id">{{ arac_vites.vites_tipi_adi }}</option>
               </select>
+              <div class="errors-div" *ngIf="arac_vites_tipi.errors && arac_vites_tipi.dirty">
+                <div class="help-block" *ngIf="arac_vites_tipi.errors.invalidNotZero">Araç Vites Tipi Seçiniz</div>
+              </div>
             </div>
             <!-- Araç Vites Tipi -->
 
             <!-- Araç Yakıt Tipi -->
-            <div class="form-group">
+            <div class="form-group" [class.has-error-ozel]="arac_yakit_tipi.dirty && arac_yakit_tipi.errors">
               <label class="control-label form-style-ozel-label">Yakıt Tipi</label>
-              <select class="form-control form-style-ozel" name="arac_yakit_tipi" [(ngModel)]="arac_model.arac_yakit_tipi" >
+              <select class="form-control form-style-ozel" name="arac_yakit_tipi" #arac_yakit_tipi="ngModel" [(ngModel)]="arac_model.arac_yakit_tipi" notZeroValidate>
                 <option value="0">Yakit Tipi Seçiniz</option>
                 <option *ngFor="let arac_yakit of arac_yakit_tipleri" [value]="arac_yakit.id">{{ arac_yakit.yakit_tipi_adi }}</option>
               </select>
+              <div class="errors-div" *ngIf="arac_yakit_tipi.errors && arac_yakit_tipi.dirty">
+                <div class="help-block" *ngIf="arac_yakit_tipi.errors.invalidNotZero">Araç Yakıt Tipi Seçiniz</div>
+              </div>
             </div>
             <!-- Araç Yakıt Tipi -->
 
             <!-- Araç Başlangıç Şube -->
-            <div class="form-group">
+            <div class="form-group" [class.has-error-ozel]="arac_baslangic_sube.dirty && arac_baslangic_sube.errors">
               <label class="control-label form-style-ozel-label">Başlangıç Şube</label>
-              <select class="form-control form-style-ozel" name="arac_baslangic_sube" [(ngModel)]="arac_model.arac_baslangic_sube" >
+              <select class="form-control form-style-ozel" name="arac_baslangic_sube" #arac_baslangic_sube="ngModel" [(ngModel)]="arac_model.arac_baslangic_sube" notZeroValidate>
                 <option value="0">Başlangıç Şube Seçiniz</option>
                 <option *ngFor="let sube of firma_subeleri" [value]="sube.id">{{ sube.sube_adi }}</option>
               </select>
+              <div class="errors-div" *ngIf="arac_baslangic_sube.errors && arac_baslangic_sube.dirty">
+                <div class="help-block" *ngIf="arac_baslangic_sube.errors.invalidNotZero">Araç Başlangıç Şubesini Seçiniz</div>
+              </div>
             </div>
             <!-- Araç Başlangıç Şube -->
 
             <!-- Araç Kilometresi -->
-            <div class="form-group">
+            <div class="form-group" [class.has-error-ozel]="arac_kilometre.dirty && arac_kilometre.errors">
               <label for="arac_kilometresiLabel" class="control-label form-style-ozel-label">Kilometre</label>
               <input
                 type="text"
@@ -133,15 +156,21 @@ import { AracModelListeleService } from '../../Shared/Service/AracEkleForm/Arac_
                 id="arac_kilometresiLabel"
                 placeholder="Araç Kilometresi"
                 name="arac_kilometresi"
-                [(ngModel)]="arac_model.arac_kilometre">
+                #arac_kilometre="ngModel"
+                [(ngModel)]="arac_model.arac_kilometre"
+                NotBlankValidate
+                >
             </div>
+             <div class="errors-div" *ngIf="arac_kilometre.errors && arac_kilometre.dirty">
+                <div class="help-block" *ngIf="arac_kilometre.errors.invalidNotBlankValidate">Araç Kilometresini Boş Bırakamazsınız</div>
+              </div>
             <!-- Araç Kilometresi -->  
         </div>
         <!-- Panel Body -->
         <!-- Panel Footer -->
         <div class="panel-footer">
           <div class="panel-footer-right-block">
-              <button class="btn btn-success-ozel btn-lg"><i class="fa fa-cloud-upload"></i> Kaydet</button>
+              <button class="btn btn-success-ozel btn-lg" [class.disabled]="aracEkleForm.invalid"><i class="fa fa-cloud-upload"></i> Kaydet</button>
           </div>
           <div class="clearfix"></div>
         </div>
@@ -150,6 +179,7 @@ import { AracModelListeleService } from '../../Shared/Service/AracEkleForm/Arac_
       <!-- Panel -->
       </form>
       
+    
       <pre>
       {{ arac_model | json }}
 </pre>
@@ -201,8 +231,8 @@ export class AracEkleFormComponent implements OnInit {
       this.aracModelleriGetir.getAracModelListele(marka_id).subscribe(arac_modelleri => {
         this.arac_modelleri = arac_modelleri.contents.arac_modelleri;
 
-        // Araç modelinin içinden arac_modeli'ni değiştiriyoruz
-        this.arac_model.arac_modeli = this.arac_modelleri[0].id;
+        // // Araç modelinin içinden arac_modeli'ni değiştiriyoruz
+        // this.arac_model.arac_modeli = this.arac_modelleri[0].id;
       });
 
 
@@ -214,6 +244,12 @@ export class AracEkleFormComponent implements OnInit {
 
   /** Araç Ekleme **/
   submitAracEkleForm(aracEkleForm:NgForm){
-      console.log(aracEkleForm);
+      console.log(aracEkleForm.valid);
+
+      if(aracEkleForm.valid == true){
+        console.log("veri ekle");
+      }else{
+        console.log(aracEkleForm);
+      }
   }
 }
