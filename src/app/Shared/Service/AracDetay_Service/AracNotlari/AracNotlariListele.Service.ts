@@ -16,7 +16,7 @@ export class AracNotlariListeleService {
   }
 
 
-  getAracDetay(): Promise<any> {
+  getAracNotlari(): Promise<any> {
     return this.http.get(this._url)
       .map(res => res.json())
       .toPromise();

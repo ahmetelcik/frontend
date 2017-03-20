@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import 'rxjs/add/operator/map';
 /** Service **/
 import { AracDetayService } from '../../Shared/Service/AracDetay_Service/AracDetay.Service';
-
 @Component({
     selector: 'app-arac-detay-goster-component',
     template: `
