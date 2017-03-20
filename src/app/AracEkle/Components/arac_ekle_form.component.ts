@@ -178,11 +178,6 @@ import { AracModelListeleService } from '../../Shared/Service/AracEkleForm/Arac_
       </div>
       <!-- Panel -->
       </form>
-      
-    
-      <pre>
-      {{ arac_model | json }}
-</pre>
 `
 })
 export class AracEkleFormComponent implements OnInit {
