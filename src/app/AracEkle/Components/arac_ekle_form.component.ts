@@ -10,7 +10,7 @@ import { AracModelListeleService } from '../../Shared/Service/AracEkleForm/Arac_
     selector: 'app_arac_ekle_form_component',
     template: `
 <!-- Panel -->
-<form #aracEkleForm="ngForm" (submit)="submitAracEkleForm(aracEkleForm)" novalidate>
+<form #aracEkleForm="ngForm"  novalidate>
       <div class="panel panel-light">
         <!-- Panel Heading -->
         <div class="panel-heading">
@@ -244,12 +244,9 @@ export class AracEkleFormComponent implements OnInit {
 
   /** Araç Ekleme **/
   submitAracEkleForm(aracEkleForm:NgForm){
-      console.log(aracEkleForm.valid);
-
       if(aracEkleForm.valid == true){
+        /** Form Başarılı **/
         console.log("veri ekle");
-      }else{
-        console.log(aracEkleForm);
       }
   }
 }
