@@ -33,12 +33,13 @@ import { KiralamaDetayComponent } from './KiralamaDetay/kiralama-detay.component
 import { GiderListeleComponent } from './Giderler/gider-listele.component';
 import { GiderDetayComponent } from './GiderDetay/gider-detay.component';
 import { AracEkleComponent } from './AracEkle/arac-ekle.component';
-
+import { AracDetayGosterComponent } from './AracDetay/Components/arac_detay.component';
 /** Services */
 import { AracEkleFormGetBilgilerService} from './Shared/Service/AracEkleForm/AracEkleForm_getBilgiler.service';
 
 import { AracEkleFormComponent } from './AracEkle/Components/arac_ekle_form.component';
 import { AracModelListeleService } from './Shared/Service/AracEkleForm/Arac_model_listele.service';
+import { AracDetayService } from './Shared/Service/AracDetay_Service/AracDetay.Service';
 /** Services **/
 
 import { Ng2Validator } from './Shared/ng2_Validator/';
@@ -67,7 +68,8 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
     GiderListeleComponent,
     GiderDetayComponent,
     AracEkleComponent,
-    AracEkleFormComponent
+    AracEkleFormComponent,
+    AracDetayGosterComponent,
   ],
   imports: [
     BrowserModule,
@@ -87,7 +89,8 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
   providers: [
     MusteriNotlariService,
     AracEkleFormGetBilgilerService,
-    AracModelListeleService
+    AracModelListeleService,
+    AracDetayService,
   ],
   bootstrap: [AppComponent]
 })

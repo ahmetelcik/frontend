@@ -5,11 +5,11 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/toPromise';
 
 @Injectable()
-export class AracDetayService {
+export class AracNotlariListeleService {
 
   private arac_detay;
 
-  private _url = "/app/Shared/Service/AracDetay_Service/arac_detay.json";
+  private _url = "/app/Shared/Service/AracDetay_Service/AracNotlari/notlar.json";
 
   public constructor(private http: Http){
 
