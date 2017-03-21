@@ -25,6 +25,7 @@ export class AracNotlariListeleComponent implements OnInit {
 
   private arac_notlari = [];
 
+  private sanane;
   constructor(private arac_notlari_service: AracNotlariListeleService) { }
 
   ngOnInit() {
