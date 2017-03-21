@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import 'rxjs/add/operator/map';
 /** Service **/
 import { AracDetayService } from '../../Shared/Service/AracDetay_Service/AracDetay.Service';
@@ -10,7 +10,7 @@ import { AracDetayService } from '../../Shared/Service/AracDetay_Service/AracDet
         <div class="panel-heading">
           <!-- Panel Left Block -->
           <div class="panel-heading-left-block">
-            <span> Araç Detay</span>
+            <span> Araç Detays </span>
           </div>
           <!-- Panel Heading Left Block -->
         </div>
@@ -25,7 +25,7 @@ import { AracDetayService } from '../../Shared/Service/AracDetay_Service/AracDet
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <span> {{ arac_detay?.arac_plaka }}</span>
+              <span> 2 </span>
             </div>
           </div>
 
@@ -37,7 +37,7 @@ import { AracDetayService } from '../../Shared/Service/AracDetay_Service/AracDet
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <span>{{ arac_detay.arac_marka?.marka_adi }}</span>
+              <span> 1 </span>
             </div>
           </div>
           <div class="row musteri-detay-list-row-block">
@@ -48,7 +48,7 @@ import { AracDetayService } from '../../Shared/Service/AracDetay_Service/AracDet
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <span>{{ arac_detay.arac_modeli?.model_adi }}</span>
+              <span> 2 </span>
             </div>
           </div>
           <div class="row musteri-detay-list-row-block">
@@ -59,7 +59,7 @@ import { AracDetayService } from '../../Shared/Service/AracDetay_Service/AracDet
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <span>{{ arac_detay.arac_yakit_tipi?.yakit_tipi_adi }}</span>
+              <span>asd </span>
             </div>
           </div>
           <div class="row musteri-detay-list-row-block">
@@ -70,7 +70,7 @@ import { AracDetayService } from '../../Shared/Service/AracDetay_Service/AracDet
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <span>{{ arac_detay.arac_cekis_tipi?.cekis_tipi_adi }}</span>
+              <span> sds </span>
             </div>
           </div>
           <div class="row musteri-detay-list-row-block">
@@ -81,7 +81,7 @@ import { AracDetayService } from '../../Shared/Service/AracDetay_Service/AracDet
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <span>{{ arac_detay.arac_kasa_tipi?.kasa_tipi_adi }}</span>
+              <span> asdasd </span>
             </div>
           </div>
           <div class="row musteri-detay-list-row-block">
@@ -92,7 +92,7 @@ import { AracDetayService } from '../../Shared/Service/AracDetay_Service/AracDet
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <span>{{ arac_detay.arac_motor_hacmi?.motor_hacmi_adi }}</span>
+              <span>21313</span>
             </div>
           </div>
           <div class="row musteri-detay-list-row-block">
@@ -103,7 +103,7 @@ import { AracDetayService } from '../../Shared/Service/AracDetay_Service/AracDet
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <span>{{ arac_detay.arac_vites_tipi?.vites_tipi_adi }}</span>
+              <span>44</span>
             </div>
           </div>
 
@@ -115,7 +115,7 @@ import { AracDetayService } from '../../Shared/Service/AracDetay_Service/AracDet
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <span>{{ arac_detay?.arac_kilometresi }}</span>
+              <span>asdad</span>
             </div>
           </div>
 
@@ -124,14 +124,14 @@ import { AracDetayService } from '../../Shared/Service/AracDetay_Service/AracDet
           <!-- Panel Footer Left Block -->
           <div class="panel-footer-left-block">
             <div class="panel-footer-ekleyen-kullanici-block">
-              <span>Ekleyen Kullanıcı : <a href="#" class="link-blue-hover">{{ arac_detay.ekleyen_kullanici?.adi_soyadi }}</a></span>
+              <span>Ekleyen Kullanıcı : <a href="#" class="link-blue-hover">xxx</a></span>
             </div>
           </div>
           <!-- Panel Footer Left Block -->
           <!-- Panel Footer Right Block -->
           <div class="panel-footer-right-block">
             <div class="panel-footer-olusturulma-tarihi-block">
-              <span>Oluşturulma Tarihi : {{ arac_detay?.arac_olusturulma_tarihi }}</span>
+              <span>Oluşturulma Tarihi : xx</span>
             </div>
           </div>
           <!-- Panel Footer Right Block -->
@@ -142,18 +142,19 @@ import { AracDetayService } from '../../Shared/Service/AracDetay_Service/AracDet
 })
 export class AracDetayGosterComponent implements OnInit {
 
-  arac_detay = {};
 
-  constructor(public arac_detay_service: AracDetayService) {
+  @Input('AracDetayInput') AracDetayInput;
+
+
+  constructor() {
 
   }
 
   ngOnInit() {
 
-    this.arac_detay_service.getAracDetay()
-      .then(arac_detay => {
-        this.arac_detay = arac_detay.contents.arac_detay;
-      });
+
+
+
 
   }
 
