@@ -142,20 +142,15 @@ import { AracDetayService } from '../../Shared/Service/AracDetay_Service/AracDet
 })
 export class AracDetayGosterComponent implements OnInit {
 
-
-  @Input('AracDetayInput') AracDetayInput;
-
+  @Input('aracDetayInput') aracDetayInput;
 
   constructor() {
+
 
   }
 
   ngOnInit() {
-
-
-
-
-
+    console.log(this.aracDetayInput);
   }
 
 }

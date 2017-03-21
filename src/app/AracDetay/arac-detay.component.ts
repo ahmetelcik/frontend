@@ -18,19 +18,24 @@ export class AracDetayComponent implements OnInit {
 
 
 
+  public ahmet = {
+    "id" : 5,
+    "adi" : "ahmet elçik"
+  };
+
   constructor(private arac_detay_service: AracDetayService) {
 
   }
+
+
 
   ngOnInit() {
 
     this.arac_detay_service.getAracDetay()
       .then(arac_detay => {
-
         this.arac_detay = arac_detay.contents.arac_detay;
       });
-
-
   }
+
 
 }
