@@ -13,9 +13,7 @@ export class AracDetayComponent implements OnInit {
   constructor() {
 
   }
-
-
-
+  
 
   ngOnInit() {
   }
