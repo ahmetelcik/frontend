@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { AracNotlariListeleService } from '../../Shared/Service/AracDetay_Service/AracNotlari/AracNotlariListele.Service'
+import { AracNotlariListeleService } from '../../Shared/Service/AracDetay_Service/AracNotlari/AracNotlariListele.Service';
 @Component({
     selector: 'app-arac-detay-arac-notlari-listele',
     template: `
@@ -25,7 +25,7 @@ export class AracNotlariListeleComponent implements OnInit {
 
   private arac_notlari = [];
 
-  constructor(private arac_notlari_service : AracNotlariListeleService) { }
+  constructor(private arac_notlari_service: AracNotlariListeleService) { }
 
   ngOnInit() {
 
