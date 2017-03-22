@@ -35,11 +35,9 @@ import { GiderDetayComponent } from './GiderDetay/gider-detay.component';
 import { AracEkleComponent } from './AracEkle/arac-ekle.component';
 import { AracDetayGosterComponent } from './AracDetay/Components/arac_detay.component';
 import { AracNotlariListeleComponent } from './AracDetay/Components/Arac_notlari_listele.component';
+import { AracEkleFormComponent } from './AracEkle/Components/arac_ekle_form.component';
 /** Services */
 import { AracEkleFormGetBilgilerService} from './Shared/Service/AracEkleForm/AracEkleForm_getBilgiler.service';
-import { AracEkleFormComponent } from './AracEkle/Components/arac_ekle_form.component';
-import { AracModelListeleService } from './Shared/Service/AracEkleForm/Arac_model_listele.service';
-
 
 /** Services **/
 
@@ -91,7 +89,6 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
   providers: [
     MusteriNotlariService,
     AracEkleFormGetBilgilerService,
-    AracModelListeleService,
   ],
   bootstrap: [AppComponent]
 })

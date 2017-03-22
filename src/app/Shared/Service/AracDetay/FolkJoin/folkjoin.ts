@@ -3,19 +3,20 @@ import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/forkJoin';
 import 'rxjs/operator/map';
-
+import { AracDetayService } from '../AracDetay.Service';
+import { AracNotListeleService } from '../../AracNotlari/AracNotlariListele.Service';
 @Injectable()
-export class NotListeleService {
+export class FolkJoin {
 
 
-  public constructor(private http: Http){
+  public constructor(private http: Http,private _arac_detay_service: AracDetayService,private _arac_notlari_listele_service: AracNotListeleService){
 
   }
 
-  getBooksAndMovies() {
+  getAll() {
     return Observable.forkJoin(
-      this.http.get('/app/Shared/Service/AracDetay_Service/arac_detay.json').map((res: Response) => res.json()),
-      this.http.get('/app/Shared/Service/AracDetay_Service/AracNotlari/notlar.json').map((res: Response) => res.json())
+      this._arac_detay_service.getAracDetay(),
+      this._arac_notlari_listele_service.getNotListele()
     );
   }
 

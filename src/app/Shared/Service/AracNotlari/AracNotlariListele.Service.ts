@@ -10,7 +10,6 @@ export class AracNotListeleService {
   private _url = "/app/Shared/Service//AracNotlari/notlar.json";
 
   public constructor(private http: Http){
-
   }
 
   public getNotListele(){
