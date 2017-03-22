@@ -3,7 +3,7 @@ import { Http, Response } from '@angular/http';
 import 'rxjs/operator/map';
 
 @Injectable()
-export class AracMarkalariListeleService {
+export class AracVitesTipleriListeleService {
 
   protected _url = "/app/Shared/Service/AracVitesTipleriListele/vites_tipleri.json";
 

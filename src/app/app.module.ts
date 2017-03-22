@@ -43,7 +43,7 @@ import { AracMarkalariListeleService } from './Shared/Service/AracMarkalariListe
 import { AracCekisTipleriListeleService } from './Shared/Service/AracCekisTipleriListele/AracCekisTipleriListele.Service';
 import { AracKasaTipleriListeleService } from './Shared/Service/AracKasaTipleriListele/AracKasaTipleriListele.Service';
 import { AracMotorHacimleriListeleService } from './Shared/Service/AracMotorHacimleriListele/AracMotorHacimleriListele.Service';
-import { AracMarkalariListeleService } from './Shared/Service/AracVitesTipleriListele/AracVitesTipleriListele.Service';
+import { AracVitesTipleriListeleService } from './Shared/Service/AracVitesTipleriListele/AracVitesTipleriListele.Service';
 /** Services **/
 
 import { Ng2Validator } from './Shared/ng2_Validator/';
