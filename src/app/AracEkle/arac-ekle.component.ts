@@ -29,21 +29,33 @@ export class AracEkleComponent implements OnInit {
     private _arac_yakit_tipleri_service:AracYakitTipleriListeleService,
     private _firma_subeleri_service:FirmaSubeleriListeleService,
   ){
+    console.log("cost");
   }
 
   ngOnInit() {
 
     var array = [
-      this._arac_markalari_service,
-      this._arac_cekis_tipleri_service,
-      this._arac_kasa_tipleri_service,
-      this._arac_motor_hacimleri_service,
-      this._arac_vites_tipleri_service,
-      this._arac_yakit_tipleri_service,
-      this._firma_subeleri_service,
+      this._arac_markalari_service.getAracMarkalariListele(),
+      this._arac_cekis_tipleri_service.getAracCekisTipleriListele(),
+      this._arac_kasa_tipleri_service.getAracKasaTipleriListele(),
+      this._arac_motor_hacimleri_service.getAracMotorHacimleriListele(),
+      this._arac_vites_tipleri_service.getAracVitesTipleriListele(),
+      this._arac_yakit_tipleri_service.getAracYakitTipleriListele(),
+      this._firma_subeleri_service.getFirmaSubeleriListele(),
     ];
 
     var ls = new FolkJoins(array);
+
+
+    ls.getAll().subscribe(
+      data => {
+       console.log(data);
+      }
+    );
+
+
+    //
+    // console.log("deneme");
 
     //
     // this._demoService.getBooksAndMovies().subscribe(

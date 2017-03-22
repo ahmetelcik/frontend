@@ -1,26 +1,49 @@
-import { Injectable, } from '@angular/core';
+// import { Injectable, } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/forkJoin';
-import 'rxjs/operator/map';
+//
+//
+// export class FolkJoins {
+//
+//   private AllServices = [];
+//
+//   public constructor(services){
+//     this.AllServices = services;
+//   }
+//
+//   getAll() {
+//
+//     if(this.AllServices){
+//       console.log(this.AllServices);
+//     }
+//     // return Observable.forkJoin(
+//     //   this._arac_detay_service.getAracDetay(),
+//     //   this._arac_notlari_listele_service.getNotListele()
+//     // );
+//   }
+//
+//
+//
+//
+// }
+
 
 export class FolkJoins {
 
-  private AllServices = [];
+  private allServices;
 
-  public constructor(services){
-    this.AllServices = services;
-    console.log(this.AllServices);
-    console.log("ahmet");
+  constructor(services){
+    this.allServices = services;
+
+    // console.log(this.allServices);
   }
 
-  // getAll() {
-  //   return Observable.forkJoin(
-  //     this._arac_detay_service.getAracDetay(),
-  //     this._arac_notlari_listele_service.getNotListele()
-  //   );
-  // }
-
+  getAll() {
+    return Observable.forkJoin(
+      this.allServices
+    );
+  }
 
 
 

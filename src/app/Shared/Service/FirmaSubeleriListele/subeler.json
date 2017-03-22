@@ -5,22 +5,18 @@
     "http_message" : "Başarıyla Listelendi"
   },
   "contents" : {
-    "arac_yakit_tipleri" : [
+    "firma_subeleri" : [
       {
         "id" : 1,
-        "yakit_tipi_adi" : "Benzin"
+        "sube_adi" : "Antalya Manavgat Şube"
       },
       {
-        "id" : 2,
-        "yakit_tipi_adi" : "Benzin & LPG"
+        "id": 2,
+        "sube_adi" : "Denizli Çınar Şube"
       },
       {
-        "id" : 3,
-        "yakit_tipi_adi" : "Dizel"
-      },
-      {
-        "id" : 4,
-        "yakit_tipi_adi" : "Hybrid"
+        "id": 3,
+        "sube_adi" : "İstanbul Sabiha Gökçen Havalimanı"
       }
     ]
   }
