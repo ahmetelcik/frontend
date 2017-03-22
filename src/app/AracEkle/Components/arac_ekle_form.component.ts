@@ -3,9 +3,6 @@ import { NgForm } from '@angular/forms';
 
 import { AracModel } from '../Model/arac-ekle.model';
 
-
-import { AracEkleFormGetBilgilerService } from '../../Shared/Service/AracEkleForm/AracEkleForm_getBilgiler.service';
-import { AracModelListeleService } from '../../Shared/Service/AracEkleForm/Arac_model_listele.service';
 @Component({
     selector: 'app_arac_ekle_form_component',
     template: `
