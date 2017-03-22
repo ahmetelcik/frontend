@@ -11,7 +11,7 @@ export class AracVitesTipleriListeleService {
 
   }
 
-  public getAracVitesTipleri(){
+  public getAracVitesTipleriListele(){
     return this.http.get(this._url)
       .map((res:Response) => res.json());
   }

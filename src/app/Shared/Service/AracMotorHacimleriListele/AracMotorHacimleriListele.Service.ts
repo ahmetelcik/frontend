@@ -11,7 +11,7 @@ export class AracMotorHacimleriListeleService {
 
   }
 
-  public getAracMarkalariListele(){
+  public getAracMotorHacimleriListele(){
     return this.http.get(this._url)
       .map((res:Response) => res.json());
   }

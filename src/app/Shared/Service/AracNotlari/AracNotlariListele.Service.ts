@@ -12,7 +12,7 @@ export class AracNotListeleService {
   public constructor(private http: Http){
   }
 
-  public getNotListele(){
+  public getAracNotlariListele(){
     return this.http.get(this._url)
       .map((res:Response) => res.json());
   }
