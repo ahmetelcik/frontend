@@ -1,0 +1,23 @@
+{
+  "http" : {
+    "success" : true,
+    "http_code" : 200,
+    "http_message" : "Başarıyla Listelendi"
+  },
+  "contents" : {
+    "arac_vites_tipleri" : [
+      {
+        "id" : 1,
+        "vites_tipi_adi" : "Manuel"
+      },
+      {
+        "id" : 2,
+        "vites_tipi_adi" : "Yarı Otomatik"
+      },
+      {
+        "id" : 3,
+        "vites_tipi_adi" : "Otomatik"
+      }
+    ]
+  }
+}
