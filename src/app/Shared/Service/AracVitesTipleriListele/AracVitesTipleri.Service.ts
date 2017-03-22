@@ -8,7 +8,6 @@ export class AracVitesTipleriListeleService {
   protected _url = "/app/Shared/Service/AracVitesTipleriListele/vites_tipleri.json";
 
   constructor(private http :Http) {
-
   }
 
   public getAracVitesTipleriListele(){

@@ -3,14 +3,15 @@ import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/forkJoin';
 import 'rxjs/operator/map';
-import { AracDetayService } from '../AracDetay.Service';
-import { AracNotListeleService } from '../../AracNotlari/AracNotlariListele.Service';
-@Injectable()
-export class FolkJoin {
 
+export class FolkJoins {
 
-  public constructor(private http: Http,private _arac_detay_service: AracDetayService,private _arac_notlari_listele_service: AracNotListeleService){
+  private AllServices = [];
 
+  public constructor(services){
+    this.AllServices = services;
+    console.log(this.AllServices);
+    console.log("ahmet");
   }
 
   // getAll() {
