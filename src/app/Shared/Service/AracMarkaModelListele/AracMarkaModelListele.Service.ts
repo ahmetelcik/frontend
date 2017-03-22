@@ -16,7 +16,7 @@ export class AracMarkaModelListeleService {
       .map((res:Response) => res.json());
   }
 
-  public getAracMarkaModelListeleID(marka_id){
+  public getAracMarkaModelListeleID(marka_id:number){
     return this.http.get(this._url)
       .map((res: Response) => res.json());
   }
