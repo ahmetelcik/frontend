@@ -20,6 +20,7 @@ import { FolkJoins } from '../Shared/Service/FolkJoins/FolkJoins';
 })
 export class AracEkleComponent implements OnInit {
 
+  private data;
   constructor(
     private _arac_markalari_service: AracMarkalariListeleService,
     private _arac_cekis_tipleri_service: AracCekisTipleriListeleService,
@@ -34,7 +35,7 @@ export class AracEkleComponent implements OnInit {
 
   ngOnInit() {
 
-    var array = [
+    let arrayServices = [
       this._arac_markalari_service.getAracMarkalariListele(),
       this._arac_cekis_tipleri_service.getAracCekisTipleriListele(),
       this._arac_kasa_tipleri_service.getAracKasaTipleriListele(),
@@ -44,10 +45,8 @@ export class AracEkleComponent implements OnInit {
       this._firma_subeleri_service.getFirmaSubeleriListele(),
     ];
 
-    var ls = new FolkJoins(array);
-
-
-    ls.getAll().subscribe(
+    this.data = new FolkJoins(arrayServices);
+    this.data.getAll().subscribe(
       data => {
        console.log(data);
       }

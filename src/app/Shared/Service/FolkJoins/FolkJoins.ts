@@ -36,7 +36,6 @@ export class FolkJoins {
   constructor(services){
     this.allServices = services;
 
-    // console.log(this.allServices);
   }
 
   getAll() {
