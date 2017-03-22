@@ -3,15 +3,15 @@ import { Http, Response } from '@angular/http';
 import 'rxjs/operator/map';
 
 @Injectable()
-export class AracMarkalariListeleService {
+export class AracCekisTipleriListeleService {
 
-  protected _url = "/app/Shared/Service/AracMarkalariListele/markalar.json";
+  protected _url = "/app/Shared/Service/AracCekisTipleriListele/cekis_tipleri.json";
 
   constructor(private http :Http) {
 
   }
 
-  public getAracMarkalariListele(){
+  public getCekisTipleriListele(){
     return this.http.get(this._url)
       .map((res:Response) => res.json());
   }

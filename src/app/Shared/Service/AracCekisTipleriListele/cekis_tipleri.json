@@ -1,0 +1,23 @@
+{
+  "http" : {
+    "success" : true,
+    "http_code" : 200,
+    "http_message" : "Başarıyla Listelendi"
+  },
+  "contents" : {
+    "arac_cekis_tipleri" : [
+      {
+        "id" : 1,
+        "cekis_adi" : "4WD (Sürekli)"
+      },
+      {
+        "id" : 2,
+        "cekis_adi" : "Arkadan İtiş"
+      },
+      {
+        "id" : 3,
+        "cekis_adi" : "Önden Çekiş"
+      }
+    ]
+  }
+}
