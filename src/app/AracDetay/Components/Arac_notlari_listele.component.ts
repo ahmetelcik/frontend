@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { AracNotlariListeleService } from '../../Shared/Service/AracDetay_Service/AracNotlari/AracNotlariListele.Service';
+
 @Component({
     selector: 'app-arac-detay-arac-notlari-listele',
     template: `
@@ -26,14 +26,14 @@ export class AracNotlariListeleComponent implements OnInit {
   private arac_notlari = [];
 
 
-  constructor(private arac_notlari_service: AracNotlariListeleService) { }
+  constructor() { }
 
   ngOnInit() {
 
-    this.arac_notlari_service.getAracNotlari()
-      .then(arac_notlari => {
-        this.arac_notlari = arac_notlari.contents.arac_notlari;
-      });
+    // this.arac_notlari_service.getAracNotlari()
+    //   .then(arac_notlari => {
+    //     this.arac_notlari = arac_notlari.contents.arac_notlari;
+    //   });
 
   }
 

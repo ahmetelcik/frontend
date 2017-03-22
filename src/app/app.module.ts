@@ -39,8 +39,8 @@ import { AracNotlariListeleComponent } from './AracDetay/Components/Arac_notlari
 import { AracEkleFormGetBilgilerService} from './Shared/Service/AracEkleForm/AracEkleForm_getBilgiler.service';
 import { AracEkleFormComponent } from './AracEkle/Components/arac_ekle_form.component';
 import { AracModelListeleService } from './Shared/Service/AracEkleForm/Arac_model_listele.service';
-import { AracDetayService } from './Shared/Service/AracDetay_Service/AracDetay.Service';
-import { AracNotlariListeleService } from './Shared/Service/AracDetay_Service/AracNotlari/AracNotlariListele.Service';
+
+
 /** Services **/
 
 import { Ng2Validator } from './Shared/ng2_Validator/';
@@ -92,8 +92,6 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
     MusteriNotlariService,
     AracEkleFormGetBilgilerService,
     AracModelListeleService,
-    AracDetayService,
-    AracNotlariListeleService,
   ],
   bootstrap: [AppComponent]
 })

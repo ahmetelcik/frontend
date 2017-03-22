@@ -6,6 +6,9 @@ import { AracDetayService } from '../../Shared/Service/AracDetay_Service/AracDet
     selector: 'app-arac-detay-goster-component',
     template: `
 <div class="panel panel-light">
+  <div *ngIf="aracDetayInput">
+    <!--{{ aracDetayInput | json }}-->
+  </div>
         <!-- Panel Heading -->
         <div class="panel-heading">
           <!-- Panel Left Block -->
@@ -144,13 +147,15 @@ export class AracDetayGosterComponent implements OnInit {
 
   @Input('aracDetayInput') aracDetayInput;
 
+  public arac_detay;
+
   constructor() {
 
 
   }
 
   ngOnInit() {
-    console.log(this.aracDetayInput);
+    // console.log(this.aracDetayInput);
   }
 
 }
