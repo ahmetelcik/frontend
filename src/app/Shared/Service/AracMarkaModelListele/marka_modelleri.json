@@ -5,18 +5,22 @@
     "http_message" : "Başarıyla Listelendi"
   },
   "contents" : {
-    "arac_cekis_tipleri" : [
+    "arac_marka_modelleri" : [
       {
         "id" : 1,
-        "cekis_tipi_adi" : "4WD (Sürekli)"
+        "model_adi" : "Bmw 1 Serisi"
       },
       {
         "id" : 2,
-        "cekis_tipi_adi" : "Arkadan İtiş"
+        "model_adi" : "Bmw 3 Serisi"
       },
       {
         "id" : 3,
-        "cekis_tipi_adi" : "Önden Çekiş"
+        "model_adi" : "Bmw 5 Serisi"
+      },
+      {
+        "id" : 4,
+        "model_adi" : "Bmw 7 Serisi"
       }
     ]
   }

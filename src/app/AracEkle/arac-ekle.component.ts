@@ -20,7 +20,14 @@ import { FolkJoins } from '../Shared/Service/FolkJoins/FolkJoins';
 })
 export class AracEkleComponent implements OnInit {
 
-  private data;
+  arac_markalari:any;
+  arac_cekis_tipleri:any;
+  arac_kasa_tipleri:any;
+  arac_motor_hacimleri: any;
+  arac_vites_tipleri: any;
+  arac_yakit_tipleri: any;
+  firma_subeleri: any;
+
   constructor(
     private _arac_markalari_service: AracMarkalariListeleService,
     private _arac_cekis_tipleri_service: AracCekisTipleriListeleService,
@@ -30,7 +37,7 @@ export class AracEkleComponent implements OnInit {
     private _arac_yakit_tipleri_service:AracYakitTipleriListeleService,
     private _firma_subeleri_service:FirmaSubeleriListeleService,
   ){
-    console.log("cost");
+
   }
 
   ngOnInit() {
@@ -45,26 +52,24 @@ export class AracEkleComponent implements OnInit {
       this._firma_subeleri_service.getFirmaSubeleriListele(),
     ];
 
-    this.data = new FolkJoins(arrayServices);
-    this.data.getAll().subscribe(
-      data => {
-       console.log(data);
+    var arrayFolksJoins = new FolkJoins(arrayServices);
+
+    arrayFolksJoins.getAll().subscribe(
+      data=> {
+        this.arac_markalari = data["0"].contents.arac_markalari;
+        this.arac_cekis_tipleri = data["1"].contents.arac_cekis_tipleri;
+        this.arac_kasa_tipleri = data["2"].contents.arac_kasa_tipleri;
+        this.arac_motor_hacimleri = data["3"].contents.arac_motor_hacimleri;
+        this.arac_vites_tipleri = data["4"].contents.arac_vites_tipleri;
+        this.arac_yakit_tipleri = data["5"].contents.arac_yakit_tipleri;
+        this.firma_subeleri = data["6"].contents.firma_subeleri;
       }
     );
 
 
-    //
-    // console.log("deneme");
 
-    //
-    // this._demoService.getBooksAndMovies().subscribe(
-    //   data => {
-    //     this.books = data[0]
-    //     this.movies = data[1]
-    //   }
-    //   // No error or completion callbacks here. They are optional, but
-    //   // you will get console errors if the Observable is in an error state.
-    // );
+
+
 
   }
 }

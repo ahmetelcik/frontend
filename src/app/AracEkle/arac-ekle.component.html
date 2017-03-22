@@ -25,7 +25,16 @@
   <!-- Araç Ekle -->
   <div class="row">
     <div class="col-md-12">
-      <app_arac_ekle_form_component></app_arac_ekle_form_component>
+
+      <app_arac_ekle_form_component
+        [AracMarkalari]="arac_markalari"
+        [AraCekisTipleri]="arac_cekis_tipleri"
+        [AracKasaTipleri]="arac_kasa_tipleri"
+        [AracMotorHacimleri]="arac_motor_hacimleri"
+        [AracVitesTipleri]="arac_vites_tipleri"
+        [AracYakitTipleri]="arac_yakit_tipleri"
+        [FirmaSubeleri]="firma_subeleri"
+      ></app_arac_ekle_form_component>
     </div>
   </div>
   <!-- Araç Ekle -->
