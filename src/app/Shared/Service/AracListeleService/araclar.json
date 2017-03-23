@@ -1,0 +1,14 @@
+{
+  "http" : {
+    "success" : true,
+    "http_code" : 200,
+    "http_message" : "Başarıyla Listelendi"
+  },
+  "contents" : {
+    "araclar" : [
+      {
+        "id" : 1
+      }
+    ]
+  }
+}
