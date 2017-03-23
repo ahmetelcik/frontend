@@ -52,6 +52,53 @@
           "id" : 12,
           "firma_adi" : "Bulut Rent A"
         }
+      },
+      {
+        "id" : 3,
+        "arac_plaka" : "35 D 8897",
+        "arac_marka" : {
+          "id" : 7,
+          "marka_adi" : "Audi"
+        },
+        "arac_modeli" : {
+          "id" : 8,
+          "model_adi" : "A4"
+        },
+        "arac_cekis_tipi" :  {
+          "id" : 12,
+          "cekis_tipi_adi" : "Arkadan İtiş"
+        },
+        "arac_kasa_tipi" : {
+          "id" : 5,
+          "kasa_tipi_adi" : "Sedan"
+        },
+        "arac_motor_hacmi" : {
+          "id" : 2,
+          "motor_hacmi_adi" : "1801 - 2001"
+        },
+        "arac_vites_tipi" : {
+          "id" : 12,
+          "vites_tipi_adi" : "Otomatik"
+        },
+        "arac_yakit_tipi" : {
+          "id" : 14,
+          "yakit_tipi_adi" : "Benzin"
+        },
+        "ekleyen_kullanici" : {
+          "id" : 125,
+          "adi_soyadi" : "Ahmet Elçik"
+        },
+        "arac_baslangic_sube" : {
+          "id" : 5,
+          "sube_adi" : "İzmir Buca Şube"
+        },
+        "arac_kilometresi" : 3500,
+        "arac_baslagic_kilometre" : 20,
+        "olusturulma_tarihi" : "2016-03-20 22:59:52",
+        "arac_firma" : {
+          "id" : 12,
+          "firma_adi" : "Bulut Rent A"
+        }
       }
     ]
   }
