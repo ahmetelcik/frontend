@@ -26,7 +26,9 @@
     <div class="col-md-8">
       <!-- Araç Detay -->
 
-      <app-arac-detay-goster-component></app-arac-detay-goster-component>
+      <app-arac-detay-goster-component
+        [AracDetayi]="arac_detay"
+      ></app-arac-detay-goster-component>
       <!-- Araç Detay -->
     </div>
     <!-- Left -->
@@ -165,7 +167,9 @@
               <div class="tab-page-content">
                 <ul class="not-listele-tab">
                   <li class="not-listele-tab-not-ekle-btn"><button class="btn btn-primary-ozel btn-block"><i class="fa fa-plus"></i> Yeni Not</button></li>
-                  <app-arac-detay-arac-notlari-listele></app-arac-detay-arac-notlari-listele>
+                  <app-arac-detay-arac-notlari-listele
+                    [AracNotlari]="arac_notlari"
+                  ></app-arac-detay-arac-notlari-listele>
                 </ul>
               </div>
             </tab>

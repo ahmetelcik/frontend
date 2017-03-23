@@ -10,7 +10,6 @@ export class AracDetayComponent implements OnInit {
 
   public arac_detay: any;
   public arac_notlari: any;
-  public fullData: any;
 
   constructor(private _arac_detay_service: AracDetayService, private _arac_notlari_service: AracNotListeleService) {
 
@@ -28,18 +27,16 @@ export class AracDetayComponent implements OnInit {
 
     arrayFolksJoins.getAll().subscribe(
       data => {
-        this.fullData = data;
-        this.arac_detay = data["0"].contents;
-        this.arac_notlari = data["1"].contents;
+        this.arac_detay = data["0"].contents.arac_detay;
+        this.arac_notlari = data["1"].contents.arac_notlari;
+
       },
       err => {
         console.error(err)
       },
           // the third argument is a function which runs on completion
       () => {
-        console.log(this.arac_detay);
-        console.log(this.arac_notlari);
-        console.log(this.fullData);
+        console.log("veriler çekildi");
       }
 
     );

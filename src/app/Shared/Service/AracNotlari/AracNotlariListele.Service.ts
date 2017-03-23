@@ -6,7 +6,7 @@ import 'rxjs/operator/map';
 export class AracNotListeleService {
 
 
-  private _url = "/app/Shared/Service//AracNotlari/notlar.json";
+  private _url = "/app/Shared/Service/AracNotlari/notlar.json";
 
   public constructor(private http: Http){
   }

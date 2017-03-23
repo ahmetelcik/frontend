@@ -4,14 +4,11 @@ import 'rxjs/add/operator/map';
     selector: 'app-arac-detay-goster-component',
     template: `
 <div class="panel panel-light">
-  <div *ngIf="aracDetayInput">
-    <!--{{ aracDetayInput | json }}-->
-  </div>
         <!-- Panel Heading -->
         <div class="panel-heading">
           <!-- Panel Left Block -->
           <div class="panel-heading-left-block">
-            <span> Araç Detays </span>
+            <span> Araç Detay </span>
           </div>
           <!-- Panel Heading Left Block -->
         </div>
@@ -26,7 +23,7 @@ import 'rxjs/add/operator/map';
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <span> 2 </span>
+              <span> {{ AracDetayi?.arac_plaka }} </span>
             </div>
           </div>
 
@@ -38,7 +35,7 @@ import 'rxjs/add/operator/map';
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <span> 1 </span>
+              <span> {{ AracDetayi?.arac_marka.marka_adi }} </span>
             </div>
           </div>
           <div class="row musteri-detay-list-row-block">
@@ -49,7 +46,7 @@ import 'rxjs/add/operator/map';
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <span> 2 </span>
+              <span> {{ AracDetayi?.arac_modeli.model_adi }} </span>
             </div>
           </div>
           <div class="row musteri-detay-list-row-block">
@@ -60,7 +57,7 @@ import 'rxjs/add/operator/map';
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <span>asd </span>
+              <span>{{ AracDetayi?.arac_yakit_tipi.yakit_tipi_adi }} </span>
             </div>
           </div>
           <div class="row musteri-detay-list-row-block">
@@ -71,7 +68,7 @@ import 'rxjs/add/operator/map';
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <span> sds </span>
+              <span> {{ AracDetayi?.arac_cekis_tipi.cekis_tipi_adi }} </span>
             </div>
           </div>
           <div class="row musteri-detay-list-row-block">
@@ -82,7 +79,7 @@ import 'rxjs/add/operator/map';
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <span> asdasd </span>
+              <span> {{ AracDetayi?.arac_kasa_tipi.kasa_tipi_adi }} </span>
             </div>
           </div>
           <div class="row musteri-detay-list-row-block">
@@ -93,7 +90,7 @@ import 'rxjs/add/operator/map';
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <span>21313</span>
+              <span>{{ AracDetayi?.arac_motor_hacmi.motor_hacmi_adi }}</span>
             </div>
           </div>
           <div class="row musteri-detay-list-row-block">
@@ -104,7 +101,7 @@ import 'rxjs/add/operator/map';
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <span>44</span>
+              <span>{{ AracDetayi?.arac_vites_tipi.vites_tipi_adi }}</span>
             </div>
           </div>
 
@@ -116,7 +113,7 @@ import 'rxjs/add/operator/map';
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <span>asdad</span>
+              <span>{{ AracDetayi?.arac_kilometresi }}</span>
             </div>
           </div>
 
@@ -125,14 +122,14 @@ import 'rxjs/add/operator/map';
           <!-- Panel Footer Left Block -->
           <div class="panel-footer-left-block">
             <div class="panel-footer-ekleyen-kullanici-block">
-              <span>Ekleyen Kullanıcı : <a href="#" class="link-blue-hover">xxx</a></span>
+              <span>Ekleyen Kullanıcı : <a href="#" class="link-blue-hover">{{ AracDetayi?.ekleyen_kullanici.adi_soyadi }}</a></span>
             </div>
           </div>
           <!-- Panel Footer Left Block -->
           <!-- Panel Footer Right Block -->
           <div class="panel-footer-right-block">
             <div class="panel-footer-olusturulma-tarihi-block">
-              <span>Oluşturulma Tarihi : xx</span>
+              <span>Oluşturulma Tarihi : {{ AracDetayi?.olusturulma_tarihi }}</span>
             </div>
           </div>
           <!-- Panel Footer Right Block -->
@@ -143,17 +140,13 @@ import 'rxjs/add/operator/map';
 })
 export class AracDetayGosterComponent implements OnInit {
 
-  @Input('aracDetayInput') aracDetayInput;
+  @Input('AracDetayi') AracDetayi;
 
-  public arac_detay;
 
   constructor() {
-
-
   }
-
   ngOnInit() {
-    // console.log(this.aracDetayInput);
+
   }
 
 }

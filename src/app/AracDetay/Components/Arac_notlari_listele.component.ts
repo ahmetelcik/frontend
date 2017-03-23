@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 
 
 @Component({
     selector: 'app-arac-detay-arac-notlari-listele',
-    template: `
-<li *ngFor="let not of arac_notlari">
+    template: `      
+<li *ngFor="let not of AracNotlari">
+  
   <a href="#">
     <!-- İcon -->
     <div class="tab-page-content-icon-block">
@@ -13,8 +14,8 @@ import { Component, OnInit } from '@angular/core';
     <!-- İcon -->
     <!-- Text -->
     <div class="tab-page-content-text">
-      <p>{{ not.arac_notu }}</p>
-      <span>{{ not.olusturulma_tarihi }} / {{ not.ekleyen_kullanici?.adi_soyadi}}</span>
+      <p> {{ not.arac_notu }} </p>
+      <span> {{ not.olusturulma_tarihi }} / {{ not.ekleyen_kullanici?.adi_soyadi}}</span>
     </div>
     <!-- Text -->
   </a>
@@ -23,18 +24,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AracNotlariListeleComponent implements OnInit {
 
-  private arac_notlari = [];
 
-
+  @Input('AracNotlari') AracNotlari;
   constructor() { }
 
   ngOnInit() {
-
-    // this.arac_notlari_service.getAracNotlari()
-    //   .then(arac_notlari => {
-    //     this.arac_notlari = arac_notlari.contents.arac_notlari;
-    //   });
-
   }
 
 }
