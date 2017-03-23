@@ -20,7 +20,7 @@ import { FolkJoins } from '../Shared/Service/FolkJoins/FolkJoins';
 })
 export class AracEkleComponent implements OnInit {
 
-  loading = true;
+
   arac_markalari:any;
   arac_cekis_tipleri:any;
   arac_kasa_tipleri:any;
@@ -64,11 +64,11 @@ export class AracEkleComponent implements OnInit {
         this.arac_vites_tipleri = data["4"].contents.arac_vites_tipleri;
         this.arac_yakit_tipleri = data["5"].contents.arac_yakit_tipleri;
         this.firma_subeleri = data["6"].contents.firma_subeleri;
-        this.loading = false;
+
       },
       err => console.error(err),
       // the third argument is a function which runs on completion
-      () => console.log('done loading foods')
+      () => console.log("veriler çekildi")
 
     );
 

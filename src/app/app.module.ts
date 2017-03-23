@@ -47,6 +47,8 @@ import { AracYakitTipleriListeleService } from './Shared/Service/AracYakitTipler
 import { FirmaSubeleriListeleService } from './Shared/Service/FirmaSubeleriListele/FirmaSubeleriListele.Service';
 import { FolkJoins } from './Shared/Service/FolkJoins/FolkJoins';
 import { AracMarkaModelListeleService } from './Shared/Service/AracMarkaModelListele/AracMarkaModelListele.Service';
+import { AracDetayService } from './Shared/Service/AracDetay/AracDetay.Service';
+import { AracNotListeleService } from './Shared/Service/AracNotlari/AracNotlariListele.Service';
 /** Services **/
 
 import { Ng2Validator } from './Shared/ng2_Validator/';
@@ -105,6 +107,8 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
     AracYakitTipleriListeleService,
     FirmaSubeleriListeleService,
     AracMarkaModelListeleService,
+    AracDetayService,
+    AracNotListeleService,
   ],
   bootstrap: [AppComponent]
 })

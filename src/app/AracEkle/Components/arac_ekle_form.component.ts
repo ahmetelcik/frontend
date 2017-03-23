@@ -98,7 +98,7 @@ import { AracMarkaModelListeleService } from '../../Shared/Service/AracMarkaMode
               <label class="control-label form-style-ozel-label">Motor Hacmi</label>
               <select class="form-control form-style-ozel" name="arac_motor_hacmi" #arac_motor_hacmi="ngModel" [(ngModel)]="arac_model.arac_motor_hacmi" notZeroValidate>
                 <option value="0">Motor Hacmi Seçiniz</option>
-                <option  *ngFor="let arac_motor_hacim of AracMotorHacimleri" [value]="arac_motor_hacim.id">{{ arac_motor_hacmi.motor_hacim_adi }}</option>
+                <option  *ngFor="let arac_motor_hacim of AracMotorHacimleri" [value]="arac_motor_hacim.id">{{ arac_motor_hacim.motor_hacim_adi }}</option>
               </select>
               <div class="errors-div" *ngIf="arac_motor_hacmi.errors && arac_motor_hacmi.dirty">
                 <div class="help-block" *ngIf="arac_motor_hacmi.errors.invalidNotZero">Araç Motor Hacmi Seçiniz</div>
@@ -158,17 +158,17 @@ import { AracMarkaModelListeleService } from '../../Shared/Service/AracMarkaMode
                 [(ngModel)]="arac_model.arac_kilometre"
                 NotBlankValidate
                 >
-            </div>
-             <div class="errors-div" *ngIf="arac_kilometre.errors && arac_kilometre.dirty">
+              <div class="errors-div" *ngIf="arac_kilometre.errors && arac_kilometre.dirty">
                 <div class="help-block" *ngIf="arac_kilometre.errors.invalidNotBlankValidate">Araç Kilometresini Boş Bırakamazsınız</div>
               </div>
+            </div>
             <!-- Araç Kilometresi -->  
         </div>
         <!-- Panel Body -->
         <!-- Panel Footer -->
         <div class="panel-footer">
           <div class="panel-footer-right-block">
-              <button class="btn btn-success-ozel btn-lg" [class.disabled]="aracEkleForm.invalid"><i class="fa fa-cloud-upload"></i> Kaydet</button>
+              <button class="btn btn-success-ozel btn-lg" [class.disabled]="aracEkleForm.invalid" (click)="submitAracEkleForm(aracEkleForm)"><i class="fa fa-cloud-upload"></i> Kaydet</button>
           </div>
           <div class="clearfix"></div>
         </div>
@@ -228,8 +228,9 @@ export class AracEkleFormComponent implements OnInit {
   /** Araç Ekleme **/
   submitAracEkleForm(aracEkleForm:NgForm){
       if(aracEkleForm.valid == true){
-        /** Form Başarılı **/
-        console.log("veri ekle");
+        console.log(this.arac_model);
+      }else{
+        /** Form Valid Değil Hata **/
       }
   }
 }

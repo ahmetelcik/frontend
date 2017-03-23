@@ -5,7 +5,6 @@ import 'rxjs/operator/map';
 @Injectable()
 export class AracNotListeleService {
 
-  private arac_detay = [];
 
   private _url = "/app/Shared/Service//AracNotlari/notlar.json";
 
