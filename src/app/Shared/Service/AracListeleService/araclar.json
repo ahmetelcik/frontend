@@ -7,7 +7,51 @@
   "contents" : {
     "araclar" : [
       {
-        "id" : 1
+        "id" : 2,
+        "arac_plaka" : "20 D 8897",
+        "arac_marka" : {
+          "id" : 5,
+          "marka_adi" : "Bmw"
+        },
+        "arac_modeli" : {
+          "id" : 7,
+          "model_adi" : "3 Serisi"
+        },
+        "arac_cekis_tipi" :  {
+          "id" : 12,
+          "cekis_tipi_adi" : "Arkadan İtiş"
+        },
+        "arac_kasa_tipi" : {
+          "id" : 5,
+          "kasa_tipi_adi" : "Sedan"
+        },
+        "arac_motor_hacmi" : {
+          "id" : 2,
+          "motor_hacmi_adi" : "1801 - 2001"
+        },
+        "arac_vites_tipi" : {
+          "id" : 12,
+          "vites_tipi_adi" : "Otomatik"
+        },
+        "arac_yakit_tipi" : {
+          "id" : 14,
+          "yakit_tipi_adi" : "Dizel"
+        },
+        "ekleyen_kullanici" : {
+          "id" : 125,
+          "adi_soyadi" : "Ahmet Elçik"
+        },
+        "arac_baslangic_sube" : {
+          "id" : 5,
+          "sube_adi" : "Denizli Çınar Şube"
+        },
+        "arac_kilometresi" : 3500,
+        "arac_baslagic_kilometre" : 20,
+        "olusturulma_tarihi" : "2016-03-20 22:59:52",
+        "arac_firma" : {
+          "id" : 12,
+          "firma_adi" : "Bulut Rent A"
+        }
       }
     ]
   }
