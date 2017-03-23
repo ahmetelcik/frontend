@@ -5,7 +5,7 @@ import { AppModule } from './app/app.module';
 import { SolmenuComponent } from './app/solmenu/solmenu.component';
 import { HeaderComponent } from './app/header/header.component';
 import { AnasayfaComponent } from './app/anasayfa/anasayfa.component';
-import { AraclarComponent } from './app/araclar/araclar.component';
+import { AraclarComponent } from './app/Araclar/araclar.component';
 import { MusterilerComponent } from './app/musteriler/musteriler.component';
 if (environment.production) {
   enableProdMode();
