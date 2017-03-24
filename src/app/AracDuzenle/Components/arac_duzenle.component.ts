@@ -147,7 +147,7 @@ export class AracDuzenleFormComponent implements OnInit {
   }
 
   ngOnInit(){
-    console.log(this.AracDetay);
+
     this.data = this.route.snapshot.data['data'];
     console.log(this.data);
   }
