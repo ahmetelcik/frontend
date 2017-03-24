@@ -1,5 +1,5 @@
 import { ModuleWithProviders } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule,Resolve } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { SolmenuComponent } from './solmenu/solmenu.component';
@@ -23,6 +23,8 @@ import { KiralamaDetayComponent } from './KiralamaDetay/kiralama-detay.component
 import { GiderListeleComponent } from './Giderler/gider-listele.component';
 import { GiderDetayComponent } from './GiderDetay/gider-detay.component';
 import { AracEkleComponent } from './AracEkle/arac-ekle.component';
+
+import { AracDetayResolver } from './Shared/Service/AracDetay/AracDetay.Resolver';
 const appRoutes: Routes = [
   {
     path: 'anasayfa',
@@ -42,7 +44,7 @@ const appRoutes: Routes = [
   },
   {
     path : "araclar/:id/detay",
-    component : AracDetayComponent
+    component : AracDetayComponent,
   },
   {
     path : "araclar/:id/gider/yeni",
@@ -50,11 +52,15 @@ const appRoutes: Routes = [
   },
   {
     path : "araclar/:id/duzenle",
-    component : AracDuzenleComponent
+    component : AracDuzenleComponent,
+    resolve : {
+      data : AracDetayResolver
+    }
+
   },
   {
     path : "musteriler/:id/duzenle",
-    component : MusteriDuzenleComponent
+    component : MusteriDuzenleComponent,
   },
   {
     path : "musteriler/:id/maas/yeni",

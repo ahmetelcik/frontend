@@ -37,6 +37,7 @@ import { AracDetayGosterComponent } from './AracDetay/Components/arac_detay.comp
 import { AracNotlariListeleComponent } from './AracDetay/Components/Arac_notlari_listele.component';
 import { AracEkleFormComponent } from './AracEkle/Components/arac_ekle_form.component';
 import { AracListeleComponent } from './Araclar/Components/Arac_listele.component';
+import { AracDuzenleFormComponent } from './AracDuzenle/Components/arac_duzenle.component';
 /** Services */
 import { AracModelListeleService } from './Shared/Service/AracEkleForm/Arac_model_listele.service';
 import { AracMarkalariListeleService } from './Shared/Service/AracMarkalariListele/AracMarkalariListele.Service';
@@ -52,7 +53,7 @@ import { AracDetayService } from './Shared/Service/AracDetay/AracDetay.Service';
 import { AracNotListeleService } from './Shared/Service/AracNotlari/AracNotlariListele.Service';
 import { AracListeleService } from './Shared/Service/AracListele/AracListele.Service';
 /** Services **/
-
+import { AracDetayResolver } from './Shared/Service/AracDetay/AracDetay.Resolver';
 import { Ng2Validator } from './Shared/ng2_Validator/';
 @NgModule({
   declarations: [
@@ -83,6 +84,7 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
     AracDetayGosterComponent,
     AracNotlariListeleComponent,
     AracListeleComponent,
+    AracDuzenleFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -113,6 +115,7 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
     AracDetayService,
     AracNotListeleService,
     AracListeleService,
+    AracDetayResolver
   ],
   bootstrap: [AppComponent]
 })

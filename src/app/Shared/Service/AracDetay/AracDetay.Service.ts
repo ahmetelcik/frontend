@@ -1,6 +1,8 @@
 import { Injectable, } from '@angular/core';
 import { Http, Response } from '@angular/http';
+import { Observable } from 'rxjs/Observable';
 import 'rxjs/operator/map';
+import 'rxjs/operator/delay';
 
 @Injectable()
 export class AracDetayService {
