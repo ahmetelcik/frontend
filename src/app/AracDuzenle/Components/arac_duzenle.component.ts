@@ -39,9 +39,9 @@ import { AracModel } from '../../AracEkle/Model/arac-ekle.model';
             <!-- Araç Marka -->
             <div class="form-group">
               <label class="control-label form-style-ozel-label">Araç Marka</label>
-              <select class="form-control form-style-ozel" name="arac_marka" #arac_marka="ngModel" [(ngModel)]="arac_model.arac_marka"  notZeroValidate>
+              <select class="form-control form-style-ozel" name="arac_marka" #arac_marka="ngModel"  [(ngModel)]="arac_model.arac_marka"  notZeroValidate>
                 <option value="0">Araç Marka Seçiniz</option>
-                <option  *ngFor="let arac_marka of AracMarkalari" [value]="arac_marka.id">{{ arac_marka.marka_adi }}</option>
+                <option  *ngFor="let arac_marka of AracMarkalari" [value]="arac_marka.id" >{{ arac_marka.marka_adi }}</option>
               </select>
             </div>
             <!-- Araç Marka -->
@@ -147,6 +147,7 @@ export class AracDuzenleFormComponent implements OnInit {
   }
 
   ngOnInit(){
+    this.arac_model["arac_marka"] = 6;
 
     this.data = this.route.snapshot.data['data'];
     console.log(this.data);
