@@ -40,6 +40,7 @@ import { AracListeleComponent } from './Araclar/Components/Arac_listele.componen
 import { AracDuzenleFormComponent } from './AracDuzenle/Components/arac_duzenle.component';
 import { AracGiderEkleFormComponent } from './AracGiderEkle/Components/arac_gider_ekle.component';
 import { MusteriMaasPrimEkleFormComponent } from './MusteriMaasPrimEkle/Components/maas_prim_ekle_form.component';
+import { MusteriDuzenleFormComponent } from './MusteriDuzenle/Components/musteri_duzenle_form.component';
 /** Services */
 import { AracModelListeleService } from './Shared/Service/AracEkleForm/Arac_model_listele.service';
 import { AracMarkalariListeleService } from './Shared/Service/AracMarkalariListele/AracMarkalariListele.Service';
@@ -89,6 +90,7 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
     AracDuzenleFormComponent,
     AracGiderEkleFormComponent,
     MusteriMaasPrimEkleFormComponent,
+    MusteriDuzenleFormComponent,
   ],
   imports: [
     BrowserModule,
