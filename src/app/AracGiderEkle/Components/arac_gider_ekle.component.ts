@@ -78,12 +78,12 @@ import { AracGiderEkleModel } from '../Modal/arac_gider_ekle.model';
           </div>
           <!-- Ödeme Durumu -->
           
-          <!-- Fatura Ödeme Tarihi -->
+          <!-- Ödeme Tarihi -->
           <div class="form-group">
             <label for="FaturaOdemeTarihi" class="control-label form-style-ozel-label">Ödeme Tarihi</label>
             <input type="text" class="form-control form-style-ozel" id="FaturaOdemeTarihi" name="fatura_odeme_tarihi" [(ngModel)]="arac_gider_ekle_model.odeme_tarihi">
           </div>
-          <!-- Fatura Ödeme Tarihi -->
+          <!-- Ödeme Tarihi -->
           
           <!-- Fatura Ödeme Hesap -->
           <div class="form-group" *ngIf="arac_gider_ekle_model.odeme_durumu == 'Odendi'">
