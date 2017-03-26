@@ -150,7 +150,6 @@ export class AracDuzenleFormComponent implements OnInit {
     this.arac_model["arac_marka"] = 6;
 
     this.data = this.route.snapshot.data['data'];
-    console.log(this.data);
   }
 
 
