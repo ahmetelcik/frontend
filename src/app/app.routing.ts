@@ -23,7 +23,7 @@ import { KiralamaDetayComponent } from './KiralamaDetay/kiralama-detay.component
 import { GiderListeleComponent } from './Giderler/gider-listele.component';
 import { GiderDetayComponent } from './GiderDetay/gider-detay.component';
 import { AracEkleComponent } from './AracEkle/arac-ekle.component';
-
+import { CalisanlarComponent } from './Calisanlar/calisanlar.component';
 import { AracDetayResolver } from './Shared/Service/AracDetay/AracDetay.Resolver';
 const appRoutes: Routes = [
   {
@@ -41,6 +41,10 @@ const appRoutes: Routes = [
   {
     path: "musteri/:id/detay",
     component: MusteriDetayComponent
+  },
+  {
+    path: "calisanlar",
+    component:  CalisanlarComponent 
   },
   {
     path : "araclar/:id/detay",

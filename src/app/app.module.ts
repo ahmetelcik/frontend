@@ -41,6 +41,7 @@ import { AracDuzenleFormComponent } from './AracDuzenle/Components/arac_duzenle.
 import { AracGiderEkleFormComponent } from './AracGiderEkle/Components/arac_gider_ekle.component';
 import { MusteriMaasPrimEkleFormComponent } from './MusteriMaasPrimEkle/Components/maas_prim_ekle_form.component';
 import { MusteriDuzenleFormComponent } from './MusteriDuzenle/Components/musteri_duzenle_form.component';
+import { CalisanlarComponent } from './Calisanlar/calisanlar.component';
 /** Services */
 import { AracModelListeleService } from './Shared/Service/AracEkleForm/Arac_model_listele.service';
 import { AracMarkalariListeleService } from './Shared/Service/AracMarkalariListele/AracMarkalariListele.Service';
@@ -55,6 +56,7 @@ import { AracMarkaModelListeleService } from './Shared/Service/AracMarkaModelLis
 import { AracDetayService } from './Shared/Service/AracDetay/AracDetay.Service';
 import { AracNotListeleService } from './Shared/Service/AracNotlari/AracNotlariListele.Service';
 import { AracListeleService } from './Shared/Service/AracListele/AracListele.Service';
+
 /** Services **/
 import { AracDetayResolver } from './Shared/Service/AracDetay/AracDetay.Resolver';
 import { Ng2Validator } from './Shared/ng2_Validator/';
@@ -91,6 +93,7 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
     AracGiderEkleFormComponent,
     MusteriMaasPrimEkleFormComponent,
     MusteriDuzenleFormComponent,
+    CalisanlarComponent 
   ],
   imports: [
     BrowserModule,
