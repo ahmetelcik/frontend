@@ -62,3 +62,22 @@ body{
   padding:0;
   background-color: #F9F9F9
 }
+
+
+.kalan-bilgisi{
+  margin-top: 15px;
+  & .kalan-bilgis-text-info{
+    color: #797979;
+    font-weight: 500;
+  }
+  & .kalan-bilgi-text-try{
+    color: #E37074;
+    float: right;
+    font-weight: 500;
+  }
+
+  & .odenecek-maas{
+    color: #999!important;
+  }
+}
+
