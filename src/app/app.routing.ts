@@ -25,6 +25,7 @@ import { GiderDetayComponent } from './GiderDetay/gider-detay.component';
 import { AracEkleComponent } from './AracEkle/arac-ekle.component';
 import { CalisanlarComponent } from './Calisanlar/calisanlar.component';
 import { AracDetayResolver } from './Shared/Service/AracDetay/AracDetay.Resolver';
+import { CalisanDetayComponent } from './CalisanDetay/calisan_detay.component';
 const appRoutes: Routes = [
   {
     path: 'anasayfa',
@@ -45,6 +46,10 @@ const appRoutes: Routes = [
   {
     path: "calisanlar",
     component:  CalisanlarComponent 
+  },
+  {
+    path: "calisanlar/:id/detay",
+    component:  CalisanDetayComponent
   },
   {
     path : "araclar/:id/detay",
