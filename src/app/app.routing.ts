@@ -38,7 +38,7 @@ import { AracGiderKategoriEkleComponent } from './AracGiderKategoriEkle/arac_gid
 import { GiderKategoriEkleComponent } from './GiderKategoriEkle/gider_kategori_ekle.component';
 import { HizmetlerComponent } from './Hizmetler/hizmetler.component';
 import { HizmetDetayComponent } from './HizmetDetay/hizmet_detay.component';
-
+import { HizmetEkleComponent } from './HizmetEkle/hizmet_ekle.component';
 
 const appRoutes: Routes = [
   {
@@ -152,6 +152,10 @@ const appRoutes: Routes = [
   {
     path: "hizmetler/:id/detay",
     component: HizmetDetayComponent
+  },
+  {
+    path: "hizmetler/yeni",
+    component: HizmetEkleComponent
   },
   {
     path: '',
