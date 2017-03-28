@@ -35,6 +35,9 @@ import { SubeEkleComponent } from './SubeEkle/sube_ekle.component';
 import { KategorilerComponent } from './Kategoriler/kategoriler.component';
 import { HizmetKategoriEkleComponent } from './HizmetKategoriEkle/hizmet_kategori_ekle.component';
 import { AracGiderKategoriEkleComponent } from './AracGiderKategoriEkle/arac_gider_kategori_ekle.component';
+import { GiderKategoriEkleComponent } from './GiderKategoriEkle/gider_kategori_ekle.component';
+
+
 const appRoutes: Routes = [
   {
     path: 'anasayfa',
@@ -135,6 +138,10 @@ const appRoutes: Routes = [
   {
     path: "kategoriler/aracgider/yeni",
     component: AracGiderKategoriEkleComponent
+  },
+  {
+    path: "kategoriler/gider/yeni",
+    component: GiderKategoriEkleComponent
   },
   {
     path: '',
