@@ -1,0 +1,281 @@
+<!-- Sayfa Başlığı -->
+<div id="sayfa-baslik" style="position:relative">
+  <div class="container-fluid m-l-230">
+    <div class="row">
+      <!-- Page Header -->
+      <div class="page-head-title">
+        <h2>Şube Detay</h2>
+      </div>
+      <!-- Page Header -->
+      <!-- Breadcumb -->
+      <ol class="breadcrumb breadcumb-title">
+        <li><a href="#">Anasayfa</a></li>
+        <li><a href="#">Şube</a></li>
+        <li class="active">Ahmet Elçik</li>
+      </ol>
+      <!-- Breadcumb -->
+    </div>
+  </div>
+</div>
+<!-- Sayfa Başlığı -->
+
+
+<div class="container-fluid m-l-230 m-t-15">
+  <!-- Row -->
+  <div class="row">
+    <!-- Çalışan Detay-->
+    <div class="col-md-8">
+      <div class="panel panel-light">
+        <!-- Panel Heading -->
+        <div class="panel-heading">
+          <!-- Panel Left Block -->
+          <div class="panel-heading-left-block">
+            <span> Şube Detay </span>
+          </div>
+          <!-- Panel Heading Left Block -->
+        </div>
+        <!-- Panel Heading -->
+        <div class="panel-body">
+          <!-- Şube Adı -->
+          <div class="row musteri-detay-list-row-block">
+            <div class="col-md-3">
+              <span>Şube Adı</span>
+            </div>
+            <div class="col-md-1">
+              <span>:</span>
+            </div>
+            <div class="col-md-8">
+              <span>Ahmet Elçik</span>
+            </div>
+          </div>
+          <!-- Şube Adı -->
+
+          <!-- Telefon Numarası -->
+          <div class="row musteri-detay-list-row-block">
+            <div class="col-md-3">
+              <span>Telefon Numarası</span>
+            </div>
+            <div class="col-md-1">
+              <span>:</span>
+            </div>
+            <div class="col-md-8">
+              <span>ahmetelcik35@gmail.com</span>
+            </div>
+          </div>
+          <!-- Telefon Numarası -->
+
+          <!-- Açık Adresi -->
+          <div class="row musteri-detay-list-row-block">
+            <div class="col-md-3">
+              <span>Açık Adresi</span>
+            </div>
+            <div class="col-md-1">
+              <span>:</span>
+            </div>
+            <div class="col-md-8">
+              <p>Mehmetçik Mahallesi 1303 Sokak No:10/6 Pamukkale - Denizli</p>
+            </div>
+          </div>          
+          <!-- Açık Adresi -->
+          
+        </div>
+        <div class="panel-footer">
+          <!-- Panel Footer Left Block -->
+          <div class="panel-footer-left-block">
+            <div class="panel-footer-ekleyen-kullanici-block">
+              <span>Ekleyen Kullanıcı : <a href="#" class="link-blue-hover">Ahmet Elçik</a></span>
+            </div>
+          </div>
+          <!-- Panel Footer Left Block -->
+          <!-- Panel Footer Right Block -->
+          <div class="panel-footer-right-block">
+            <div class="panel-footer-olusturulma-tarihi-block">
+              <span>Oluşturulma Tarihi : 12 Aralık 2016 11:30</span>
+            </div>
+          </div>
+          <!-- Panel Footer Right Block -->
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Çalışan Detay-->
+    <!-- Sağ Taraf -->
+    <div class="col-md-4">
+      <!-- Panel -->
+      <div class="panel panel-light">
+        <!-- Panel Body -->
+        <div class="panel-body">
+          <div class="row">
+            <!-- Diğer Button DropDown -->
+            <div class="col-md-6">
+              <div class="btn-group btn-block" dropdown>
+                <button class="btn btn-default-ozel btn-block" dropdownToggle>DİĞER <span class="caret"></span></button>
+                <ul dropdownMenu role="menu" aria-labelledby="single-button" class="btn-block">
+                  <li role="menuitem"><a class="dropdown-item" routerLink="../maaslar/yeni">Yeni Maaş / Prim</a></li>
+                  <li class="divider dropdown-divider"></li>
+                  <li role="menuitem"><a class="dropdown-item" href="javascript:void(0)" routerLink="../duzenle"><i class="fa fa-edit"></i> <span>Düzenle</span></a></li>
+                  <li role="menuitem"><a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-trash-o"></i> <span>Sil</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- Diğer Button DropDown -->
+            <!-- Ödeme Ekle -->
+            <div class="col-md-6">
+              <a href="#" class="btn btn-success-ozel btn-block"><i class="fa fa-plus"></i> Avans Ekle</a>
+            </div>
+            <!-- Ödeme Ekle -->
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <!-- Kalan Bakiye Bilgi -->
+              <div class="kalan-bilgi-calisan-detay">
+                <!-- Geçikmiş Maaş -->
+                <div class="kalan-bilgisi">
+                  <span class="kalan-bilgis-text-info">GEÇİKMİŞ MAAŞ</span>
+                  <span class="kalan-bilgi-text-try">314,00 <i class="fa fa-try"></i></span>
+                </div>
+                <!-- Geçikmiş Maaş -->
+                <!-- Ödenecek Maaş -->
+                <div class="kalan-bilgisi">
+                  <span class="kalan-bilgis-text-info odenecek-maas">ÖDENECEK MAAŞ</span>
+                  <span class="kalan-bilgi-text-try odenecek-maas">314,00 <i class="fa fa-try"></i></span>
+                </div>
+                <!-- Ödenecek Maaş -->
+              </div>
+              <!-- Kalan Bakiye Bilgi -->
+            </div>
+          </div>
+        </div>
+        <!-- Panel Body -->
+        <!-- Panel Footer -->
+        <div class="panel-footer">
+          <div class="calisan-right-islem-detay-footer-block">
+            <div class="calisan-right-islem-detay-footer-text-block">
+              <span class="calisan-right-footer-title-text">TOPLAM</span>
+              <span class="calisan-right-footer-content-text pull-right">2.500,00 <i class="fa fa-try"></i></span>
+            </div>
+          </div>
+        </div>
+        <!-- Panel Footer -->
+      </div>
+      <!-- Panel -->
+
+      <!-- Tab -->
+      <!-- Panel -->
+      <div class="panel panel-light">
+        <!-- Panel Body -->
+        <div class="panel-body padding-0">
+          <!-- Tab -->
+          <tabset>
+            <!-- Notlar -->
+            <tab heading="Notlar" customClass="tab-ozel">
+              <div class="tab-page-content">
+                <ul class="not-listele-tab">
+                  <li class="not-listele-tab-not-ekle-btn"><button class="btn btn-primary-ozel btn-block"><i class="fa fa-plus"></i> Yeni Not</button></li>
+                  <li>
+                    <a href="#">
+                      <!-- İcon -->
+                      <div class="tab-page-content-icon-block">
+                        <i class="fa fa-commenting"></i>
+                      </div>
+                      <!-- İcon -->
+                      <!-- Text -->
+                      <div class="tab-page-content-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad asperiores aut corporis distinctio, dolorum, explicabo fuga neque nisi reiciendis suscipit veniam voluptatem voluptatibus. Consequuntur impedit laborum laudantium sed soluta?</p>
+                        <span>12 Aralık 2016 / Ahmet Elçik</span>
+                      </div>
+                      <!-- Text -->
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <!-- İcon -->
+                      <div class="tab-page-content-icon-block">
+                        <i class="fa fa-commenting"></i>
+                      </div>
+                      <!-- İcon -->
+                      <!-- Text -->
+                      <div class="tab-page-content-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad asperiores aut corporis distinctio, dolorum, explicabo fuga neque nisi reiciendis suscipit veniam voluptatem voluptatibus. Consequuntur impedit laborum laudantium sed soluta?</p>
+                        <span>12 Aralık 2016 / Ahmet Elçik</span>
+                      </div>
+                      <!-- Text -->
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <!-- İcon -->
+                      <div class="tab-page-content-icon-block">
+                        <i class="fa fa-commenting"></i>
+                      </div>
+                      <!-- İcon -->
+                      <!-- Text -->
+                      <div class="tab-page-content-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad asperiores aut corporis distinctio, dolorum, explicabo fuga neque nisi reiciendis suscipit veniam voluptatem voluptatibus. Consequuntur impedit laborum laudantium sed soluta?</p>
+                        <span>12 Aralık 2016 / Ahmet Elçik</span>
+                      </div>
+                      <!-- Text -->
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <!-- İcon -->
+                      <div class="tab-page-content-icon-block">
+                        <i class="fa fa-commenting"></i>
+                      </div>
+                      <!-- İcon -->
+                      <!-- Text -->
+                      <div class="tab-page-content-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad asperiores aut corporis distinctio, dolorum, explicabo fuga neque nisi reiciendis suscipit veniam voluptatem voluptatibus. Consequuntur impedit laborum laudantium sed soluta?</p>
+                        <span>12 Aralık 2016 / Ahmet Elçik</span>
+                      </div>
+                      <!-- Text -->
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <!-- İcon -->
+                      <div class="tab-page-content-icon-block">
+                        <i class="fa fa-commenting"></i>
+                      </div>
+                      <!-- İcon -->
+                      <!-- Text -->
+                      <div class="tab-page-content-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad asperiores aut corporis distinctio, dolorum, explicabo fuga neque nisi reiciendis suscipit veniam voluptatem voluptatibus. Consequuntur impedit laborum laudantium sed soluta?</p>
+                        <span>12 Aralık 2016 / Ahmet Elçik</span>
+                      </div>
+                      <!-- Text -->
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <!-- İcon -->
+                      <div class="tab-page-content-icon-block">
+                        <i class="fa fa-commenting"></i>
+                      </div>
+                      <!-- İcon -->
+                      <!-- Text -->
+                      <div class="tab-page-content-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad asperiores aut corporis distinctio, dolorum, explicabo fuga neque nisi reiciendis suscipit veniam voluptatem voluptatibus. Consequuntur impedit laborum laudantium sed soluta?</p>
+                        <span>12 Aralık 2016 / Ahmet Elçik</span>
+                      </div>
+                      <!-- Text -->
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </tab>
+            <!-- Notlar -->
+          </tabset>
+          <!-- Tab -->
+        </div>
+        <!-- Panel Body -->
+      </div>
+      <!-- Panel -->
+      <!-- Tab -->
+    </div>
+    <!-- Sağ Taraf -->
+  </div>
+  <!-- Row -->
+
+</div>
