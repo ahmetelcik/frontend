@@ -43,6 +43,11 @@ import { MusteriMaasPrimEkleFormComponent } from './MusteriMaasPrimEkle/Componen
 import { MusteriDuzenleFormComponent } from './MusteriDuzenle/Components/musteri_duzenle_form.component';
 import { CalisanlarComponent } from './Calisanlar/calisanlar.component';
 import { CalisanDetayComponent } from './CalisanDetay/calisan_detay.component';
+import { CalisanDuzenleComponent } from './CalisanDuzenle/calisan_duzenle.component';
+import { CalisanDuzenleFormComponent } from './CalisanDuzenle/Components/calisan_duzenle_form.component';
+import { CalisanMaasPrimEkleComponent } from './CalisanMaasPrimEkle/calisan_maas_prim_ekle.component';
+import { CalisanMaasPrimEkleFormComponent } from './CalisanMaasPrimEkle/Components/calisan_maas_prim_ekle_form.component';
+
 /** Services */
 import { AracModelListeleService } from './Shared/Service/AracEkleForm/Arac_model_listele.service';
 import { AracMarkalariListeleService } from './Shared/Service/AracMarkalariListele/AracMarkalariListele.Service';
@@ -95,7 +100,11 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
     MusteriMaasPrimEkleFormComponent,
     MusteriDuzenleFormComponent,
     CalisanlarComponent,
-    CalisanDetayComponent
+    CalisanDetayComponent,
+    CalisanDuzenleComponent,
+    CalisanDuzenleFormComponent,
+    CalisanMaasPrimEkleComponent,
+    CalisanMaasPrimEkleFormComponent,
   ],
   imports: [
     BrowserModule,
