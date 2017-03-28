@@ -28,6 +28,8 @@ import { AracDetayResolver } from './Shared/Service/AracDetay/AracDetay.Resolver
 import { CalisanDetayComponent } from './CalisanDetay/calisan_detay.component';
 import { CalisanDuzenleComponent } from './CalisanDuzenle/calisan_duzenle.component';
 import { CalisanMaasPrimEkleComponent } from './CalisanMaasPrimEkle/calisan_maas_prim_ekle.component';
+
+import { CalisanEkleComponent } from './CalisanEkle/calisan_ekle.component';
 const appRoutes: Routes = [
   {
     path: 'anasayfa',
@@ -60,6 +62,10 @@ const appRoutes: Routes = [
   {
     path: "calisanlar/:id/maaslar/yeni",
     component: CalisanMaasPrimEkleComponent
+  },
+  {
+    path: "calisanlar/yeni",
+    component: CalisanEkleComponent
   },
   {
     path : "araclar/:id/detay",
