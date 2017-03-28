@@ -52,7 +52,9 @@ import { CalisanEkleFormComponent } from './CalisanEkle/Components/calisan_ekle_
 import { SubelerComponent } from './Subeler/subeler.component';
 import { SubeDetayComponent } from './SubeDetay/sube_detay.component';
 import { SubeEkleComponent } from './SubeEkle/sube_ekle.component';
+import { KategorilerComponent } from './Kategoriler/kategoriler.component';
 
+import { AracGiderKategoriEkleComponent } from './AracGiderKategoriEkle/arac_gider_kategori_ekle.component';
 /** Services */
 import { AracModelListeleService } from './Shared/Service/AracEkleForm/Arac_model_listele.service';
 import { AracMarkalariListeleService } from './Shared/Service/AracMarkalariListele/AracMarkalariListele.Service';
@@ -67,7 +69,7 @@ import { AracMarkaModelListeleService } from './Shared/Service/AracMarkaModelLis
 import { AracDetayService } from './Shared/Service/AracDetay/AracDetay.Service';
 import { AracNotListeleService } from './Shared/Service/AracNotlari/AracNotlariListele.Service';
 import { AracListeleService } from './Shared/Service/AracListele/AracListele.Service';
-
+import { HizmetKategoriEkleComponent } from './HizmetKategoriEkle/hizmet_kategori_ekle.component';
 /** Services **/
 import { AracDetayResolver } from './Shared/Service/AracDetay/AracDetay.Resolver';
 import { Ng2Validator } from './Shared/ng2_Validator/';
@@ -115,6 +117,9 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
     SubelerComponent,
     SubeDetayComponent,
     SubeEkleComponent,
+    KategorilerComponent,
+    HizmetKategoriEkleComponent,
+    AracGiderKategoriEkleComponent,
   ],
   imports: [
     BrowserModule,
