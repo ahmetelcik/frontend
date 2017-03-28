@@ -51,6 +51,8 @@ import { CalisanEkleComponent } from './CalisanEkle/calisan_ekle.component';
 import { CalisanEkleFormComponent } from './CalisanEkle/Components/calisan_ekle_form.component';
 import { SubelerComponent } from './Subeler/subeler.component';
 import { SubeDetayComponent } from './SubeDetay/sube_detay.component';
+import { SubeEkleComponent } from './SubeEkle/sube_ekle.component';
+
 /** Services */
 import { AracModelListeleService } from './Shared/Service/AracEkleForm/Arac_model_listele.service';
 import { AracMarkalariListeleService } from './Shared/Service/AracMarkalariListele/AracMarkalariListele.Service';
@@ -112,6 +114,7 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
     CalisanEkleFormComponent,
     SubelerComponent,
     SubeDetayComponent,
+    SubeEkleComponent,
   ],
   imports: [
     BrowserModule,

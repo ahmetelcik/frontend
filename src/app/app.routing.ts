@@ -31,6 +31,7 @@ import { CalisanMaasPrimEkleComponent } from './CalisanMaasPrimEkle/calisan_maas
 import { SubelerComponent } from './Subeler/subeler.component';
 import { CalisanEkleComponent } from './CalisanEkle/calisan_ekle.component';
 import { SubeDetayComponent } from './SubeDetay/sube_detay.component';
+import { SubeEkleComponent } from './SubeEkle/sube_ekle.component';
 const appRoutes: Routes = [
   {
     path: 'anasayfa',
@@ -115,6 +116,10 @@ const appRoutes: Routes = [
   {
     path: "subeler/:id/detay",
     component: SubeDetayComponent
+  },
+  {
+    path: "subeler/yeni",
+    component: SubeEkleComponent
   },
   {
     path: '',
