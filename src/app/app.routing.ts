@@ -28,7 +28,7 @@ import { AracDetayResolver } from './Shared/Service/AracDetay/AracDetay.Resolver
 import { CalisanDetayComponent } from './CalisanDetay/calisan_detay.component';
 import { CalisanDuzenleComponent } from './CalisanDuzenle/calisan_duzenle.component';
 import { CalisanMaasPrimEkleComponent } from './CalisanMaasPrimEkle/calisan_maas_prim_ekle.component';
-
+import { SubelerComponent } from './Subeler/subeler.component';
 import { CalisanEkleComponent } from './CalisanEkle/calisan_ekle.component';
 const appRoutes: Routes = [
   {
@@ -106,6 +106,10 @@ const appRoutes: Routes = [
   {
     path : "araclar/yeni",
     component : AracEkleComponent
+  },
+  {
+    path: "subeler",
+    component: SubelerComponent
   },
   {
     path: '',
