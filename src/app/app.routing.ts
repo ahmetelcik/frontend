@@ -36,6 +36,8 @@ import { KategorilerComponent } from './Kategoriler/kategoriler.component';
 import { HizmetKategoriEkleComponent } from './HizmetKategoriEkle/hizmet_kategori_ekle.component';
 import { AracGiderKategoriEkleComponent } from './AracGiderKategoriEkle/arac_gider_kategori_ekle.component';
 import { GiderKategoriEkleComponent } from './GiderKategoriEkle/gider_kategori_ekle.component';
+import { HizmetlerComponent } from './Hizmetler/hizmetler.component';
+import { HizmetDetayComponent } from './HizmetDetay/hizmet_detay.component';
 
 
 const appRoutes: Routes = [
@@ -142,6 +144,14 @@ const appRoutes: Routes = [
   {
     path: "kategoriler/gider/yeni",
     component: GiderKategoriEkleComponent
+  },
+  {
+    path: "hizmetler",
+    component: HizmetlerComponent
+  },
+  {
+    path: "hizmetler/:id/detay",
+    component: HizmetDetayComponent
   },
   {
     path: '',

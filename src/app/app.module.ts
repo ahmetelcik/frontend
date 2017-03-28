@@ -56,6 +56,8 @@ import { KategorilerComponent } from './Kategoriler/kategoriler.component';
 
 import { AracGiderKategoriEkleComponent } from './AracGiderKategoriEkle/arac_gider_kategori_ekle.component';
 import { GiderKategoriEkleComponent } from './GiderKategoriEkle/gider_kategori_ekle.component';
+import { HizmetlerComponent } from './Hizmetler/hizmetler.component';
+import { HizmetDetayComponent } from './HizmetDetay/hizmet_detay.component';
 /** Services */
 import { AracModelListeleService } from './Shared/Service/AracEkleForm/Arac_model_listele.service';
 import { AracMarkalariListeleService } from './Shared/Service/AracMarkalariListele/AracMarkalariListele.Service';
@@ -122,6 +124,8 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
     HizmetKategoriEkleComponent,
     AracGiderKategoriEkleComponent,
     GiderKategoriEkleComponent,
+    HizmetlerComponent,
+    HizmetDetayComponent,
   ],
   imports: [
     BrowserModule,
