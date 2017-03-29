@@ -61,6 +61,7 @@ import { HizmetDetayComponent } from './HizmetDetay/hizmet_detay.component';
 import { HizmetEkleComponent } from './HizmetEkle/hizmet_ekle.component';
 import { HesaplarComponent } from './Hesaplar/hesaplar.component';
 import { HesapDetayComponent } from './HesapDetay/hesap_detay.component';
+import { HesaplarBankaEkleComponent } from './HesaplarBankaEkle/hesaplar_banka_ekle.component';
 
 /** Services */
 import { AracModelListeleService } from './Shared/Service/AracEkleForm/Arac_model_listele.service';
@@ -133,6 +134,7 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
     HizmetEkleComponent,
     HesaplarComponent,
     HesapDetayComponent,
+    HesaplarBankaEkleComponent,
   ],
   imports: [
     BrowserModule,

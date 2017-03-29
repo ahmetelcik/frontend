@@ -41,6 +41,7 @@ import { HizmetDetayComponent } from './HizmetDetay/hizmet_detay.component';
 import { HizmetEkleComponent } from './HizmetEkle/hizmet_ekle.component';
 import { HesaplarComponent } from './Hesaplar/hesaplar.component';
 import { HesapDetayComponent } from './HesapDetay/hesap_detay.component';
+import { HesaplarBankaEkleComponent } from './HesaplarBankaEkle/hesaplar_banka_ekle.component';
 
 const appRoutes: Routes = [
   {
@@ -166,6 +167,10 @@ const appRoutes: Routes = [
   {
     path: "hesaplar/:id/detay",
     component: HesapDetayComponent
+  },
+  {
+    path: "hesaplar/banka/yeni",
+    component: HesaplarBankaEkleComponent
   },
   {
     path: '',
