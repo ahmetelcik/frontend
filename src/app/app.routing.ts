@@ -40,7 +40,7 @@ import { HizmetlerComponent } from './Hizmetler/hizmetler.component';
 import { HizmetDetayComponent } from './HizmetDetay/hizmet_detay.component';
 import { HizmetEkleComponent } from './HizmetEkle/hizmet_ekle.component';
 import { HesaplarComponent } from './Hesaplar/hesaplar.component';
-
+import { HesapDetayComponent } from './HesapDetay/hesap_detay.component';
 
 const appRoutes: Routes = [
   {
@@ -162,6 +162,10 @@ const appRoutes: Routes = [
   {
     path: "hesaplar",
     component: HesaplarComponent
+  },
+  {
+    path: "hesaplar/:id/detay",
+    component: HesapDetayComponent
   },
   {
     path: '',
