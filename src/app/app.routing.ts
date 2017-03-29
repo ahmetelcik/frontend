@@ -42,7 +42,8 @@ import { HizmetEkleComponent } from './HizmetEkle/hizmet_ekle.component';
 import { HesaplarComponent } from './Hesaplar/hesaplar.component';
 import { HesapDetayComponent } from './HesapDetay/hesap_detay.component';
 import { HesaplarBankaEkleComponent } from './HesaplarBankaEkle/hesaplar_banka_ekle.component';
-
+import { HesaplarKasaEkleComponent } from './HesaplarKasaEkle/hesaplar_kasa_ekle.component';
+import { HesapParaGirisiEkleComponent } from './HesapParaGirisiEkle/hesap_para_giris_ekle.component';
 const appRoutes: Routes = [
   {
     path: 'anasayfa',
@@ -171,6 +172,14 @@ const appRoutes: Routes = [
   {
     path: "hesaplar/banka/yeni",
     component: HesaplarBankaEkleComponent
+  },
+  {
+    path: "hesaplar/kasa/yeni",
+    component: HesaplarKasaEkleComponent
+  },
+  {
+    path: "hesaplar/:id/paragirisi/yeni",
+    component: HesapParaGirisiEkleComponent
   },
   {
     path: '',

@@ -36,32 +36,63 @@
         </div>
         <!-- Panel Heading -->
         <div class="panel-body">
-          <!-- Adı Soyadı -->
+
+          <!-- Hesap İsmi -->
           <div class="row musteri-detay-list-row-block">
             <div class="col-md-3">
-              <span>Adı Soyadı</span>
+              <span>Hesap İsmi</span>
             </div>
             <div class="col-md-1">
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <span>Ahmet Elçik</span>
+              <span>Ziraat Bankası (Denizli Merkez Şube)</span>
             </div>
           </div>
-          <!-- Adı Soyadı -->
-          <!-- E-Posta Adresi -->
+          <!-- Hesap İsmi -->
+
+          <!-- Banka İsmi -->
           <div class="row musteri-detay-list-row-block">
             <div class="col-md-3">
-              <span>E-Posta Adresi</span>
+              <span>Banka İsmi</span>
             </div>
             <div class="col-md-1">
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <span>ahmetelcik35@gmail.com</span>
+              <span>Ziraat Bankası</span>
             </div>
           </div>
-          <!-- E-Posta Adresi -->
+          <!-- Banka İsmi -->
+
+          <!-- Banka Şube -->
+          <div class="row musteri-detay-list-row-block">
+            <div class="col-md-3">
+              <span>Banka Şube</span>
+            </div>
+            <div class="col-md-1">
+              <span>:</span>
+            </div>
+            <div class="col-md-8">
+              <span>Çınar Şubesi</span>
+            </div>
+          </div>
+          <!-- Banka Şube -->
+
+          <!-- Hesap Numarası -->
+          <div class="row musteri-detay-list-row-block">
+            <div class="col-md-3">
+              <span>Hesap Numarası</span>
+            </div>
+            <div class="col-md-1">
+              <span>:</span>
+            </div>
+            <div class="col-md-8">
+              <span>1236-1257-8888-1041</span>
+            </div>
+          </div>
+          <!-- Hesap Numarası -->
+
           <!-- IBAN Numarası -->
           <div class="row musteri-detay-list-row-block">
             <div class="col-md-3">
@@ -75,7 +106,23 @@
             </div>
           </div>
           <!-- IBAN Numarası -->
+
+          <!-- Hesap Şube -->
+          <div class="row musteri-detay-list-row-block">
+            <div class="col-md-3">
+              <span>Hesap Şube</span>
+            </div>
+            <div class="col-md-1">
+              <span>:</span>
+            </div>
+            <div class="col-md-8">
+              <a href="#" class="link-blue-hover">Denizli Çınar Şube</a>
+            </div>
+          </div>
+          <!-- Hesap Şube -->
+
         </div>
+
         <div class="panel-footer">
           <!-- Panel Footer Left Block -->
           <div class="panel-footer-left-block">
@@ -107,8 +154,8 @@
               <div class="btn-group btn-block" dropdown>
                 <button class="btn btn-default-ozel btn-block" dropdownToggle> PARA GİRİŞ & ÇIKIŞI EKLE <span class="caret"></span></button>
                 <ul dropdownMenu role="menu" aria-labelledby="single-button" class="btn-block">
-                  <li role="menuitem"><a class="dropdown-item" href="#"><i class="fa fa-sign-in fa-rotate-90"></i> <span> Para Girişi Ekle</span></a></li>
-                  <li role="menuitem"><a class="dropdown-item" href="#"><i class="fa fa-sign-in fa-rotate-270"></i> <span> Para Çıkışı Ekle </span></a></li>
+                  <li role="menuitem"><a routerLink="../paragirisi/yeni" class="dropdown-item"><i class="fa fa-sign-in fa-rotate-90"></i> <span> Para Girişi Ekle</span></a></li>
+                  <li role="menuitem"><a routerLink="../paracikisi/yeni" class="dropdown-item"><i class="fa fa-sign-in fa-rotate-270"></i> <span> Para Çıkışı Ekle </span></a></li>
                 </ul>
               </div>
             </div>
