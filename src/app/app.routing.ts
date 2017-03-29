@@ -46,7 +46,7 @@ import { HesaplarKasaEkleComponent } from './HesaplarKasaEkle/hesaplar_kasa_ekle
 import { HesapParaGirisiEkleComponent } from './HesapParaGirisiEkle/hesap_para_giris_ekle.component';
 import { HesapParaCikisiEkleComponent } from './HesapParaCikisiEkle/hesap_para_cikisi_ekle.component';
 import { HesapDuzenleComponent } from './HesapDuzenle/hesap_duzenle.component';
-
+import { MusteriEkleComponent } from './MusteriEkle/musteri_ekle.component';
 
 const appRoutes: Routes = [
   {
@@ -108,6 +108,10 @@ const appRoutes: Routes = [
   {
     path : "musteriler/:id/maas/yeni",
     component : MusteriMaasPrimEkleComponent
+  },
+  {
+    path: "musteriler/yeni",
+    component: MusteriEkleComponent
   },
   {
     path : "kiralamalar/:id/detay",

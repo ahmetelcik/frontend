@@ -66,6 +66,7 @@ import { HesaplarKasaEkleComponent } from './HesaplarKasaEkle/hesaplar_kasa_ekle
 import { HesapParaGirisiEkleComponent } from './HesapParaGirisiEkle/hesap_para_giris_ekle.component';
 import { HesapParaCikisiEkleComponent } from './HesapParaCikisiEkle/hesap_para_cikisi_ekle.component';
 import { HesapDuzenleComponent } from './HesapDuzenle/hesap_duzenle.component';
+import { MusteriEkleComponent } from './MusteriEkle/musteri_ekle.component';
 /** Services */
 import { AracModelListeleService } from './Shared/Service/AracEkleForm/Arac_model_listele.service';
 import { AracMarkalariListeleService } from './Shared/Service/AracMarkalariListele/AracMarkalariListele.Service';
@@ -142,6 +143,7 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
     HesapParaGirisiEkleComponent,
     HesapParaCikisiEkleComponent,
     HesapDuzenleComponent,
+    MusteriEkleComponent,
   ],
   imports: [
     BrowserModule,
