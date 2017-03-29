@@ -39,6 +39,8 @@ import { GiderKategoriEkleComponent } from './GiderKategoriEkle/gider_kategori_e
 import { HizmetlerComponent } from './Hizmetler/hizmetler.component';
 import { HizmetDetayComponent } from './HizmetDetay/hizmet_detay.component';
 import { HizmetEkleComponent } from './HizmetEkle/hizmet_ekle.component';
+import { HesaplarComponent } from './Hesaplar/hesaplar.component';
+
 
 const appRoutes: Routes = [
   {
@@ -156,6 +158,10 @@ const appRoutes: Routes = [
   {
     path: "hizmetler/yeni",
     component: HizmetEkleComponent
+  },
+  {
+    path: "hesaplar",
+    component: HesaplarComponent
   },
   {
     path: '',
