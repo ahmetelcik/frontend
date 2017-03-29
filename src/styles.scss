@@ -1,13 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
-
+@import "scss/bootstrap.min.css";
 @import "assets/css/font-awesome.min.css";
 @import "ozel.scss";
 
 /* Header */
 @import "scss/Header/header.scss";
 @import "app/solmenu/solmenu.component.scss";
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic-ext');
+// @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic-ext');
+@import "scss/googlefontcss.css";
 @import "scss/font-size";
 
 /* Link */
@@ -55,6 +56,10 @@
 
 /* Modal */
 @import "scss/Modal/modal.scss";
+
+/* Kasa ve Banka Listele */
+@import "scss/List/kasavebankalistele.scss";
+
 body{
   font-family: 'Roboto', sans-serif;
   font-size:14px;

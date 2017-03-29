@@ -1,0 +1,106 @@
+#hesaplari-listele-table-body-block{
+    /* Table */
+    & table{
+        & tr{
+            &:hover{
+                background: #f6f6f6;
+            }
+            & a{
+                text-decoration: none;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                display: block;
+            }
+            & td{
+                padding: 0;
+                border-bottom: 1px solid #f5f5f5;
+            }
+        }
+    }
+    & .last-child{
+        text-align: right;
+        padding-right: 15px;
+        vertical-align: middle;
+    }
+    & .first-child{
+        min-width: 200px;
+        padding-left: 15px;
+        vertical-align: middle;
+    }
+    & .kasavebanka-listele-table-head-text-first{
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        color: #999;
+        font-weight: 500;
+    }
+
+    & .kasavebanka-listele-table-head-text{
+        color: #999;
+        font-weight: 500;
+    }
+
+    & .kasavebanka-listele-table-head-text-last{
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        color: #999;
+        font-weight: 500;
+    }
+
+    & .kasavebanka-listele-left-block{
+        & .kasavebanka-listele-table-left-icon-block{
+            float: left;
+            margin-right: 10px;
+            & i {
+                background-color: #dddddd;
+                padding: 13px;
+                font-size: 21px;
+                color: #adadad;
+                border-radius: 10px;
+            }
+        }
+
+        /* Hesap ve Banka Hesabı */
+        & .kasavebanka-hesap-ismi-ve-sube-adi{
+            display: inline-block;
+            margin-top: 3px;
+            /* Hesap İsmi */
+            & .kasavebanka-hesap-ismi-block{
+                & span{
+                    color: #888;
+                    font-size: 15px;
+                }
+            }
+             /* Şube Adı */
+            & .kasavebanka-hesap-sube-adi-block{
+                & span{
+                    color: #888;
+                    font-size: 12px;
+                }
+            }
+        }
+               
+    }
+
+    /* IBAN Numarası Block */
+        & .kasavebanka-listele-iban-block{
+            & .kasavebanka-listele-iban-text{
+                & span{
+                    color: #888;
+                }
+            }
+        }
+
+        /* Bakiyesi Block */
+        & .kasavebanka-listele-bakiye-block{
+            text-align: right;
+            & .kasavebanka-listele-bakiye-text{
+                & span{
+                    color: #a2a2a2;
+                    font-weight: 500;
+                    font-size: 15px;
+                }
+            }
+        }
+}

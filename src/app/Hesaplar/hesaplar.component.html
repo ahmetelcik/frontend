@@ -26,55 +26,84 @@
 <div class="row">
     <div class="col-md-12">
       <div class="btn-group pull-right" role="group" aria-label="...">
-        <a routerLink="/hesaplar/banka/yeni" class="btn btn-success-ozel">YENİ BANKA</a>
-        <a routerLink="/hesaplar/kasa/yeni" class="btn btn-success-ozel">YENİ KASA</a>
+        <a routerLink="/hesaplar/banka/yeni" class="btn btn-success-ozel"> <i class="fa fa-plus"></i> YENİ BANKA</a>
+        <a routerLink="/hesaplar/kasa/yeni" class="btn btn-success-ozel"> <i class="fa fa-plus"></i> YENİ KASA</a>
       </div>
     </div>
 </div>
 <!-- Kasa & Banka Ekle -->
 
 <!-- Hesap Listele -->
-  <div class="row">
-    <div class="col-md-12">
-      <!-- Panel -->
+<div class="row m-t-15">
+  <div class="col-md-12">
+    <!-- Panel -->
       <div class="panel panel-light" style="border-radius: 5px">
         <!-- Panel Body -->
-        <div class="panel-body" style="padding: 0;">
-          <div id="kiralama-listele-table-body-block">
+        <div class="panel-body" style="padding: 0">
+          <!-- Hesap Listele -->
+          <div id="hesaplari-listele-table-body-block">
             <div class="table-responsive">
               <table class="table">
                 <thead>
-                  <th class="kiralama-listele-table-head-text-first">Hesap İsmi</th>
-                  <th class="kiralama-listele-table-head-text">Şube</th>
-                  <th class="kiralama-listele-table-head-text">IBAN</th>
-                  <th class="kiralama-listele-table-head-text-last" style="text-align: right">Bakiye</th>
+                  <th class="kasavebanka-listele-table-head-text-first">Hesap İsmi</th>
+                  <th class="kasavebanka-listele-table-head-text">IBAN</th>
+                  <th class="kasavebanka-listele-table-head-text-last" style="text-align: right">Bakiye</th>
                 </thead>
                 <tbody>
-                <tr>
-                  <td class="first-table-cell">
-                    
-                  </td>
-                  <td style="min-width: 170px">
-                    
-                  </td>
-                  <td style="min-width: 260px">
-                    
-                  </td>
-                  <td class="last-table-cell">
-                    
-                  </td>
-                </tr>
-   
+                  <tr>
+                    <td class="first-child">
+                      <a routerLink="/hesaplar/5/detay">
+                        <div class="kasavebanka-listele-left-block">
+                          <!-- İcon -->
+                          <div class="kasavebanka-listele-table-left-icon-block">
+                            <i class="fa fa-bank"></i>
+                          </div>
+                          <!-- İcon -->
+                          <!-- İcon Yanı Block -->
+                          <div class="kasavebanka-hesap-ismi-ve-sube-adi">
+                            <!-- Hesap İsmi -->
+                            <div class="kasavebanka-hesap-ismi-block">
+                              <span>Merkez Şube</span>
+                            </div>
+                            <!-- Hesap İsmi -->
+                            <!-- Şube Adı -->
+                            <div class="kasavebanka-hesap-sube-adi-block">
+                              <span>Merkez Şube</span>
+                            </div>
+                            <!-- Şube Adı -->
+                          </div>
+                          <!-- İcon Yanı Block -->
+                        </div>
+                      </a>
+                    </td>
+                    <td style="vertical-align: middle;min-width: 200px;">
+                      <a routerLink="/hesaplar/5/detay">
+                        <div class="kasavebanka-listele-iban-block">
+                          <div class="kasavebanka-listele-iban-text">
+                            <span>TR2323-2323-2323-0095</span>
+                          </div>
+                        </div>
+                      </a>
+                    </td>
+                    <td class="last-child">
+                      <a routerLink="/hesaplar/5/detay">
+                        <div class="kasavebanka-listele-bakiye-block">
+                          <div class="kasavebanka-listele-bakiye-text">
+                            <span>250,10 <i class="fa fa-try"></i></span>
+                          </div>
+                        </div>
+                      </a>
+                    </td>
+                  </tr>
                 </tbody>
               </table>
             </div>
           </div>
+          <!-- Hesap Listele -->
         </div>
         <!-- Panel Body -->
       </div>
       <!-- Panel -->
-    </div>
   </div>
-<!-- Hesap Listele -->
-  
 </div>
+<!-- Hesap Listele -->
