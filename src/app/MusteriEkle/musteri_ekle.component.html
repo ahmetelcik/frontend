@@ -38,28 +38,107 @@
           </div>
           <!-- Panel Heading -->
           <!-- Panel Body -->
-          <div class="panel-body">
+          <div class="panel-body">     
 
-          <!-- Şube Adı -->
-          <div class="form-group">
-            <label for="SubeAdi" class="control-label form-style-ozel-label">Şube Adı</label>
-            <input type="text" class="form-control form-style-ozel" id="SubeAdi" name="sube_adi" placeholder="Şube Adı">
-          </div>
-          <!-- Şube Adı -->
+            <!-- Müşteri Tipi -->
+            <div class="form-group">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default" [class.active]="musteri_tipi == 'Bireysel'"  (click)="MusteriTipiChange('Bireysel')">BİREYSEL</button>
+                    <button type="button" class="btn btn-default" [class.active]="musteri_tipi == 'Kurumsal'" (click)="MusteriTipiChange('Kurumsal')">KURUMSAL</button>
+                </div>
+            </div>
+            <!-- Müşteri Tipi -->
 
-          <!-- Şube Telefon -->
-          <div class="form-group">
-            <label for="SubeTelefon" class="control-label form-style-ozel-label">Telefon Numarası</label>
-            <input type="text" class="form-control form-style-ozel" id="SubeTelefon" name="sube_telefon" placeholder="Telefon Numarası">
-          </div>
-          <!-- Şube Telefon -->
+            <!-- Firma Ünvanı -->
+            <div class="form-group" *ngIf="musteri_tipi == 'Kurumsal'">
+                <label for="MusteriFirmaUnvani" class="control-label form-style-ozel-label">Firma Ünvani</label>
+                <input type="text" class="form-control form-style-ozel" id="MusteriFirmaUnvani"  placeholder="Firma Ünvanı">
+            </div>
+            <!-- Firma Ünvanı -->
 
-          <!-- Şube Açık Adresi -->
-          <div class="form-group">
-            <label for="SubeAcikAdres" class="control-label form-style-ozel-label">Şube Açık Adres</label>
-            <textarea class="form-control form-style-ozel" id="SubeAcikAdres" name="sube_acik_adres" placeholder="Açık Adres"></textarea>
-          </div>
-          <!-- Şube Açık Adresi -->
+            <!-- Firma Kısa İsim -->
+            <div class="form-group" *ngIf="musteri_tipi == 'Kurumsal'">
+                <label for="MusteriFirmaKisaIsim" class="control-label form-style-ozel-label">Kısa İsim</label>
+                <input type="text" class="form-control form-style-ozel" id="MusteriFirmaKisaIsim"  placeholder="Kısa İsim">
+            </div>
+            <!-- Firma Kısa İsim -->
+
+            <!-- Firma Vergi Dairesi -->
+            <div class="form-group" *ngIf="musteri_tipi == 'Kurumsal'">
+                <label for="MusteriFirmaVergiDairesi" class="control-label form-style-ozel-label">Vergi Dairesi</label>
+                <input type="text" class="form-control form-style-ozel" id="MusteriFirmaVergiDairesi"  placeholder="Vergi Dairesi">
+            </div>
+            <!-- Firma Vergi Dairesi -->
+
+            <!-- Firma Vergi Dairesi -->
+            <div class="form-group" *ngIf="musteri_tipi == 'Kurumsal'">
+                <label for="MusteriVKNTCNNumarasi" class="control-label form-style-ozel-label">VKN / TCKN</label>
+                <input type="text" class="form-control form-style-ozel" id="MusteriVKNTCNNumarasi"  placeholder="Vergi Kimlik Numarası">
+            </div>
+            <!-- Firma Vergi Dairesi -->
+
+            <!-- Adı -->
+            <div class="form-group" *ngIf="musteri_tipi == 'Bireysel'">
+                <label for="MusteriAdi" class="control-label form-style-ozel-label">Adı</label>
+                <input type="text" class="form-control form-style-ozel" id="MusteriAdi"  placeholder="Müşteri Adı">
+            </div>
+            <!-- Adı -->
+
+            <!-- Soyadı -->
+            <div class="form-group" *ngIf="musteri_tipi == 'Bireysel'">
+                <label for="MusteriSoyadi" class="control-label form-style-ozel-label">Soyadı</label>
+                <input type="text" class="form-control form-style-ozel" id="MusteriSoyadi"  placeholder="Müşteri Soyadı">
+            </div>
+            <!-- Soyadı -->
+
+            <!-- TC Kimlik -->
+            <div class="form-group" *ngIf="musteri_tipi == 'Bireysel'">
+                <label for="MusteriTCKimlik" class="control-label form-style-ozel-label">T.C Kimlik NO</label>
+                <input type="text" class="form-control form-style-ozel" id="MusteriTCKimlik"  placeholder="Müşteri T.C Kimlik No">
+            </div>
+            <!-- TC Kimlik -->
+
+            <!-- Doğum Tarihi -->
+            <div class="form-group" *ngIf="musteri_tipi == 'Bireysel'">
+                <label for="MusteriDogumTarihi" class="control-label form-style-ozel-label">Doğum Tarihi</label>
+                <input type="text" class="form-control form-style-ozel" id="MusteriDogumTarihi" value="05/12/1995">
+            </div>
+            <!-- Doğum Tarihi -->
+            
+            <!-- E-Posta Adresi -->
+            <div class="form-group">
+                <label for="MusteriEpostaAdresi" class="control-label form-style-ozel-label">Eposta Adresi</label>
+                <input type="text" class="form-control form-style-ozel" id="MusteriEpostaAdresi" placeholder="E-Posta Adresi">
+            </div>
+            <!-- E-Posta Adresi -->
+
+            <!-- Telefon Numarası -->
+            <div class="form-group">
+                <label for="MusteriTelefonNumarasi" class="control-label form-style-ozel-label">Telefon Numarası</label>
+                <input type="text" class="form-control form-style-ozel" id="MusteriTelefonNumarasi" placeholder="Telefon Numarası">
+            </div>
+            <!-- Telefon Numarası -->
+
+            <!-- Faks Numarası -->
+            <div class="form-group">
+                <label for="MusteriFaksNumarasi" class="control-label form-style-ozel-label">Faks Numarası</label>
+                <input type="text" class="form-control form-style-ozel" id="MusteriFaksNumarasi" placeholder="Faks Numarası">
+            </div>
+            <!-- Faks Numarası -->
+
+            <!-- Faks Numarası -->
+            <div class="form-group">
+                <label for="MusteriIBANNumarasi" class="control-label form-style-ozel-label">IBAN Numarası</label>
+                <input type="text" class="form-control form-style-ozel" id="MusteriIBANNumarasi" placeholder="IBAN Numarası">
+            </div>
+            <!-- Faks Numarası -->
+
+            <!-- Açık Adres -->
+            <div class="form-group">
+                <label for="MusteriAcikAdres" class="control-label form-style-ozel-label">Açık Adres</label>
+                <textarea class="form-control form-style-ozel" id="MusteriAcikAdres" placeholder="Açık Adres"></textarea>
+            </div>
+            <!-- Açık Adres -->
 
           </div>
           <!-- Panel Body -->

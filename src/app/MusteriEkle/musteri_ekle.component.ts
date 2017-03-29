@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class MusteriEkleComponent implements OnInit {
+
+    private musteri_tipi: string = "Bireysel";
     constructor() { }
 
     ngOnInit() { }
+
+    MusteriTipiChange(musteri_tipi: string) {
+        this.musteri_tipi = musteri_tipi;
+    }
 }
