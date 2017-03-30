@@ -50,7 +50,7 @@ import { MusteriEkleComponent } from './MusteriEkle/musteri_ekle.component';
 import { GiderDuzenleComponent } from './GiderDuzenle/gider_duzenle.component';
 import { GiderOdemeEkleComponent } from './GiderOdemeEkle/gider_odeme_ekle.component';
 import { GiderOdemeDetay } from './GiderOdemeDetay/gider_odeme_detay.component';
-
+import { AracGiderDetayComponent } from './AracGiderDetay/arac_gider_detay.component';
 const appRoutes: Routes = [
   {
     path: 'anasayfa',
@@ -97,6 +97,10 @@ const appRoutes: Routes = [
     component : AracGiderEkleComponent
   },
   {
+    path: "araclar/:id/giderler/:id/detay",
+    component: AracGiderDetayComponent
+  },
+  {
     path : "araclar/:id/duzenle",
     component : AracDuzenleComponent,
     resolve : {
@@ -139,7 +143,7 @@ const appRoutes: Routes = [
   {
     path: "giderler/:id/odeme/:id/detay",
     component: GiderOdemeDetay
-  }
+  },
   {
     path : "araclar/yeni",
     component : AracEkleComponent

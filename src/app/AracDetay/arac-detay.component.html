@@ -53,7 +53,13 @@
             <!-- Diğer Button DropDown -->
             <!-- Ödeme Ekle -->
             <div class="col-md-6">
-              <a routerLink="/araclar/5/gider/yeni" id="giderEkleBtn" class="btn btn-danger-ozel btn-block"><i class="fa fa-sign-in fa-rotate-270"></i> Gider Ekle</a>
+              <div class="btn-group btn-block" dropdown>
+                <button class="btn btn btn-danger-ozel btn-block" dropdownToggle> GİDER EKLE <span class="caret"></span></button>
+                <ul dropdownMenu role="menu" aria-labelledby="single-button" class="btn-block">
+                  <li role="menuitem"><a routerLink="/araclar/5/gider/yeni" class="dropdown-item"><span>Hızlı Fiş/Fatura</span></a></li>
+                  <li role="menuitem"><a routerLink="/araclar/5/gider/yeni" class="dropdown-item"><span>Detaylı Fiş/Fatura</span></a></li>
+                </ul>
+              </div>
             </div>
             <!-- Ödeme Ekle -->
           </div>
