@@ -47,6 +47,9 @@ import { HesapParaGirisiEkleComponent } from './HesapParaGirisiEkle/hesap_para_g
 import { HesapParaCikisiEkleComponent } from './HesapParaCikisiEkle/hesap_para_cikisi_ekle.component';
 import { HesapDuzenleComponent } from './HesapDuzenle/hesap_duzenle.component';
 import { MusteriEkleComponent } from './MusteriEkle/musteri_ekle.component';
+import { GiderDuzenleComponent } from './GiderDuzenle/gider_duzenle.component';
+import { GiderOdemeEkleComponent } from './GiderOdemeEkle/gider_odeme_ekle.component';
+import { GiderOdemeDetay } from './GiderOdemeDetay/gider_odeme_detay.component';
 
 const appRoutes: Routes = [
   {
@@ -125,6 +128,18 @@ const appRoutes: Routes = [
     path : "giderler/:id/detay",
     component : GiderDetayComponent
   },
+  {
+    path: "giderler/:id/duzenle",
+    component: GiderDuzenleComponent
+  },
+  {
+    path: "giderler/:id/odeme/yeni",
+    component: GiderOdemeEkleComponent
+  },
+  {
+    path: "giderler/:id/odeme/:id/detay",
+    component: GiderOdemeDetay
+  }
   {
     path : "araclar/yeni",
     component : AracEkleComponent

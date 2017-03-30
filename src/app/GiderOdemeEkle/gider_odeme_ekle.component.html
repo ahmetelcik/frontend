@@ -4,13 +4,14 @@
     <div class="row">
       <!-- Page Header -->
       <div class="page-head-title">
-        <h2>Yeni Şube</h2>
+        <h2>Yeni Ödeme</h2>
       </div>
       <!-- Page Header -->
       <!-- Breadcumb -->
       <ol class="breadcrumb breadcumb-title">
         <li><a href="#">Anasayfa</a></li>
-        <li><a href="#">Şubeler</a></li>
+        <li><a href="#">Giderler</a></li>
+        <li><a href="#">Ödeme</a></li>
         <li class="active">Yeni</li>
       </ol>
       <!-- Breadcumb -->
@@ -35,7 +36,7 @@
           <div class="panel-heading">
           <!-- Panel Left Block -->
             <div class="panel-heading-left-block">
-              <span> Yeni Şube </span>
+              <span> Yeni Ödeme </span>
             </div>
           <!-- Panel Heading Left Block -->
           </div>
@@ -43,28 +44,39 @@
           <!-- Panel Body -->
           <div class="panel-body">
 
-          <!-- Şube Adı -->
+          <!-- Ödeme Tarihi -->
           <div class="form-group">
-            <label for="SubeAdi" class="control-label form-style-ozel-label">Şube Adı</label>
-            <input type="text" class="form-control form-style-ozel" id="SubeAdi" name="sube_adi" placeholder="Şube Adı">
+            <label for="GiderOdemeTarihi" class="control-label form-style-ozel-label">Ödeme Tarihi</label>
+            <input type="text" class="form-control form-style-ozel" id="GiderOdemeTarihi" value="27/03/2017">
           </div>
-          <!-- Şube Adı -->
+          <!-- Ödeme Tarihi -->
 
         
 
-          <!-- Şube Telefon -->
+          <!-- Ödeme Tutarı -->
           <div class="form-group">
-            <label for="SubeTelefon" class="control-label form-style-ozel-label">Telefon Numarası</label>
-            <input type="text" class="form-control form-style-ozel" id="SubeTelefon" name="sube_telefon" placeholder="Telefon Numarası">
+            <label for="GiderOdemeTutari" class="control-label form-style-ozel-label">Ödeme Tutarı</label>
+            <input type="text" class="form-control form-style-ozel" id="GiderOdemeTutari" value="0,00">
           </div>
-          <!-- Şube Telefon -->
+          <!-- Ödeme Tutarı -->
 
-          <!-- Şube Açık Adresi -->
-          <div class="form-group">
-            <label for="SubeAcikAdres" class="control-label form-style-ozel-label">Şube Açık Adres</label>
-            <textarea class="form-control form-style-ozel" id="SubeAcikAdres" name="sube_acik_adres" placeholder="Açık Adres"></textarea>
+          <!-- Gider Ödeme Hesabı -->
+           <div class="form-group" >
+            <label for="GiderOdemeHesap" class="control-label form-style-ozel-label">Hesap</label>
+            <select class="form-control form-style-ozel" id="GiderOdemeHesap">
+              <option value="0">Hesap Seçiniz</option>
+              <option value="1">Merkez KAsa</option>
+              <option value="2">Denizli Merkez Kasa</option>
+            </select>
           </div>
-          <!-- Şube Açık Adresi -->
+          <!-- Gider Ödeme Hesabı -->
+
+          <!-- Açıklama -->
+          <div class="form-group">
+            <label for="GiderOdemeAciklama" class="control-label form-style-ozel-label">Açıklama</label>
+            <textarea class="form-control form-style-ozel" id="GiderOdemeAciklama" placeholder="Açık Adres"></textarea>
+          </div>
+          <!-- Açıklama -->
 
           </div>
           <!-- Panel Body -->
