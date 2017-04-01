@@ -99,7 +99,7 @@ const appRoutes: Routes = [
     component : AracGiderEkleComponent
   },
   {
-    path: "araclar/:id/giderler/:id/detay",
+    path: "araclar/giderler/:id/detay",
     component: AracGiderDetayComponent
   },
   {
