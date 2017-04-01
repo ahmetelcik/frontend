@@ -52,6 +52,7 @@ import { GiderOdemeEkleComponent } from './GiderOdemeEkle/gider_odeme_ekle.compo
 import { GiderOdemeDetay } from './GiderOdemeDetay/gider_odeme_detay.component';
 import { AracGiderDetayComponent } from './AracGiderDetay/arac_gider_detay.component';
 import { AracGiderDuzenleComponent } from './AracGiderDuzenle/arac_gider_duzenle.component';
+import { AracGiderOdemeEkleComponent } from './AracGiderOdemeEkle/arac_gider_odeme_ekle.component';
 
 const appRoutes: Routes = [
   {
@@ -101,6 +102,10 @@ const appRoutes: Routes = [
   {
     path: "araclar/giderler/:id/detay",
     component: AracGiderDetayComponent
+  },
+  {
+    path: "araclar/giderler/:id/odeme/yeni",
+    component: AracGiderOdemeEkleComponent
   },
   {
     path: "araclar/giderler/:id/duzenle",
