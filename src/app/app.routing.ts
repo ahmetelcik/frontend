@@ -51,6 +51,8 @@ import { GiderDuzenleComponent } from './GiderDuzenle/gider_duzenle.component';
 import { GiderOdemeEkleComponent } from './GiderOdemeEkle/gider_odeme_ekle.component';
 import { GiderOdemeDetay } from './GiderOdemeDetay/gider_odeme_detay.component';
 import { AracGiderDetayComponent } from './AracGiderDetay/arac_gider_detay.component';
+import { AracGiderDuzenleComponent } from './AracGiderDuzenle/arac_gider_duzenle.component';
+
 const appRoutes: Routes = [
   {
     path: 'anasayfa',
@@ -99,6 +101,10 @@ const appRoutes: Routes = [
   {
     path: "araclar/:id/giderler/:id/detay",
     component: AracGiderDetayComponent
+  },
+  {
+    path: "araclar/giderler/:id/duzenle",
+    component: AracGiderDuzenleComponent
   },
   {
     path : "araclar/:id/duzenle",
