@@ -1,0 +1,29 @@
+{
+  "http" : {
+    "success" : true,
+    "http_code" : 200,
+    "http_message" : "Başarıyla Listelendi"
+  },
+  "contents" : {
+    "musteriler" : [
+      {
+        "id" : 1,
+        "musteri_tipi" : "Bireysel",
+        "tam_adi" : "Ahmet Elçik",
+        "eposta_adresi" : "ahmetelcik35@gmail.com",
+        "telefon_numarasi" : "05549109894",
+        "faks_numarasi" : null,
+        "bakiye" : 0.00
+      },
+      {
+        "id" : 2,
+        "musteri_tipi" : "Kurumsal",
+        "tam_adi" : "HAŞEM BİLGİ TEKNOLOJİLERİ PAZARLAMA VE TİC.LTD.ŞTİ",
+        "eposta_adresi" : "ahmetelcik35@gmail.com",
+        "telefon_numarasi" : "05549109894",
+        "faks_numarasi" : null,
+        "bakiye" : 0.00
+      }
+    ]
+  }
+}

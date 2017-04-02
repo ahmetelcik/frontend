@@ -93,6 +93,10 @@ import { AracListeleResolver } from './Shared/Service/AracListele/AracListele.Re
 import { AracDetayResolver1 } from './Shared/Service/AracDetay/AracDetay.Resolver1';
 import { AracGiderDetayService } from './Shared/Service/AracGiderDetay/AracGiderDetay.Service';
 import { AracGiderDetayResolver } from './Shared/Service/AracGiderDetay/AracGiderDetay.Resolver';
+
+import { MusteriListeleService } from './Shared/Service/MusteriListele/MusteriListele.Service';
+import { MusteriListeleResolver } from './Shared/Service/MusteriListele/MusteriListele.Resolver';
+
 /** Services **/
 import { AracDetayResolver } from './Shared/Service/AracDetay/AracDetay.Resolver';
 import { Ng2Validator } from './Shared/ng2_Validator/';
@@ -196,6 +200,7 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
     AracDetayResolver1,
     AracGiderDetayService,
     AracGiderDetayResolver,
+    MusteriListeleService,
   ],
   bootstrap: [AppComponent]
 })

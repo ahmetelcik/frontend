@@ -73,7 +73,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'musteriler',
-    component: MusterilerComponent
+    component: MusterilerComponent,
   },
   {
     path: "musteri/:id/detay",

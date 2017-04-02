@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-musteriler',
@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./musteriler.component.scss']
 })
 export class MusterilerComponent implements OnInit {
-
+  
+ 
   constructor() {
-
+    
   }
 
   ngOnInit() {
