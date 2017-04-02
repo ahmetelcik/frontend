@@ -80,7 +80,7 @@ import { AracGiderEkleModel } from '../Modal/arac_gider_ekle.model';
           
           <!-- Ödeme Tarihi -->
           <div class="form-group">
-            <label for="FaturaOdemeTarihi" class="control-label form-style-ozel-label">Ödeme Tarihi</label>
+            <label for="FaturaOdemeTarihi" class="control-label form-style-ozel-label">{{ arac_gider_ekle_model.odeme_durumu == 'Odendi' ? 'Ödeme Tarihi' : 'Ödeneceği Tarih' }}</label>
             <input type="text" class="form-control form-style-ozel" id="FaturaOdemeTarihi" name="fatura_odeme_tarihi" [(ngModel)]="arac_gider_ekle_model.odeme_tarihi">
           </div>
           <!-- Ödeme Tarihi -->

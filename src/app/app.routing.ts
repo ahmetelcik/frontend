@@ -55,6 +55,10 @@ import { AracGiderDuzenleComponent } from './AracGiderDuzenle/arac_gider_duzenle
 import { AracGiderOdemeEkleComponent } from './AracGiderOdemeEkle/arac_gider_odeme_ekle.component';
 import { AracGiderOdemeDetay } from './AracGiderOdemeDetay/arac_gider_odeme_detay.component';
 
+import { AracListeleResolver } from './Shared/Service/AracListele/AracListele.Resolver';
+import { AracDetayResolver1 } from './Shared/Service/AracDetay/AracDetay.Resolver1';
+import { AracGiderDetayResolver } from './Shared/Service/AracGiderDetay/AracGiderDetay.Resolver';
+
 const appRoutes: Routes = [
   {
     path: 'anasayfa',
@@ -62,7 +66,10 @@ const appRoutes: Routes = [
   },
   {
     path: 'araclar',
-    component: AraclarComponent
+    component: AraclarComponent,
+    resolve: {
+      data : AracListeleResolver
+    }
   },
   {
     path: 'musteriler',
@@ -94,7 +101,10 @@ const appRoutes: Routes = [
   },
   {
     path : "araclar/:id/detay",
-    component : AracDetayComponent,
+    component: AracDetayComponent,
+    resolve: {
+      data : AracDetayResolver1
+    }
   },
   {
     path : "araclar/:id/gider/yeni",
@@ -102,7 +112,10 @@ const appRoutes: Routes = [
   },
   {
     path: "araclar/giderler/:id/detay",
-    component: AracGiderDetayComponent
+    component: AracGiderDetayComponent,
+    resolve: {
+      data : AracGiderDetayResolver
+    }
   },
   {
     path: "araclar/giderler/:id/odeme/yeni",

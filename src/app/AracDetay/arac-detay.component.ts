@@ -1,48 +1,36 @@
 import { Component, OnInit } from '@angular/core';
-import { AracDetayService } from '../Shared/Service/AracDetay/AracDetay.Service';
-import { AracNotListeleService } from '../Shared/Service/AracNotlari/AracNotlariListele.Service';
-import { FolkJoins } from '../Shared/Service/FolkJoins/FolkJoins';
+import { ActivatedRoute } from '@angular/router';
+
 @Component({
   selector: 'app-arac-detays',
   templateUrl: './arac-detay.component.html',
 })
 export class AracDetayComponent implements OnInit {
 
+  // Arac Detayi
   public arac_detay: any;
+  // Arac Notlari
   public arac_notlari: any;
+  // Resolve Data 
+  public data: any;
 
-  constructor(private _arac_detay_service: AracDetayService, private _arac_notlari_service: AracNotListeleService) {
+  constructor(private route: ActivatedRoute) {
 
+    // Resolve Data
+    this.data = this.route.snapshot.data['data'];
+
+    // Araç Detayi
+    this.arac_detay = this.data.contents.arac_detay;
+
+    // Araç Notları
+    this.arac_notlari = this.data.contents.arac_notlari;
+    
   }
 
 
 
   ngOnInit() {
-    let arrayServices = [
-      this._arac_detay_service.getAracDetay(),
-      this._arac_notlari_service.getAracNotlariListele(),
-    ];
-
-    var arrayFolksJoins = new FolkJoins(arrayServices);
-
-    arrayFolksJoins.getAll().subscribe(
-      data => {
-        this.arac_detay = data["0"].contents.arac_detay;
-        this.arac_notlari = data["1"].contents.arac_notlari;
-
-      },
-      err => {
-        console.error(err)
-      },
-          // the third argument is a function which runs on completion
-      () => {
-        console.log("veriler çekildi");
-      }
-
-    );
-
-
-
+    
   }
 
 

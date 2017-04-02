@@ -130,6 +130,7 @@ import { AracModel } from '../../AracEkle/Model/arac-ekle.model';
 })
 export class AracDuzenleFormComponent implements OnInit {
 
+  public AracDetayDeneme;  
   @Input('AracDetay') AracDetay;
   @Input('AracMarkalari') AracMarkalari;
   @Input('AraCekisTipleri') AraCekisTipleri;
@@ -142,8 +143,9 @@ export class AracDuzenleFormComponent implements OnInit {
   data;
 
   public arac_model: AracModel = new AracModel();
-  constructor(private route:ActivatedRoute) {
 
+  constructor(private route: ActivatedRoute) {
+    
   }
 
   ngOnInit(){

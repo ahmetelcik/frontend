@@ -89,6 +89,10 @@ import { AracDetayService } from './Shared/Service/AracDetay/AracDetay.Service';
 import { AracNotListeleService } from './Shared/Service/AracNotlari/AracNotlariListele.Service';
 import { AracListeleService } from './Shared/Service/AracListele/AracListele.Service';
 import { HizmetKategoriEkleComponent } from './HizmetKategoriEkle/hizmet_kategori_ekle.component';
+import { AracListeleResolver } from './Shared/Service/AracListele/AracListele.Resolver';
+import { AracDetayResolver1 } from './Shared/Service/AracDetay/AracDetay.Resolver1';
+import { AracGiderDetayService } from './Shared/Service/AracGiderDetay/AracGiderDetay.Service';
+import { AracGiderDetayResolver } from './Shared/Service/AracGiderDetay/AracGiderDetay.Resolver';
 /** Services **/
 import { AracDetayResolver } from './Shared/Service/AracDetay/AracDetay.Resolver';
 import { Ng2Validator } from './Shared/ng2_Validator/';
@@ -172,7 +176,6 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
     TabsModule.forRoot(),
     DatepickerModule.forRoot(),
     Ng2Validator
-
   ],
   providers: [
     MusteriNotlariService,
@@ -188,7 +191,11 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
     AracDetayService,
     AracNotListeleService,
     AracListeleService,
-    AracDetayResolver
+    AracDetayResolver,
+    AracListeleResolver,
+    AracDetayResolver1,
+    AracGiderDetayService,
+    AracGiderDetayResolver,
   ],
   bootstrap: [AppComponent]
 })
