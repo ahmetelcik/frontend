@@ -40,22 +40,23 @@
           <div id="musteri-listele-body-table">
             <div class="table-responsive">
 
+
               <table class="table">
                 <thead>
                 <th class="musteri-listele-table-head-text-first" style="padding-left: 20px;padding-bottom: 20px;padding-top: 20px">Adi</th>
                 <th class="musteri-listele-table-head-text-last" style="padding-right: 20px;padding-bottom: 20px;padding-top: 20px;text-align:right"> <i class="fa fa-sort-numeric-desc"></i> Bakiye</th>
                 </thead>
                 <tbody>
-                <tr>
+                <tr *ngFor="let calisan of calisanlar">
                   <td class="first-table-cell">
-                    <a routerLink="/calisanlar/1/detay">
+                    <a routerLink="/calisanlar/{{ calisan.id }}/detay">
                       <div class="musteri-listele-table-left-block">
                         <div class="musteri-listele-table-left-kisa-ad-block">
-                          <span>AE</span>
+                          <span>{{ calisan.bas_harfler }}</span>
                         </div>
                         <div class="musteri-listele-table-left-tam-adi">
-                          <span>Ahmet Elçik</span>
-                          <span class="musteri-listele-table-left-telefon-no">(554) 910 98 94</span>
+                          <span>{{ calisan.adi_soyadi }}</span>
+                          <span class="musteri-listele-table-left-telefon-no">{{ calisan.telefon_numarasi }}</span>
                         </div>
                       </div>
                     </a>
@@ -64,7 +65,7 @@
                     <a routerLink="/calisanlar/2/detay">
                       <div class="musteri-listele-table-right-block">
                         <div class="musteri-listele-table-right-bakiye-text">
-                          <span>250,00 <i class="fa fa-try"></i></span>
+                          <span>{{ calisan.toplam_odenecek }} <i class="fa fa-try"></i></span>
                         </div>
                       </div>
                     </a>

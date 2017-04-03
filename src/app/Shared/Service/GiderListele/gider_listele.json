@@ -1,0 +1,89 @@
+{
+  "http" : {
+    "success" : true,
+    "http_code" : 200,
+    "http_message" : "Başarıyla Listelendi"
+  },
+  "contents" : {
+    "giderler" : [
+      {
+        "id" : 1,
+        "fatura_tipi" : "Hızlı Fiş",
+        "fatura_aciklama" : "Hızlı Fiş Açıklama",
+        "fatura_tarihi" : "2017-03-04",
+        "toplam_tutar" : 1000.00,
+        "toplam_kdv" : 180.00,
+        "gider_sube" : {
+          "id" : 1,
+          "sube_adi" : "Denizli Çınar Şube"
+        },
+        "gider_kategori" : {
+          "id" : 2,
+          "kategori_adi" : "Ofis Kırtasiye"
+        },
+        "gider_turu" : "Para Çıkışı",
+        "gider_belirtec" : "Fiş / Fatura",
+        "ekleyen_kullanici" : {
+          "id" : 1,
+          "adi_soyadi" : "Ahmet Elçik"
+        },
+        "olusturulma_tarihi" : "2017-03-04 12:34:02",
+        "toplam_odenen_tutar" : 0.00,
+        "toplam_kalan_odeme" : 1000.00,
+        "odendi" : true
+      },
+      {
+        "id" : 2,
+        "fatura_tipi" : "Detaylı Fiş",
+        "fatura_aciklama" : "Detaylı Fiş Açıklama",
+        "fatura_tarihi" : "2017-03-04",
+        "toplam_tutar" : 100.00,
+        "toplam_kdv" : 18.00,
+        "gider_sube" : {
+          "id" : 1,
+          "sube_adi" : "Denizli Çınar Şube"
+        },
+        "gider_kategori" : {
+          "id" : 2,
+          "kategori_adi" : "Temizlik Malzemesi"
+        },
+        "gider_turu" : "Para Çıkışı",
+        "gider_belirtec" : "Fiş / Fatura",
+        "ekleyen_kullanici" : {
+          "id" : 1,
+          "adi_soyadi" : "Ahmet Elçik"
+        },
+        "olusturulma_tarihi" : "2017-03-04 12:34:02",
+        "toplam_odenen_tutar" : 0.00,
+        "toplam_kalan_odeme" : 100.00,
+        "odendi" : false
+      },
+      {
+        "id" : 3,
+        "fatura_tipi" : "Çalışan Maaş",
+        "fatura_aciklama" : "Çalışan Maaş Açıklama",
+        "fatura_tarihi" : "2017-03-04",
+        "toplam_tutar" : 1404.00,
+        "toplam_kdv" : null,
+        "gider_sube" : {
+          "id" : 1,
+          "sube_adi" : "Denizli Çınar Şube"
+        },
+        "gider_kategori" : {
+          "id" : 2,
+          "kategori_adi" : "Çalışan Maaş"
+        },
+        "gider_turu" : "Para Çıkışı",
+        "gider_belirtec" : "Çalışan Maaş",
+        "ekleyen_kullanici" : {
+          "id" : 1,
+          "adi_soyadi" : "Ahmet Elçik"
+        },
+        "olusturulma_tarihi" : "2017-03-04 12:34:02",
+        "toplam_odenen_tutar" : 0.00,
+        "toplam_kalan_odeme" : 1404.00,
+        "odendi" : false
+      }
+    ]
+  }
+}

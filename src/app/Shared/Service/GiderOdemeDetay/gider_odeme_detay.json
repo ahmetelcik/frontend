@@ -1,0 +1,25 @@
+{
+  "http" : {
+    "success" : true,
+    "http_code" : 200,
+    "http_message" : "Başarıyla Listelendi"
+  },
+  "contents" : {
+    "odeme_detay" : {
+      "id" : 1,
+      "odeme_tutari" : 20.00,
+      "odeme_tarihi" : "2017-03-04",
+      "odeme_aciklama" : "ödeme açıklamasını buraya yazılacak",
+      "odeme_yapilan_hesap" : {
+        "id" : 2,
+        "hesap_ismi" : "Denizli Çınar Şube Kasa"
+      },
+      "ekleyen_kullanici" : {
+        "id" : 5,
+        "adi_soyadi": "Ahmet Elçik"
+      },
+      "olusturulma_tarihi" : "2017-03-04 12:34"
+    }
+      
+  }
+}

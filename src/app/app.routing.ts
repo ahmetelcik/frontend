@@ -60,6 +60,16 @@ import { AracGiderDetayResolver } from './Shared/Service/AracGiderDetay/AracGide
 import { MusteriListeleResolver } from './Shared/Service/MusteriListele/MusteriListele.Resolver';
 import { MusteriDetayResolver } from './Shared/Service/MusteriDetay/MusteriDetay.Resolver';
 import { MusteriKartEkleComponent } from './MusteriKartEkle/musteri_kart_ekle.component';
+import { CalisanListeleResolver } from './Shared/Service/CalisanListele/CalisanListele.Resolver';
+import { CalisanDetayResolver } from './Shared/Service/CalisanDetay/CalisanDetay.Resolver';
+import { GiderListeleResolver } from './Shared/Service/GiderListele/GiderListele.Resolver';
+import { GiderDetayResolver } from './Shared/Service/GiderDetay/GiderDetay.Resolver';
+import { GiderOdemeDetayResolver } from './Shared/Service/GiderOdemeDetay/GiderOdemeDetay.Resolver';
+import { HesapListeleResolver } from './Shared/Service/KasaveBankalar/HesapListele.Resolver';
+import { HesapDetayResolver } from './Shared/Service/KasaveBankaDetay/HesapDetay.Resolver';
+
+import { SubeListeleResolver } from './Shared/Service/SubeListele/SubeListele.Resolver';
+
 const appRoutes: Routes = [
   {
     path: 'anasayfa',
@@ -92,11 +102,17 @@ const appRoutes: Routes = [
   },
   {
     path: "calisanlar",
-    component:  CalisanlarComponent 
+    component: CalisanlarComponent,
+    resolve: {
+      data : CalisanListeleResolver
+    }
   },
   {
     path: "calisanlar/:id/detay",
-    component:  CalisanDetayComponent
+    component: CalisanDetayComponent,
+    resolve: {
+      data : CalisanDetayResolver
+    }
   },
   {
     path: "calisanlar/:id/duzenle",
@@ -166,23 +182,32 @@ const appRoutes: Routes = [
   },
   {
     path : "giderler/listele",
-    component : GiderListeleComponent
+    component: GiderListeleComponent,
+    resolve: {
+      data : GiderListeleResolver
+    }
   },
   {
     path : "giderler/:id/detay",
-    component : GiderDetayComponent
+    component: GiderDetayComponent,
+    resolve: {
+      data : GiderDetayResolver
+    }
   },
   {
     path: "giderler/:id/duzenle",
-    component: GiderDuzenleComponent
+    component: GiderDuzenleComponent,
   },
   {
     path: "giderler/:id/odeme/yeni",
     component: GiderOdemeEkleComponent
   },
   {
-    path: "giderler/:id/odeme/:id/detay",
-    component: GiderOdemeDetay
+    path: "giderler/:id/odeme/:odeme_id/detay",
+    component: GiderOdemeDetay,
+    resolve: {
+      data : GiderOdemeDetayResolver
+    }
   },
   {
     path : "araclar/yeni",
@@ -190,7 +215,10 @@ const appRoutes: Routes = [
   },
   {
     path: "subeler",
-    component: SubelerComponent
+    component: SubelerComponent,
+    resolve : {
+      data : SubeListeleResolver
+    }
   },
   {
     path: "subeler/:id/detay",
@@ -230,11 +258,17 @@ const appRoutes: Routes = [
   },
   {
     path: "hesaplar",
-    component: HesaplarComponent
+    component: HesaplarComponent,
+    resolve: {
+      data : HesapListeleResolver
+    }
   },
   {
     path: "hesaplar/:id/detay",
-    component: HesapDetayComponent
+    component: HesapDetayComponent,
+    resolve: {
+      data : HesapDetayResolver
+    }
   },
   {
     path: "hesaplar/:id/duzenle",

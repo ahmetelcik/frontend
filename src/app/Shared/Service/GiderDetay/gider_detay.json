@@ -1,0 +1,113 @@
+{
+  "http" : {
+    "success" : true,
+    "http_code" : 200,
+    "http_message" : "Başarıyla Listelendi"
+  },
+  "contents" : {
+    "gider_detay" : {
+      "id" : 1,
+      "fatura_tipi" : "Hızlı Fiş",
+      "fatura_aciklama" : "Hızlı Fiş Açıklama",
+      "fatura_tarihi" : "2017-03-04",
+      "toplam_tutar" : 1000.00,
+      "toplam_kdv" : 180.00,
+      "gider_odeme_tarihi" : "2017-03-04",
+      "gider_sube" : {
+        "id" : 1,
+        "sube_adi" : "Denizli Çınar Şube"
+      },
+      "gider_kategori" : {
+        "id" : 2,
+        "kategori_adi" : "Ofis Kırtasiye"
+      },
+      "gider_turu" : "Para Çıkışı",
+      "gider_belirtec" : "Fiş / Fatura",
+      "ekleyen_kullanici" : {
+        "id" : 1,
+        "adi_soyadi" : "Ahmet Elçik"
+      },
+      "olusturulma_tarihi" : "2017-03-04 12:34:02",
+      "toplam_odenen_tutar" : 0.00,
+      "toplam_kalan_odeme" : 1000.00,
+      "odendi" : true
+    },
+    "odemeler" : [
+      {
+        "id" : 1,
+        "odeme_tutari" : 20.00,
+        "odeme_tarihi" : "2017-03-04",
+        "odeme_yapilan_hesap" : {
+          "id" : 2,
+          "hesap_ismi" : "Denizli Çınar Şube Kasa"
+        },
+        "ekleyen_kullanici" : {
+          "id" : 5,
+          "adi_soyadi": "Ahmet Elçik"
+        },
+        "odeme_aciklama" : "ödeme açıklamasını buraya yazılacak"
+      },
+      {
+        "id" : 2,
+        "odeme_tutari" : 11.00,
+        "odeme_tarihi" : "2017-03-04",
+        "odeme_yapilan_hesap" : {
+          "id" : 2,
+          "hesap_ismi" : "Denizli Çınar Şube Kasa"
+        },
+        "ekleyen_kullanici" :{
+          "id" :5,
+          "adi_soyadi" :"Ahmet Elçik"
+        },
+        "odeme_aciklama" :"ödeme açıklamasını buraya yazılacak"
+      }
+    ],
+    "notlar" : [
+      {
+        "id" : 1,
+        "gider_notu" : "Bu bir deneme notuduur bundan daha çok var bekleyin gelecek.",
+        "ekleyen_kullanici" : {
+          "id" : 6,
+          "adi_soyadi" : "Mahmut Elçik"
+        },
+        "olusturulma_tarihi" : "2016-03-14 12:22"
+      },
+      {
+        "id" : 2,
+        "gider_notu" : "Bu bir deneme notuduur bundan daha çok var bekleyin gelecek.",
+        "ekleyen_kullanici" : {
+          "id" : 7,
+          "adi_soyadi" : "Recep Elçik"
+        },
+        "olusturulma_tarihi" : "2016-03-15 23:15"
+      },
+      {
+        "id" : 3,
+        "gider_notu" : "Bu bir deneme notuduur bundan daha çok var bekleyin gelecek.",
+        "ekleyen_kullanici" : {
+          "id" : 8,
+          "adi_soyadi" : "Habibe Elçik"
+        },
+        "olusturulma_tarihi" : "2016-03-17 02:05"
+      },
+      {
+        "id" : 4,
+        "gider_notu" : "Bu bir deneme notuduur bundan daha çok var bekleyin gelecek.",
+        "ekleyen_kullanici" : {
+          "id" : 9,
+          "adi_soyadi" : "Halil Sarıca"
+        },
+        "olusturulma_tarihi" : "2016-03-11 14:32"
+      },
+      {
+        "id" : 5,
+        "gider_notu" : "Bu bir deneme notuduur bundan daha çok var bekleyin gelecek.",
+        "ekleyen_kullanici" : {
+          "id" : 10,
+          "adi_soyadi" : "Batuhan Çalış"
+        },
+        "olusturulma_tarihi" : "2016-02-20 02:12"
+      }
+    ]
+  }
+}

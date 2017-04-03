@@ -1,0 +1,62 @@
+{
+  "http" : {
+    "success" : true,
+    "http_code" : 200,
+    "http_message" : "Başarıyla Listelendi"
+  },
+  "contents" : {
+    "calisanlar" : [
+      {
+        "id" : 1,
+        "adi_soyadi" : "HALİL SARICA",
+        "bas_harfler" : "HS",
+        "telefon_numarasi" : "05549109894",
+        "eposta_adresi" : "halil@btsmetal.com",
+        "calistigi_sube" : {
+          "id" : 33,
+          "sube_adi" : "Denizli Çınar Şube"
+        },
+        "firma" : {
+          "id" : 22,
+          "firma_adi" : "BTS ÇELİK METAL"
+        },
+        "gecikmis_maas" : 1250.00,
+        "toplam_odenecek" : 2500.00
+      },
+      {
+        "id" : 2,
+        "adi_soyadi" : "RECEP ELÇİK",
+        "bas_harfler" : "RE",
+        "telefon_numarasi" : "05372664071",
+        "eposta_adresi" : "recep@btsmetal.com",
+        "calistigi_sube" : {
+          "id" : 33,
+          "sube_adi" : "Denizli Çınar Şube"
+        },
+        "firma" : {
+          "id" : 22,
+          "firma_adi" : "BTS ÇELİK METAL"
+        },
+        "gecikmis_maas" : null,
+        "toplam_odenecek" : 5500.00
+      },
+      {
+        "id" : 3,
+        "adi_soyadi" : "MAHMUT ELÇİK",
+        "bas_harfler" : "ME",
+        "telefon_numarasi" : "05549109894",
+        "eposta_adresi" : "mahmut@btsmetal.com",
+        "calistigi_sube" : {
+          "id" : 33,
+          "sube_adi" : "Denizli Çınar Şube"
+        },
+        "firma" : {
+          "id" : 22,
+          "firma_adi" : "BTS ÇELİK METAL"
+        },
+        "gecikmis_maas" : null,
+        "toplam_odenecek" : 1404.00
+      }
+    ]
+  }
+}

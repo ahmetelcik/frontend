@@ -50,155 +50,53 @@
                 <th class="gider-listele-table-baslik-text gider-listele-right-baslik-text" style="padding-right: 20px;padding-bottom: 20px;padding-top: 20px"> <i class="fa fa-sort-numeric-desc"></i> Bakiye</th>
                 </thead>
                 <tbody>
-                <tr>
+                <tr *ngFor="let gider of giderler">
                   <td class="first-table-cell">
-                    <a routerLink="/giderler/5/detay">
+                    <a routerLink="/giderler/{{ gider.id }}/detay">
                       <div class="gider-listele-table-left-block">
                         <div class="gider-listele-table-left-icon-block">
                           <i class="fa fa-file" style="padding: 14px;background-color: #ddd;border-radius: 9px;font-size: 20px;color: #adadad;"></i>
                         </div>
                         <div class="gider-listele-table-aciklama-text">
-                          <span>Deneme Gider Açıklama</span>
+                          <span>{{ gider.fatura_aciklama }}</span>
                         </div>
                         <div class="gider-listele-table-kategori-block">
-                          <span>Araç Giderleri</span>
+                          <span>{{ gider.gider_kategori.kategori_adi }}</span>
                         </div>
                       </div>
                     </a>
                   </td>
                   <td>
-                    <a routerLink="/giderler/5/detay">
+                    <a routerLink="/giderler/{{ gider.id }}/detay">
                       <div class="gider-listele-table-middle-block">
                         <div class="gider-listele-table-fatura-tarihi">
-                          <span>12 Ocak 2016</span>
+                          <span>{{ gider.fatura_tarihi }}</span>
                           <span class="kalan-gun-text">( <i class="fa fa-bell"></i> 32 gün sonra )</span>
                         </div>
                         <div class="gider-listele-table-gider-turu-block">
-                          <span>Para Çıkışı</span>
+                          <span>{{ gider.gider_belirtec  }}</span>
                         </div>
                         <div class="gider-listele-table-gider-sube-block">
-                          <span><i class="fa fa-map-marker"></i> Denizli Merkez</span>
+                          <span><i class="fa fa-map-marker"></i> {{ gider.gider_sube.sube_adi }}</span>
                         </div>
                       </div>
                     </a>
                   </td>
                   <td style="text-align: right;">
-                    <a routerLink="/giderler/5/detay">
+                    <a routerLink="/giderler/{{ gider.id }}/detay">
                       <div class="gider-listele-table-right-block">
                         <div class="gider-listele-table-kalan-meblag-block">
-                          <span>Kalan Meblağ : <b>90,00</b> <i class="fa fa-try"></i></span>
+                          <span>Kalan Meblağ : <b>{{ gider.toplam_kalan_odeme }}</b> <i class="fa fa-try"></i></span>
                         </div>
                         <div class="gider-listele-table-genel-toplam-block">
-                          <span>Genel Toplam : <b>100,00</b> <i class="fa fa-try"></i></span>
+                          <span>Genel Toplam : <b>{{ gider.toplam_tutar }}</b> <i class="fa fa-try"></i></span>
                         </div>
-                        <div class="gider-listele-table-odeme-durumu-block">
+                        <div class="gider-listele-table-odeme-durumu-block" *ngIf="gider.odendi == false">
                           <span class="odenecek"><i class="fa fa-minus"></i> ÖDENECEK</span>
                         </div>
-                        <!--<div class="gider-listele-table-odeme-durumu-block">-->
-                        <!--<span class="odendi"><i class="fa fa-check-circle"></i> ÖDENDİ</span>-->
-                        <!--</div>-->
-                      </div>
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="first-table-cell">
-                    <a href="#">
-                      <div class="gider-listele-table-left-block">
-                        <div class="gider-listele-table-left-icon-block">
-                          <i class="fa fa-file" style="padding: 14px;background-color: #ddd;border-radius: 9px;font-size: 20px;color: #adadad;"></i>
+                        <div class="gider-listele-table-odeme-durumu-block" *ngIf="gider.odendi == true">
+                          <span class="odendi"><i class="fa fa-check-circle"></i> ÖDENDİ</span>
                         </div>
-                        <div class="gider-listele-table-aciklama-text">
-                          <span>Deneme Gider Açıklama</span>
-                        </div>
-                        <div class="gider-listele-table-kategori-block">
-                          <span>Araç Giderleri</span>
-                        </div>
-                      </div>
-                    </a>
-                  </td>
-                  <td>
-                    <a href="#">
-                      <div class="gider-listele-table-middle-block">
-                        <div class="gider-listele-table-fatura-tarihi">
-                          <span>12 Ocak 2016</span>
-                          <span class="kalan-gun-text">( <i class="fa fa-bell"></i> 32 gün sonra )</span>
-                        </div>
-                        <div class="gider-listele-table-gider-turu-block">
-                          <span>Para Çıkışı</span>
-                        </div>
-                        <div class="gider-listele-table-gider-sube-block">
-                          <span><i class="fa fa-map-marker"></i> Denizli Merkez</span>
-                        </div>
-                      </div>
-                    </a>
-                  </td>
-                  <td style="text-align: right;">
-                    <a href="#">
-                      <div class="gider-listele-table-right-block">
-                        <div class="gider-listele-table-kalan-meblag-block">
-                          <span>Kalan Meblağ : <b>90,00</b> <i class="fa fa-try"></i></span>
-                        </div>
-                        <div class="gider-listele-table-genel-toplam-block">
-                          <span>Genel Toplam : <b>100,00</b> <i class="fa fa-try"></i></span>
-                        </div>
-                        <div class="gider-listele-table-odeme-durumu-block">
-                          <span class="odenecek"><i class="fa fa-minus"></i> ÖDENECEK</span>
-                        </div>
-                        <!--<div class="gider-listele-table-odeme-durumu-block">-->
-                        <!--<span class="odendi"><i class="fa fa-check-circle"></i> ÖDENDİ</span>-->
-                        <!--</div>-->
-                      </div>
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="first-table-cell">
-                    <a href="#">
-                      <div class="gider-listele-table-left-block">
-                        <div class="gider-listele-table-left-icon-block">
-                          <i class="fa fa-file" style="padding: 14px;background-color: #ddd;border-radius: 9px;font-size: 20px;color: #adadad;"></i>
-                        </div>
-                        <div class="gider-listele-table-aciklama-text">
-                          <span>Deneme Gider Açıklama</span>
-                        </div>
-                        <div class="gider-listele-table-kategori-block">
-                          <span>Araç Giderleri</span>
-                        </div>
-                      </div>
-                    </a>
-                  </td>
-                  <td>
-                    <a href="#">
-                      <div class="gider-listele-table-middle-block">
-                        <div class="gider-listele-table-fatura-tarihi">
-                          <span>12 Ocak 2016</span>
-                          <span class="kalan-gun-text">( <i class="fa fa-bell"></i> 32 gün sonra )</span>
-                        </div>
-                        <div class="gider-listele-table-gider-turu-block">
-                          <span>Para Çıkışı</span>
-                        </div>
-                        <div class="gider-listele-table-gider-sube-block">
-                          <span><i class="fa fa-map-marker"></i> Denizli Merkez</span>
-                        </div>
-                      </div>
-                    </a>
-                  </td>
-                  <td style="text-align: right;">
-                    <a href="#">
-                      <div class="gider-listele-table-right-block">
-                        <div class="gider-listele-table-kalan-meblag-block">
-                          <span>Kalan Meblağ : <b>90,00</b> <i class="fa fa-try"></i></span>
-                        </div>
-                        <div class="gider-listele-table-genel-toplam-block">
-                          <span>Genel Toplam : <b>100,00</b> <i class="fa fa-try"></i></span>
-                        </div>
-                        <div class="gider-listele-table-odeme-durumu-block">
-                          <span class="odenecek"><i class="fa fa-minus"></i> ÖDENECEK</span>
-                        </div>
-                        <!--<div class="gider-listele-table-odeme-durumu-block">-->
-                        <!--<span class="odendi"><i class="fa fa-check-circle"></i> ÖDENDİ</span>-->
-                        <!--</div>-->
                       </div>
                     </a>
                   </td>

@@ -1,0 +1,35 @@
+{
+  "http" : {
+    "success" : true,
+    "http_code" : 200,
+    "http_message" : "Başarıyla Listelendi"
+  },
+  "contents" : {
+    "hesaplar" : [
+      {
+        "id" : 1,
+        "hesap_ismi" : "Denizli Merkez Şube Kasa",
+        "hesap_tipi" : "Kasa",
+        "iban_numarasi" : null,
+        "hesap_sahibi_sube" : {
+          "id" : 5,
+          "sube_adi" : "Denizli Merkez Şube"
+        },
+        "bakiye" : 1250.00
+      },
+      {
+        "id" : 2,
+        "hesap_ismi" : "Ziraat Bankası",
+        "hesap_tipi" : "Banka",
+        "iban_numarasi" : "TR2323-2323-2323-0095",
+        "hesap_sahibi_sube" : {
+          "id" : 5,
+          "sube_adi" : "Denizli Merkez Şube"
+        },
+        "bakiye" : 235.00
+      }
+
+      
+    ]
+  }
+}

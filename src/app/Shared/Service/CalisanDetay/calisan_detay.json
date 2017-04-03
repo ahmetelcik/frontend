@@ -1,0 +1,79 @@
+{
+  "http" : {
+    "success" : true,
+    "http_code" : 200,
+    "http_message" : "Başarıyla Listelendi"
+  },
+  "contents" : {
+    "calisan_detay" : {
+      "id" : 1,
+      "adi_soyadi" : "AHMET ELÇİK",
+      "telefon_numarasi" : "05549109894",
+      "eposta_adresi" : "ahmetelcik35@gmail.com",
+      "calistigi_sube" : {
+        "id" : 33,
+        "sube_adi" : "Denizli Çınar Şube"
+      },
+      "firma" : {
+        "id" : 22,
+        "firma_adi" : "BTS ÇELİK METAL"
+      },
+      "iban_numarasi" : "TR-5553-9483-2932-9090-1235",
+      "gecikmis_maas" : 1250.00,
+      "odenecek_maas" : 5500.00,
+      "toplam" : 6750.00,
+      "ekleyen_kullanici" : {
+        "id" : 1,
+        "adi_soyadi" : "Ahmet Elçik"
+      },
+      "olusturulma_tarihi" : "2016-03-11 14:32"
+    },
+    "calisan_notlari" : [
+      {
+        "id" : 1,
+        "calisan_notu" : "Bu bir deneme notuduur bundan daha çok var bekleyin gelecek.",
+        "ekleyen_kullanici" : {
+          "id" : 6,
+          "adi_soyadi" : "Mahmut Elçik"
+        },
+        "olusturulma_tarihi" : "2016-03-14 12:22"
+      },
+      {
+        "id" : 2,
+        "calisan_notu" : "Bu bir deneme notuduur bundan daha çok var bekleyin gelecek.",
+        "ekleyen_kullanici" : {
+          "id" : 7,
+          "adi_soyadi" : "Recep Elçik"
+        },
+        "olusturulma_tarihi" : "2016-03-15 23:15"
+      },
+      {
+        "id" : 3,
+        "calisan_notu" : "Bu bir deneme notuduur bundan daha çok var bekleyin gelecek.",
+        "ekleyen_kullanici" : {
+          "id" : 8,
+          "adi_soyadi" : "Habibe Elçik"
+        },
+        "olusturulma_tarihi" : "2016-03-17 02:05"
+      },
+      {
+        "id" : 4,
+        "calisan_notu" : "Bu bir deneme notuduur bundan daha çok var bekleyin gelecek.",
+        "ekleyen_kullanici" : {
+          "id" : 9,
+          "adi_soyadi" : "Halil Sarıca"
+        },
+        "olusturulma_tarihi" : "2016-03-11 14:32"
+      },
+      {
+        "id" : 5,
+        "calisan_notu" : "Bu bir deneme notuduur bundan daha çok var bekleyin gelecek.",
+        "ekleyen_kullanici" : {
+          "id" : 10,
+          "adi_soyadi" : "Batuhan Çalış"
+        },
+        "olusturulma_tarihi" : "2016-02-20 02:12"
+      }
+    ]
+  }
+}

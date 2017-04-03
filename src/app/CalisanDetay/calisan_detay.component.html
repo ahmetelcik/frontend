@@ -45,7 +45,7 @@
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <span>Ahmet Elçik</span>
+              <span>{{ calisan_detay.adi_soyadi }}</span>
             </div>
           </div>
           <!-- Adı Soyadı -->
@@ -58,7 +58,7 @@
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <span>ahmetelcik35@gmail.com</span>
+              <span>{{ calisan_detay.eposta_adresi }}</span>
             </div>
           </div>
           <!-- E-Posta Adresi -->
@@ -71,23 +71,39 @@
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <span>TR25252525252525253242342</span>
+              <span>{{ calisan_detay.iban_numarasi }}</span>
             </div>
           </div>
           <!-- IBAN Numarası -->
+
+          <!-- Çalıştığı Şube -->
+          <div class="row musteri-detay-list-row-block">
+            <div class="col-md-3">
+              <span>Şube</span>
+            </div>
+            <div class="col-md-1">
+              <span>:</span>
+            </div>
+            <div class="col-md-8">
+              <a href="#" class="link-blue-hover">{{ calisan_detay.calistigi_sube.sube_adi }}</a>
+            </div>
+          </div>
+          <!-- Çalıştığı Şube -->
+
+
         </div>
         <div class="panel-footer">
           <!-- Panel Footer Left Block -->
           <div class="panel-footer-left-block">
             <div class="panel-footer-ekleyen-kullanici-block">
-              <span>Ekleyen Kullanıcı : <a href="#" class="link-blue-hover">Ahmet Elçik</a></span>
+              <span>Ekleyen Kullanıcı : <a href="#" class="link-blue-hover">{{ calisan_detay.ekleyen_kullanici.adi_soyadi }}</a></span>
             </div>
           </div>
           <!-- Panel Footer Left Block -->
           <!-- Panel Footer Right Block -->
           <div class="panel-footer-right-block">
             <div class="panel-footer-olusturulma-tarihi-block">
-              <span>Oluşturulma Tarihi : 12 Aralık 2016 11:30</span>
+              <span>Oluşturulma Tarihi : {{ calisan_detay.olusturulma_tarihi }}</span>
             </div>
           </div>
           <!-- Panel Footer Right Block -->
@@ -118,7 +134,7 @@
             <!-- Diğer Button DropDown -->
             <!-- Ödeme Ekle -->
             <div class="col-md-6">
-              <a href="#" class="btn btn-success-ozel btn-block"><i class="fa fa-plus"></i> Avans Ekle</a>
+              <a href="#" class="btn btn-success-ozel btn-block"><i class="fa fa-plus"></i> Ödeme Ekle </a>
             </div>
             <!-- Ödeme Ekle -->
           </div>
@@ -129,13 +145,13 @@
                 <!-- Geçikmiş Maaş -->
                 <div class="kalan-bilgisi">
                   <span class="kalan-bilgis-text-info">GEÇİKMİŞ MAAŞ</span>
-                  <span class="kalan-bilgi-text-try">314,00 <i class="fa fa-try"></i></span>
+                  <span class="kalan-bilgi-text-try">{{ calisan_detay.gecikmis_maas }} <i class="fa fa-try"></i></span>
                 </div>
                 <!-- Geçikmiş Maaş -->
                 <!-- Ödenecek Maaş -->
                 <div class="kalan-bilgisi">
                   <span class="kalan-bilgis-text-info odenecek-maas">ÖDENECEK MAAŞ</span>
-                  <span class="kalan-bilgi-text-try odenecek-maas">314,00 <i class="fa fa-try"></i></span>
+                  <span class="kalan-bilgi-text-try odenecek-maas">{{ calisan_detay.odenecek_maas }} <i class="fa fa-try"></i></span>
                 </div>
                 <!-- Ödenecek Maaş -->
               </div>
@@ -149,7 +165,7 @@
           <div class="calisan-right-islem-detay-footer-block">
             <div class="calisan-right-islem-detay-footer-text-block">
               <span class="calisan-right-footer-title-text">TOPLAM</span>
-              <span class="calisan-right-footer-content-text pull-right">2.500,00 <i class="fa fa-try"></i></span>
+              <span class="calisan-right-footer-content-text pull-right">{{ calisan_detay.toplam }} <i class="fa fa-try"></i></span>
             </div>
           </div>
         </div>
@@ -169,7 +185,7 @@
               <div class="tab-page-content">
                 <ul class="not-listele-tab">
                   <li class="not-listele-tab-not-ekle-btn"><button class="btn btn-primary-ozel btn-block"><i class="fa fa-plus"></i> Yeni Not</button></li>
-                  <li>
+                  <li *ngFor="let not of calisan_notlari">
                     <a href="#">
                       <!-- İcon -->
                       <div class="tab-page-content-icon-block">
@@ -178,87 +194,13 @@
                       <!-- İcon -->
                       <!-- Text -->
                       <div class="tab-page-content-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad asperiores aut corporis distinctio, dolorum, explicabo fuga neque nisi reiciendis suscipit veniam voluptatem voluptatibus. Consequuntur impedit laborum laudantium sed soluta?</p>
-                        <span>12 Aralık 2016 / Ahmet Elçik</span>
+                        <p>{{ not.calisan_notu }}</p>
+                        <span>{{ calisan_detay.olusturulma_tarihi }} / {{ calisan_detay.ekleyen_kullanici.adi_soyadi }}</span>
                       </div>
                       <!-- Text -->
                     </a>
                   </li>
-                  <li>
-                    <a href="#">
-                      <!-- İcon -->
-                      <div class="tab-page-content-icon-block">
-                        <i class="fa fa-commenting"></i>
-                      </div>
-                      <!-- İcon -->
-                      <!-- Text -->
-                      <div class="tab-page-content-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad asperiores aut corporis distinctio, dolorum, explicabo fuga neque nisi reiciendis suscipit veniam voluptatem voluptatibus. Consequuntur impedit laborum laudantium sed soluta?</p>
-                        <span>12 Aralık 2016 / Ahmet Elçik</span>
-                      </div>
-                      <!-- Text -->
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <!-- İcon -->
-                      <div class="tab-page-content-icon-block">
-                        <i class="fa fa-commenting"></i>
-                      </div>
-                      <!-- İcon -->
-                      <!-- Text -->
-                      <div class="tab-page-content-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad asperiores aut corporis distinctio, dolorum, explicabo fuga neque nisi reiciendis suscipit veniam voluptatem voluptatibus. Consequuntur impedit laborum laudantium sed soluta?</p>
-                        <span>12 Aralık 2016 / Ahmet Elçik</span>
-                      </div>
-                      <!-- Text -->
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <!-- İcon -->
-                      <div class="tab-page-content-icon-block">
-                        <i class="fa fa-commenting"></i>
-                      </div>
-                      <!-- İcon -->
-                      <!-- Text -->
-                      <div class="tab-page-content-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad asperiores aut corporis distinctio, dolorum, explicabo fuga neque nisi reiciendis suscipit veniam voluptatem voluptatibus. Consequuntur impedit laborum laudantium sed soluta?</p>
-                        <span>12 Aralık 2016 / Ahmet Elçik</span>
-                      </div>
-                      <!-- Text -->
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <!-- İcon -->
-                      <div class="tab-page-content-icon-block">
-                        <i class="fa fa-commenting"></i>
-                      </div>
-                      <!-- İcon -->
-                      <!-- Text -->
-                      <div class="tab-page-content-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad asperiores aut corporis distinctio, dolorum, explicabo fuga neque nisi reiciendis suscipit veniam voluptatem voluptatibus. Consequuntur impedit laborum laudantium sed soluta?</p>
-                        <span>12 Aralık 2016 / Ahmet Elçik</span>
-                      </div>
-                      <!-- Text -->
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <!-- İcon -->
-                      <div class="tab-page-content-icon-block">
-                        <i class="fa fa-commenting"></i>
-                      </div>
-                      <!-- İcon -->
-                      <!-- Text -->
-                      <div class="tab-page-content-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad asperiores aut corporis distinctio, dolorum, explicabo fuga neque nisi reiciendis suscipit veniam voluptatem voluptatibus. Consequuntur impedit laborum laudantium sed soluta?</p>
-                        <span>12 Aralık 2016 / Ahmet Elçik</span>
-                      </div>
-                      <!-- Text -->
-                    </a>
-                  </li>
+                  
                 </ul>
               </div>
             </tab>

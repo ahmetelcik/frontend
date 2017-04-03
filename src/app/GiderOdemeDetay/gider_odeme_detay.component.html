@@ -47,7 +47,7 @@
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <span>10,00 <i class="fa fa-try"></i> </span>
+              <span>{{ odeme_detay.odeme_tutari }} <i class="fa fa-try"></i> </span>
             </div>
           </div>
           <!-- Ödeme Tutarı -->
@@ -61,7 +61,7 @@
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <span>30 Mart 2017</span>
+              <span>{{ odeme_detay.odeme_tarihi }}</span>
             </div>
           </div>
           <!-- Ödeme Tarihi -->
@@ -75,7 +75,7 @@
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <a href="#" class="link-blue-hover">Merkez Kasa</a>
+              <a href="#" class="link-blue-hover">{{ odeme_detay.odeme_yapilan_hesap.hesap_ismi }}</a>
             </div>
           </div>          
           <!-- Hesap -->
@@ -89,7 +89,7 @@
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi quis, officiis quibusdam doloremque minima repudiandae libero ratione. Illo distinctio fuga sequi, ipsam dolorum, ea eum, praesentium officiis tempore ad, a?</p>
+              <p>{{ odeme_detay.odeme_aciklama }}</p>
             </div>
           </div>      
           <!-- Açıklama -->
@@ -99,14 +99,14 @@
           <!-- Panel Footer Left Block -->
           <div class="panel-footer-left-block">
             <div class="panel-footer-ekleyen-kullanici-block">
-              <span>Ekleyen Kullanıcı : <a href="#" class="link-blue-hover">Ahmet Elçik</a></span>
+              <span>Ekleyen Kullanıcı : <a href="#" class="link-blue-hover">{{ odeme_detay.ekleyen_kullanici.adi_soyadi }}</a></span>
             </div>
           </div>
           <!-- Panel Footer Left Block -->
           <!-- Panel Footer Right Block -->
           <div class="panel-footer-right-block">
             <div class="panel-footer-olusturulma-tarihi-block">
-              <span>Oluşturulma Tarihi : 12 Aralık 2016 11:30</span>
+              <span>Oluşturulma Tarihi : {{ odeme_detay.olusturulma_tarihi }}</span>
             </div>
           </div>
           <!-- Panel Footer Right Block -->

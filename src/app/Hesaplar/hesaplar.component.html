@@ -50,25 +50,26 @@
                   <th class="kasavebanka-listele-table-head-text-last" style="text-align: right">Bakiye</th>
                 </thead>
                 <tbody>
-                  <tr>
+                  <tr *ngFor="let hesap of hesaplar">
                     <td class="first-child">
-                      <a routerLink="/hesaplar/5/detay">
+                      <a routerLink="/hesaplar/{{ hesap.id }}/detay">
                         <div class="kasavebanka-listele-left-block">
                           <!-- İcon -->
                           <div class="kasavebanka-listele-table-left-icon-block">
-                            <i class="fa fa-bank"></i>
+                            <i class="fa fa-bank" *ngIf="hesap.hesap_tipi == 'Banka'"></i>
+                            <i class="fa fa-money" *ngIf="hesap.hesap_tipi == 'Kasa'"></i>
                           </div>
                           <!-- İcon -->
                           <!-- İcon Yanı Block -->
                           <div class="kasavebanka-hesap-ismi-ve-sube-adi">
                             <!-- Hesap İsmi -->
                             <div class="kasavebanka-hesap-ismi-block">
-                              <span>Merkez Şube</span>
+                              <span>{{ hesap.hesap_ismi }}</span>
                             </div>
                             <!-- Hesap İsmi -->
                             <!-- Şube Adı -->
                             <div class="kasavebanka-hesap-sube-adi-block">
-                              <span>Merkez Şube</span>
+                              <span>{{ hesap.hesap_sahibi_sube.sube_adi }}</span>
                             </div>
                             <!-- Şube Adı -->
                           </div>
@@ -77,19 +78,19 @@
                       </a>
                     </td>
                     <td style="vertical-align: middle;min-width: 200px;">
-                      <a routerLink="/hesaplar/5/detay">
+                      <a routerLink="/hesaplar/{{ hesap.id }}/detay">
                         <div class="kasavebanka-listele-iban-block">
                           <div class="kasavebanka-listele-iban-text">
-                            <span>TR2323-2323-2323-0095</span>
+                            <span>{{ hesap.iban_numarasi }}</span>
                           </div>
                         </div>
                       </a>
                     </td>
                     <td class="last-child">
-                      <a routerLink="/hesaplar/5/detay">
+                      <a routerLink="/hesaplar/{{ hesap.id }}/detay">
                         <div class="kasavebanka-listele-bakiye-block">
                           <div class="kasavebanka-listele-bakiye-text">
-                            <span>250,10 <i class="fa fa-try"></i></span>
+                            <span>{{ hesap.bakiye }} <i class="fa fa-try"></i></span>
                           </div>
                         </div>
                       </a>

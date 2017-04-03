@@ -44,39 +44,18 @@
                   <th class="sube-listele-table-head-text-first" style="padding-left: 20px;padding-bottom: 20px;padding-top: 20px">Şube Adı</th>
                 </thead>
                 <tbody>
-                <tr>
+                <tr *ngFor="let sube of subeler">
                   <td class="first-table-cell">
-                    <a routerLink="/subeler/1/detay">
+                    <a routerLink="/subeler/{{ sube.id }}/detay">
                       <div class="sube-listele-table-left-block">
                         <div class="sube-listele-table-sube-adi-block">
-                          <span>Denizli Merkez Şube</span>
+                          <span>{{ sube.sube_adi }}</span>
                         </div>
                       </div>
                     </a>
                   </td>
                 </tr>
-                <tr>
-                  <td class="first-table-cell">
-                    <a routerLink="/subeler/2/detay" >
-                      <div class="sube-listele-table-left-block">
-                        <div class="sube-listele-table-sube-adi-block">
-                          <span>Denizli Merkez Şube</span>
-                        </div>
-                      </div>
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="first-table-cell">
-                    <a routerLink="/subeler/3/detay">
-                      <div class="sube-listele-table-left-block">
-                        <div class="sube-listele-table-sube-adi-block">
-                          <span>Denizli Merkez Şube</span>
-                        </div>
-                      </div>
-                    </a>
-                  </td>
-                </tr>
+                
                 </tbody>
               </table>
             </div>

@@ -98,6 +98,30 @@ import { MusteriListeleResolver } from './Shared/Service/MusteriListele/MusteriL
 
 import { MusteriDetayService } from './Shared/Service/MusteriDetay/MusteriDetay.Service';
 import { MusteriDetayResolver } from './Shared/Service/MusteriDetay/MusteriDetay.Resolver';
+import { CalisanListeleService } from './Shared/Service/CalisanListele/CalisanListele.Service';
+import { CalisanListeleResolver } from './Shared/Service/CalisanListele/CalisanListele.Resolver';
+
+import { CalisanDetayService } from './Shared/Service/CalisanDetay/CalisanDetay.Service'
+import { CalisanDetayResolver } from './Shared/Service/CalisanDetay/CalisanDetay.Resolver';
+
+import { GiderListeleService } from './Shared/Service/GiderListele/GiderListele.Service';
+import { GiderListeleResolver } from './Shared/Service/GiderListele/GiderListele.Resolver';
+
+import { GiderDetayService } from './Shared/Service/GiderDetay/GiderDetay.Service';
+import { GiderDetayResolver } from './Shared/Service/GiderDetay/GiderDetay.Resolver';
+
+import { GiderOdemeDetayService } from './Shared/Service/GiderOdemeDetay/GiderOdemeDetay.Service';
+import { GiderOdemeDetayResolver } from './Shared/Service/GiderOdemeDetay/GiderOdemeDetay.Resolver';
+
+import { HesapListeleService } from './Shared/Service/KasaveBankalar/HesapListele.Service';
+import { HesapListeleResolver } from './Shared/Service/KasaveBankalar/HesapListele.Resolver';
+
+import { HesapDetayService } from './Shared/Service/KasaveBankaDetay/HesapDetay.Service';
+import { HesapDetayResolver } from './Shared/Service/KasaveBankaDetay/HesapDetay.Resolver';
+
+import { SubeListeleService } from './Shared/Service/SubeListele/SubeListele.Service';
+import { SubeListeleResolver } from './Shared/Service/SubeListele/SubeListele.Resolver';
+
 /** Services **/
 import { AracDetayResolver } from './Shared/Service/AracDetay/AracDetay.Resolver';
 import { Ng2Validator } from './Shared/ng2_Validator/';
@@ -204,6 +228,22 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
     MusteriListeleResolver,
     MusteriDetayService,
     MusteriDetayResolver,
+    CalisanListeleService,
+    CalisanListeleResolver,
+    CalisanDetayService,
+    CalisanDetayResolver,
+    GiderListeleService,
+    GiderListeleResolver,
+    GiderDetayService,
+    GiderDetayResolver,
+    GiderOdemeDetayService,
+    GiderOdemeDetayResolver,
+    HesapListeleService,
+    HesapListeleResolver,
+    HesapDetayService,
+    HesapDetayResolver,
+    SubeListeleService,
+    SubeListeleResolver,
   ],
   bootstrap: [AppComponent]
 })

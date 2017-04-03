@@ -1,0 +1,22 @@
+{
+  "http" : {
+    "success" : true,
+    "http_code" : 200,
+    "http_message" : "Başarıyla Listelendi"
+  },
+  "contents" : {
+    "subeler" : [
+      {
+        "id" : 1,
+        "sube_adi" : "Denizli Çınar Şube",
+        "sube_telefon" : "0212 350 00 20"
+      },
+      {
+         "id" : 2,
+        "sube_adi" : "İzmir Buca Şube",
+        "sube_telefon" : "0212 350 00 35"        
+      }
+      
+    ]
+  }
+}

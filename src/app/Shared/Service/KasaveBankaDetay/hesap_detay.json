@@ -1,0 +1,28 @@
+{
+  "http" : {
+    "success" : true,
+    "http_code" : 200,
+    "http_message" : "Başarılı"
+  },
+  "contents" : {
+    "hesap_detay" : {
+       "id" : 1,
+        "hesap_ismi" : "Ziraat Bankası Denizli Merkez Şube",
+        "hesap_tipi" : "Kasa",
+        "banka_ismi" : "Ziraat Bankası",
+        "banka_sube" : "Topraklık Şube",
+        "hesap_numarasi" : "2323-2323-0095",
+        "iban_numarasi" : "TR2323-2323-2323-0095",
+        "hesap_sahibi_sube" : {
+          "id" : 5,
+          "sube_adi" : "Denizli Merkez Şube"
+        },
+        "ekleyen_kullanici" : {
+          "id" : 5,
+          "adi_soyadi" : "Ahmet Elçik"
+        },
+        "bakiye" : 1250.00,
+        "olusturulma_tarihi" : "2017-03-04 16:40:36"
+    }
+  }
+}
