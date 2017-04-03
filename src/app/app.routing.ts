@@ -59,6 +59,7 @@ import { AracDetayResolver1 } from './Shared/Service/AracDetay/AracDetay.Resolve
 import { AracGiderDetayResolver } from './Shared/Service/AracGiderDetay/AracGiderDetay.Resolver';
 import { MusteriListeleResolver } from './Shared/Service/MusteriListele/MusteriListele.Resolver';
 import { MusteriDetayResolver } from './Shared/Service/MusteriDetay/MusteriDetay.Resolver';
+import { MusteriKartEkleComponent } from './MusteriKartEkle/musteri_kart_ekle.component';
 const appRoutes: Routes = [
   {
     path: 'anasayfa',
@@ -84,6 +85,10 @@ const appRoutes: Routes = [
     resolve: {
       data : MusteriDetayResolver
     }
+  },
+  {
+    path : "musteriler/:id/kartlar/yeni",
+    component : MusteriKartEkleComponent
   },
   {
     path: "calisanlar",

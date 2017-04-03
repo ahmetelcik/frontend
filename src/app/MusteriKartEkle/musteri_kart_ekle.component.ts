@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class MusteriKartEkleComponent implements OnInit {
+    
     constructor() { }
 
     ngOnInit() { }

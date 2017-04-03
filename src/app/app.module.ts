@@ -72,6 +72,7 @@ import { AracGiderDuzenleComponent } from './AracGiderDuzenle/arac_gider_duzenle
 import { AracGiderOdemeEkleComponent } from './AracGiderOdemeEkle/arac_gider_odeme_ekle.component';
 import { AracGiderOdemeDetay } from './AracGiderOdemeDetay/arac_gider_odeme_detay.component';
 import { MusteriDetayComponent } from './MusteriDetay/musteri_detay.component';
+import { MusteriKartEkleComponent } from './MusteriKartEkle/musteri_kart_ekle.component';
 /** Services */
 import { AracModelListeleService } from './Shared/Service/AracEkleForm/Arac_model_listele.service';
 import { AracMarkalariListeleService } from './Shared/Service/AracMarkalariListele/AracMarkalariListele.Service';
@@ -165,6 +166,7 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
     AracGiderOdemeEkleComponent,
     AracGiderOdemeDetay,
     MusteriDetayComponent,
+    MusteriKartEkleComponent,
   ],
   imports: [
     BrowserModule,
