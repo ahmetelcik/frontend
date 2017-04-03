@@ -7,7 +7,6 @@ import { HeaderComponent } from './header/header.component';
 import { AnasayfaComponent } from './anasayfa/anasayfa.component';
 import { AraclarComponent } from './Araclar/araclar.component';
 import { MusterilerComponent } from './musteriler/musteriler.component';
-import { MusteriDetayComponent } from './musteri-detay/musteri-detay.component';
 import { PanelComponent } from './Ui/Panel/panel.component';
 import { ButtonComponent } from './Ui/Button/button.component';
 import { ListComponent } from './Ui/List/list.component';
@@ -54,12 +53,12 @@ import { AracGiderDetayComponent } from './AracGiderDetay/arac_gider_detay.compo
 import { AracGiderDuzenleComponent } from './AracGiderDuzenle/arac_gider_duzenle.component';
 import { AracGiderOdemeEkleComponent } from './AracGiderOdemeEkle/arac_gider_odeme_ekle.component';
 import { AracGiderOdemeDetay } from './AracGiderOdemeDetay/arac_gider_odeme_detay.component';
-
+import { MusteriDetayComponent } from './MusteriDetay/musteri_detay.component';
 import { AracListeleResolver } from './Shared/Service/AracListele/AracListele.Resolver';
 import { AracDetayResolver1 } from './Shared/Service/AracDetay/AracDetay.Resolver1';
 import { AracGiderDetayResolver } from './Shared/Service/AracGiderDetay/AracGiderDetay.Resolver';
 import { MusteriListeleResolver } from './Shared/Service/MusteriListele/MusteriListele.Resolver';
-
+import { MusteriDetayResolver } from './Shared/Service/MusteriDetay/MusteriDetay.Resolver';
 const appRoutes: Routes = [
   {
     path: 'anasayfa',
@@ -80,8 +79,11 @@ const appRoutes: Routes = [
     }
   },
   {
-    path: "musteri/:id/detay",
-    component: MusteriDetayComponent
+    path: "musteriler/:id/detay",
+    component: MusteriDetayComponent,
+    resolve: {
+      data : MusteriDetayResolver
+    }
   },
   {
     path: "calisanlar",

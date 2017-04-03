@@ -11,7 +11,6 @@ import { AnasayfaComponent } from './anasayfa/anasayfa.component';
 import { routing } from './app.routing';
 import { AraclarComponent } from './Araclar/araclar.component';
 import { MusterilerComponent } from './musteriler/musteriler.component';
-import { MusteriDetayComponent } from './musteri-detay/musteri-detay.component';
 import { Ng2Bs3ModalModule } from 'ng2-bs3-modal/ng2-bs3-modal';
 import { TabsModule } from 'ng2-bootstrap/tabs';
 import { AccordionModule,DropdownModule,AlertModule,ModalModule } from 'ng2-bootstrap';
@@ -74,6 +73,7 @@ import { AracGiderDetayComponent } from './AracGiderDetay/arac_gider_detay.compo
 import { AracGiderDuzenleComponent } from './AracGiderDuzenle/arac_gider_duzenle.component';
 import { AracGiderOdemeEkleComponent } from './AracGiderOdemeEkle/arac_gider_odeme_ekle.component';
 import { AracGiderOdemeDetay } from './AracGiderOdemeDetay/arac_gider_odeme_detay.component';
+import { MusteriDetayComponent } from './MusteriDetay/musteri_detay.component';
 /** Services */
 import { AracModelListeleService } from './Shared/Service/AracEkleForm/Arac_model_listele.service';
 import { AracMarkalariListeleService } from './Shared/Service/AracMarkalariListele/AracMarkalariListele.Service';
@@ -97,6 +97,8 @@ import { AracGiderDetayResolver } from './Shared/Service/AracGiderDetay/AracGide
 import { MusteriListeleService } from './Shared/Service/MusteriListele/MusteriListele.Service';
 import { MusteriListeleResolver } from './Shared/Service/MusteriListele/MusteriListele.Resolver';
 
+import { MusteriDetayService } from './Shared/Service/MusteriDetay/MusteriDetay.Service';
+import { MusteriDetayResolver } from './Shared/Service/MusteriDetay/MusteriDetay.Resolver';
 /** Services **/
 import { AracDetayResolver } from './Shared/Service/AracDetay/AracDetay.Resolver';
 import { Ng2Validator } from './Shared/ng2_Validator/';
@@ -108,7 +110,6 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
     AnasayfaComponent,
     AraclarComponent,
     MusterilerComponent,
-    MusteriDetayComponent,
     NotlisteleComponent,
     PanelComponent,
     ButtonComponent,
@@ -166,6 +167,7 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
     AracGiderDuzenleComponent,
     AracGiderOdemeEkleComponent,
     AracGiderOdemeDetay,
+    MusteriDetayComponent,
   ],
   imports: [
     BrowserModule,
@@ -202,6 +204,8 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
     AracGiderDetayResolver,
     MusteriListeleService,
     MusteriListeleResolver,
+    MusteriDetayService,
+    MusteriDetayResolver,
   ],
   bootstrap: [AppComponent]
 })

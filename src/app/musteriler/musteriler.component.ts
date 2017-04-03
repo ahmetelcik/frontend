@@ -16,9 +16,13 @@ export class MusterilerComponent implements OnInit {
   public musteriler: any;
 
   constructor(private route: ActivatedRoute) {
+
+    // Data Resolve
     this.data = this.route.snapshot.data['data'];  
+    
+    // Müşteriler 
     this.musteriler = this.data.contents.musteriler;
-    console.log(this.data.contents.musteriler);
+   
 
   }
 

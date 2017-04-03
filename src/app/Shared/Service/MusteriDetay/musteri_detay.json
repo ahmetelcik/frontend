@@ -1,0 +1,79 @@
+{
+  "http" : {
+    "success" : true,
+    "http_code" : 200,
+    "http_message" : "Başarıyla Listelendi"
+  },
+  "contents" : {
+    "musteri_detay" : {
+      "id" : 1,
+      "musteri_tipi" : "Bireysel",
+      "adi" : "RECEP",
+      "soyadi" : "ELÇİK",
+      "tc_no" : "29437619562",
+      "dogum_tarihi" : "1995-12-05",
+      "telefon_numarasi" : "05549109894",
+      "faks_numarasi" : "Faks",
+      "eposta_adresi" : "ahmetelcik35@gmail.com",
+      "acik_adresi" : "15 Mayıs Mahallesi Ressam Ahmet Cevdet Sokak Ayyıldız Apartmanı No: 42 Kat: 2 Denizli/Merkez",
+      "iban" : "TR-1234-5555-4443-4449-0903",
+      "bakiye" : 0.00,
+      "kayit_sube" : {
+        "id" : 6,
+        "sube_adi" : "Denizli Merkez Şube"
+      },
+      "ekleyen_kullanici" : {
+        "id" : 99,
+        "adi_soyadi" : "Ahmet Elçik"
+      },
+      "olusturulma_tarihi" : "2017-02-01 08:04:53"
+    },
+    "musteri_notlari" : [
+      {
+        "id" : 1,
+        "musteri_notu" : "Bu bir deneme notuduur bundan daha çok var bekleyin gelecek.",
+        "ekleyen_kullanici" : {
+          "id" : 6,
+          "adi_soyadi" : "Mahmut Elçik"
+        },
+        "olusturulma_tarihi" : "2016-03-14 12:22"
+      },
+      {
+        "id" : 2,
+        "musteri_notu" : "Bu bir deneme notuduur bundan daha çok var bekleyin gelecek.",
+        "ekleyen_kullanici" : {
+          "id" : 7,
+          "adi_soyadi" : "Recep Elçik"
+        },
+        "olusturulma_tarihi" : "2016-03-15 23:15"
+      },
+      {
+        "id" : 3,
+        "musteri_notu" : "Bu bir deneme notuduur bundan daha çok var bekleyin gelecek.",
+        "ekleyen_kullanici" : {
+          "id" : 8,
+          "adi_soyadi" : "Habibe Elçik"
+        },
+        "olusturulma_tarihi" : "2016-03-17 02:05"
+      },
+      {
+        "id" : 4,
+        "musteri_notu" : "Bu bir deneme notuduur bundan daha çok var bekleyin gelecek.",
+        "ekleyen_kullanici" : {
+          "id" : 9,
+          "adi_soyadi" : "Halil Sarıca"
+        },
+        "olusturulma_tarihi" : "2016-03-11 14:32"
+      },
+      {
+        "id" : 5,
+        "musteri_notu" : "Bu bir deneme notuduur bundan daha çok var bekleyin gelecek.",
+        "ekleyen_kullanici" : {
+          "id" : 10,
+          "adi_soyadi" : "Batuhan Çalış"
+        },
+        "olusturulma_tarihi" : "2016-02-20 02:12"
+      }
+    ]      
+  }
+}
