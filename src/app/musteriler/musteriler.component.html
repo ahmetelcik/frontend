@@ -46,16 +46,16 @@
                 <th class="musteri-listele-table-head-text-last" style="padding-right: 20px;padding-bottom: 20px;padding-top: 20px;text-align:right"> <i class="fa fa-sort-numeric-desc"></i> Bakiye</th>
                 </thead>
                 <tbody>
-                <tr>
+                <tr *ngFor="let musteri of musteriler">
                   <td class="first-table-cell">
-                    <a routerLink="/musteri/5/detay">
+                    <a routerLink="/musteri/{{ musteri.id }}/detay">
                       <div class="musteri-listele-table-left-block">
                         <div class="musteri-listele-table-left-kisa-ad-block">
-                          <span>AE</span>
+                          <span>{{ musteri.bas_harfler }}</span>
                         </div>
                         <div class="musteri-listele-table-left-tam-adi">
-                          <span>Ahmet Elçik</span>
-                          <span class="musteri-listele-table-left-telefon-no">(554) 910 98 94</span>
+                          <span>{{ musteri.tam_adi }}</span>
+                          <span class="musteri-listele-table-left-telefon-no">{{ musteri.telefon_numarasi }}</span>
                         </div>
                       </div>
                     </a>
@@ -64,7 +64,7 @@
                     <a routerLink="/musteri/5/detay">
                       <div class="musteri-listele-table-right-block">
                         <div class="musteri-listele-table-right-bakiye-text">
-                          <span>250,00 <i class="fa fa-try"></i></span>
+                          <span>{{ musteri.bakiye }} <i class="fa fa-try"></i></span>
                         </div>
                       </div>
                     </a>

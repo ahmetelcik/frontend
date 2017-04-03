@@ -201,6 +201,7 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
     AracGiderDetayService,
     AracGiderDetayResolver,
     MusteriListeleService,
+    MusteriListeleResolver,
   ],
   bootstrap: [AppComponent]
 })

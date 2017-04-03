@@ -58,6 +58,7 @@ import { AracGiderOdemeDetay } from './AracGiderOdemeDetay/arac_gider_odeme_deta
 import { AracListeleResolver } from './Shared/Service/AracListele/AracListele.Resolver';
 import { AracDetayResolver1 } from './Shared/Service/AracDetay/AracDetay.Resolver1';
 import { AracGiderDetayResolver } from './Shared/Service/AracGiderDetay/AracGiderDetay.Resolver';
+import { MusteriListeleResolver } from './Shared/Service/MusteriListele/MusteriListele.Resolver';
 
 const appRoutes: Routes = [
   {
@@ -74,6 +75,9 @@ const appRoutes: Routes = [
   {
     path: 'musteriler',
     component: MusterilerComponent,
+    resolve: {
+      data : MusteriListeleResolver
+    }
   },
   {
     path: "musteri/:id/detay",

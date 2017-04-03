@@ -9,8 +9,17 @@ import { ActivatedRoute } from '@angular/router';
 export class MusterilerComponent implements OnInit {
   
  
-  constructor() {
-    
+  /** Data **/ 
+  public data: any;
+  
+  // Araçlar
+  public musteriler: any;
+
+  constructor(private route: ActivatedRoute) {
+    this.data = this.route.snapshot.data['data'];  
+    this.musteriler = this.data.contents.musteriler;
+    console.log(this.data.contents.musteriler);
+
   }
 
   ngOnInit() {
