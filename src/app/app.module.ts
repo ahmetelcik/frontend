@@ -14,8 +14,6 @@ import { MusterilerComponent } from './musteriler/musteriler.component';
 import { Ng2Bs3ModalModule } from 'ng2-bs3-modal/ng2-bs3-modal';
 import { TabsModule } from 'ng2-bootstrap/tabs';
 import { AccordionModule,DropdownModule,AlertModule,ModalModule } from 'ng2-bootstrap';
-import { MusteriNotlariService } from './musteri-detay/Service/musteri-notlari.service';
-import { NotlisteleComponent } from './musteri-detay/Components/notlistele/notlistele.component';
 import { PanelComponent } from './Ui/Panel/panel.component';
 import { ButtonComponent } from './Ui/Button/button.component';
 import { ListComponent } from './Ui/List/list.component';
@@ -110,7 +108,6 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
     AnasayfaComponent,
     AraclarComponent,
     MusterilerComponent,
-    NotlisteleComponent,
     PanelComponent,
     ButtonComponent,
     ListComponent,
@@ -184,7 +181,6 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
     Ng2Validator
   ],
   providers: [
-    MusteriNotlariService,
     AracModelListeleService,
     AracMarkalariListeleService,
     AracCekisTipleriListeleService,
