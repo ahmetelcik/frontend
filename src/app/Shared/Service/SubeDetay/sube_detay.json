@@ -1,0 +1,20 @@
+{
+  "http" : {
+    "success" : true,
+    "http_code" : 200,
+    "http_message" : "Başarıyla Listelendi"
+  },
+  "contents" : {
+    "sube_detay" : {
+      "id" : 1,
+      "sube_adi" : "Denizli Çınar Şube",
+      "sube_telefon" : "0212 350 00 20",
+      "acik_adres" : "Mehmetçik Mahallesi 1303 Sokak No:10/6 Pamukkale - Denizli",
+      "ekleyen_kullanici" : {
+        "id" : 2,
+        "adi_soyadi" : "Ahmet Elçik"
+      },
+      "olusturulma_tarihi" : "2017-04-03 12:23:43"
+    }
+  }
+}

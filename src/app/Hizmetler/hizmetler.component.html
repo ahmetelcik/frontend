@@ -48,17 +48,11 @@
                   <th class="hizmet-listele-table-head-text-last" style="text-align: right">Fiyatı</th>
                 </thead>
                 <tbody>
-                <tr>
-                  <td class="hizmet-listele-table-body-text-first"><a routerLink="/hizmetler/1/detay">Bebek Koltuğu</a></td>
-                  <td class="hizmet-listele-table-body-text"><a routerLink="/hizmetler/1/detay">Günlük</a></td>
-                  <td class="hizmet-listele-table-body-text"><a routerLink="/hizmetler/1/detay">Ekstralar</a></td>
-                  <td class="hizmet-listele-table-body-text-last"><a routerLink="/hizmetler/1/detay">7,50 <i class="fa fa-try"></i></a></td>
-                </tr>
-                <tr>
-                  <td class="hizmet-listele-table-body-text-first"><a routerLink="/hizmetler/2/detay">Bebek Koltuğu</a></td>
-                  <td class="hizmet-listele-table-body-text"><a routerLink="/hizmetler/2/detay">Günlük</a></td>
-                  <td class="hizmet-listele-table-body-text"><a routerLink="/hizmetler/2/detay">Ekstralar</a></td>
-                  <td class="hizmet-listele-table-body-text-last"><a routerLink="/hizmetler/2/detay">7,50 <i class="fa fa-try"></i></a></td>
+                <tr *ngFor="let hizmet of hizmetler">
+                  <td class="hizmet-listele-table-body-text-first"><a routerLink="/hizmetler/{{ hizmet.id }}/detay">{{ hizmet.hizmet_adi }}</a></td>
+                  <td class="hizmet-listele-table-body-text"><a routerLink="/hizmetler/{{ hizmet.id }}/detay">{{ hizmet.hizmet_turu.hizmet_turu_adi }}</a></td>
+                  <td class="hizmet-listele-table-body-text"><a routerLink="/hizmetler/{{ hizmet.id }}/detay">{{ hizmet.hizmet_kategori.kategori_adi }}</a></td>
+                  <td class="hizmet-listele-table-body-text-last"><a routerLink="/hizmetler/{{ hizmet.id }}/detay">{{ hizmet.hizmet_fiyati }} <i class="fa fa-try"></i></a></td>
                 </tr>
                 </tbody>
               </table>

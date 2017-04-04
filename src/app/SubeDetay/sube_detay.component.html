@@ -45,7 +45,7 @@
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <span>Ahmet Elçik</span>
+              <span>{{ sube_detay.sube_adi }}</span>
             </div>
           </div>
           <!-- Şube Adı -->
@@ -59,7 +59,7 @@
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <span>0 850 885 07 47 </span>
+              <span>{{ sube_detay.sube_telefon }}</span>
             </div>
           </div>
           <!-- Telefon Numarası -->
@@ -73,7 +73,7 @@
               <span>:</span>
             </div>
             <div class="col-md-8">
-              <p>Mehmetçik Mahallesi 1303 Sokak No:10/6 Pamukkale - Denizli</p>
+              <p>{{ sube_detay.acik_adres }}</p>
             </div>
           </div>          
           <!-- Açık Adresi -->
@@ -83,14 +83,14 @@
           <!-- Panel Footer Left Block -->
           <div class="panel-footer-left-block">
             <div class="panel-footer-ekleyen-kullanici-block">
-              <span>Ekleyen Kullanıcı : <a href="#" class="link-blue-hover">Ahmet Elçik</a></span>
+              <span>Ekleyen Kullanıcı : <a href="#" class="link-blue-hover">{{ sube_detay.ekleyen_kullanici.adi_soyadi }}</a></span>
             </div>
           </div>
           <!-- Panel Footer Left Block -->
           <!-- Panel Footer Right Block -->
           <div class="panel-footer-right-block">
             <div class="panel-footer-olusturulma-tarihi-block">
-              <span>Oluşturulma Tarihi : 12 Aralık 2016 11:30</span>
+              <span>Oluşturulma Tarihi : {{ sube_detay.olusturulma_tarihi }}</span>
             </div>
           </div>
           <!-- Panel Footer Right Block -->

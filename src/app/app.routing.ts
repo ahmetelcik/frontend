@@ -70,6 +70,12 @@ import { HesapDetayResolver } from './Shared/Service/KasaveBankaDetay/HesapDetay
 
 import { SubeListeleResolver } from './Shared/Service/SubeListele/SubeListele.Resolver';
 
+import { SubeDetayResolver } from './Shared/Service/SubeDetay/SubeDetay.Resolver';
+
+import { HizmetListeleResolver } from './Shared/Service/HizmetListele/HizmetListele.Resolver';
+
+import { HizmetDetayResolver } from './Shared/Service/HizmetDetay/HizmetDetay.Resolver';
+
 const appRoutes: Routes = [
   {
     path: 'anasayfa',
@@ -222,7 +228,10 @@ const appRoutes: Routes = [
   },
   {
     path: "subeler/:id/detay",
-    component: SubeDetayComponent
+    component: SubeDetayComponent,
+    resolve: {
+      data : SubeDetayResolver
+    }
   },
   {
     path: "subeler/yeni",
@@ -246,11 +255,17 @@ const appRoutes: Routes = [
   },
   {
     path: "hizmetler",
-    component: HizmetlerComponent
+    component: HizmetlerComponent,
+    resolve: {
+      data : HizmetListeleResolver
+    }
   },
   {
     path: "hizmetler/:id/detay",
-    component: HizmetDetayComponent
+    component: HizmetDetayComponent,
+    resolve: {
+      data : HizmetDetayResolver
+    }
   },
   {
     path: "hizmetler/yeni",

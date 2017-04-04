@@ -122,6 +122,15 @@ import { HesapDetayResolver } from './Shared/Service/KasaveBankaDetay/HesapDetay
 import { SubeListeleService } from './Shared/Service/SubeListele/SubeListele.Service';
 import { SubeListeleResolver } from './Shared/Service/SubeListele/SubeListele.Resolver';
 
+import { SubeDetayService } from './Shared/Service/SubeDetay/SubeDetay.Service';
+import { SubeDetayResolver } from './Shared/Service/SubeDetay/SubeDetay.Resolver';
+
+import { HizmetListeleService } from './Shared/Service/HizmetListele/HizmetListele.Service';
+import { HizmetListeleResolver } from './Shared/Service/HizmetListele/HizmetListele.Resolver';
+
+import { HizmetDetayService } from './Shared/Service/HizmetDetay/HizmetDetay.Service';
+import { HizmetDetayResolver } from './Shared/Service/HizmetDetay/HizmetDetay.Resolver';
+
 /** Services **/
 import { AracDetayResolver } from './Shared/Service/AracDetay/AracDetay.Resolver';
 import { Ng2Validator } from './Shared/ng2_Validator/';
@@ -244,6 +253,12 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
     HesapDetayResolver,
     SubeListeleService,
     SubeListeleResolver,
+    SubeDetayService,
+    SubeDetayResolver,
+    HizmetListeleService,
+    HizmetListeleResolver,
+    HizmetDetayService,
+    HizmetDetayResolver,
   ],
   bootstrap: [AppComponent]
 })

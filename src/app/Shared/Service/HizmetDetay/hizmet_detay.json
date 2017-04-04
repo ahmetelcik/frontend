@@ -1,0 +1,28 @@
+{
+  "http" : {
+    "success" : true,
+    "http_code" : 200,
+    "http_message" : "Başarıyla Listelendi"
+  },
+  "contents" : {
+    "hizmet_detay" : {
+      "id" : 1,
+        "hizmet_adi" : "Bebek Koltuğu",
+        "hizmet_fiyati" : 7.50,
+        "hizmet_turu" : {
+          "id" : 5,
+          "hizmet_turu_adi" : "Günlük"
+        },
+        "adet_satisi_yapilsin_mi" : true,
+        "hizmet_kategori" : {
+          "id" : 12,
+          "kategori_adi" : "Ekstralar (Opsiyonel)"
+        },
+        "ekleyen_kullanici" : {
+          "id" : 1,
+          "adi_soyadi" : "Ahmet Elçik"
+        },
+        "olusturulma_tarihi" : "2017-03-04 12:33:02"
+    }
+  }
+}
