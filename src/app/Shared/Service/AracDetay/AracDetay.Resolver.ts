@@ -11,6 +11,7 @@ import { AracVitesTipleriListeleService } from '../AracVitesTipleriListele/AracV
 import { AracYakitTipleriListeleService } from '../AracYakitTipleriListele/AracYakitTipleriListele.Service';
 import { AracDetayService } from '../AracDetay/AracDetay.Service';
 import { FolkJoins } from '../FolkJoins/FolkJoins';
+
 @Injectable()
 export class AracDetayResolver implements Resolve<any> {
   constructor(

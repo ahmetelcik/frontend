@@ -76,6 +76,8 @@ import { HizmetListeleResolver } from './Shared/Service/HizmetListele/HizmetList
 
 import { HizmetDetayResolver } from './Shared/Service/HizmetDetay/HizmetDetay.Resolver';
 
+import { KategorileriListeleResolveServiceAll } from './Kategoriler/Service/KategorileriListele.Service';
+
 const appRoutes: Routes = [
   {
     path: 'anasayfa',
@@ -239,7 +241,10 @@ const appRoutes: Routes = [
   },
   {
     path: "kategoriler",
-    component: KategorilerComponent
+    component: KategorilerComponent,
+    resolve: {
+      data : KategorileriListeleResolveServiceAll
+    }
   },
   {
     path: "kategoriler/hizmetler/yeni",

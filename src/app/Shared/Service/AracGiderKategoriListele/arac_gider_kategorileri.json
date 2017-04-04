@@ -1,0 +1,23 @@
+{
+  "http" : {
+    "success" : true,
+    "http_code" : 200,
+    "http_message" : "Başarıyla Listelendi"
+  },
+  "contents" : {
+    "arac_gider_kategorileri" : [
+      {
+        "id" : 1,
+        "kategori_adi" : "Periyodik Bakım"
+      },
+      {
+        "id" : 2,
+        "kategori_adi" : "Temizlik & Yıkama"
+      },
+      {
+        "id" : 3,
+        "kategori_adi" : "Yakıt"
+      }
+    ]
+  }
+}

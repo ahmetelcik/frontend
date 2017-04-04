@@ -44,10 +44,7 @@
           <!-- Kategori Listele -->
           <div id="kategori-listele-body-block">
             <ul class="kategori-listele-ul">
-              <li><a href="#">Maaş Giderleri</a></li>
-              <li><a href="#">Ofis Giderleri</a></li>
-              <li><a href="#">Mutfak Giderleri</a></li>
-              <li><a href="#">Temizlik Giderleri</a></li>
+              <li *ngFor="let kategori of gider_kategorileri"><a href="#">{{ kategori.kategori_adi }}</a></li>
             </ul>
           </div>
           <!-- Kategori Listele -->

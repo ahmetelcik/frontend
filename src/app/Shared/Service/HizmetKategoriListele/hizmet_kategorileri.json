@@ -1,0 +1,23 @@
+{
+  "http" : {
+    "success" : true,
+    "http_code" : 200,
+    "http_message" : "Başarıyla"
+  },
+  "contents" : {
+    "hizmet_kategorileri" : [
+      {
+        "id" : 1,
+        "kategori_adi" : "Dahil Hizmetler"
+      },
+      {
+        "id" : 2,
+        "kategori_adi" : "Ekstralar"
+      },
+      {
+        "id" : 3,
+        "kategori_adi" : "Sigortalar"
+      }
+    ]
+  }
+}

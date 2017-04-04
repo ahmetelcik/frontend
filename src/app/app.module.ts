@@ -131,6 +131,16 @@ import { HizmetListeleResolver } from './Shared/Service/HizmetListele/HizmetList
 import { HizmetDetayService } from './Shared/Service/HizmetDetay/HizmetDetay.Service';
 import { HizmetDetayResolver } from './Shared/Service/HizmetDetay/HizmetDetay.Resolver';
 
+import { GiderKategoriListeleService } from './Shared/Service/GiderKategoriListele/GiderKategoriListele.Service';
+import { GiderKategoriListeleResolver } from './Shared/Service/GiderKategoriListele/GiderKategoriListele.Resolver';
+
+import { AracGiderKategoriListeleService } from './Shared/Service/AracGiderKategoriListele/AracGiderKategoriListele.Service';
+import { AracGiderKategoriListeleResolver } from './Shared/Service/AracGiderKategoriListele/AracGiderKategoriListele.Resolver';
+
+import { HizmetKategoriListeleService } from './Shared/Service/HizmetKategoriListele/HizmetKategoriListele.Service'
+import { HizmetKategoriListeleResolver } from './Shared/Service/HizmetKategoriListele/HizmetKategoriListele.Resolver'
+
+import { KategorileriListeleResolveServiceAll } from './Kategoriler/Service/KategorileriListele.Service';
 /** Services **/
 import { AracDetayResolver } from './Shared/Service/AracDetay/AracDetay.Resolver';
 import { Ng2Validator } from './Shared/ng2_Validator/';
@@ -263,6 +273,13 @@ import { Ng2Validator } from './Shared/ng2_Validator/';
     HizmetListeleResolver,
     HizmetDetayService,
     HizmetDetayResolver,
+    GiderKategoriListeleService,
+    GiderKategoriListeleResolver,
+    AracGiderKategoriListeleService,
+    AracGiderKategoriListeleResolver,
+    HizmetKategoriListeleService,
+    HizmetKategoriListeleResolver,
+    KategorileriListeleResolveServiceAll,
   ],
   bootstrap: [AppComponent]
 })
