@@ -1,0 +1,27 @@
+{
+  "http" : {
+    "success" : true,
+    "http_code" : 200,
+    "http_message" : "Başarıyla Listelendi"
+  },
+  "contents" : {
+    "gider_kategorileri" : [
+      {
+        "id" : 1,
+        "kategori_adi" : "Maaş Giderleri"
+      },
+      {
+        "id" : 2,
+        "kategori_adi" : "Ofis Giderleri"
+      },
+      {
+        "id" : 3,
+        "kategori_adi" : "Mutfak Giderleri"
+      },
+      {
+        "id" : 4,
+        "kategori_adi" : "Temizlik Giderleri"
+      }
+    ]
+  }
+}
