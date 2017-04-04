@@ -134,6 +134,10 @@ import { HizmetDetayResolver } from './Shared/Service/HizmetDetay/HizmetDetay.Re
 /** Services **/
 import { AracDetayResolver } from './Shared/Service/AracDetay/AracDetay.Resolver';
 import { Ng2Validator } from './Shared/ng2_Validator/';
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
